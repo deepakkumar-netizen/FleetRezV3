@@ -1,0 +1,122 @@
+// ===============================
+// Variables
+// ===============================
+$primary: #008857;
+$border: #ddd;
+$text: #333;
+$bg-hover: #e6f4ef;
+$shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+$radius-lg: 12px;
+$radius-md: 10px;
+$font-family: 'Inter', sans-serif;
+
+// ===============================
+// DateRangePicker (Date + Time)
+// ===============================
+.daterangepicker {
+  border-radius: $radius-lg;
+  box-shadow: $shadow;
+  font-family: $font-family;
+
+  .drp-calendar {
+    th {
+      font-weight: 600;
+      color: $text;
+    }
+  }
+
+  td {
+    &.available:hover {
+      background-color: $bg-hover;
+    }
+
+    &.active,
+    &.active:hover {
+      background-color: $primary;
+      color: #fff;
+    }
+  }
+
+  .calendar-time {
+    padding: 10px;
+    border-top: 1px solid $border;
+  }
+
+  select {
+    &.hourselect,
+    &.minuteselect,
+    &.ampmselect {
+      border-radius: 8px;
+      padding: 6px;
+      border: 1px solid $border;
+      font-family: $font-family;
+    }
+  }
+
+  .drp-buttons {
+    border-top: 1px solid $border;
+    padding: 10px;
+
+    .applyBtn {
+      background-color: $primary;
+      border-color: $primary;
+      border-radius: 8px;
+      color: #fff;
+    }
+
+    .cancelBtn {
+      border-radius: 8px;
+    }
+  }
+}
+
+// ===============================
+// Flatpickr (Time Picker only)
+// ===============================
+.flatpickr-calendar {
+  border-radius: $radius-lg;
+  box-shadow: $shadow;
+  font-family: $font-family;
+
+  .flatpickr-time {
+    input {
+      font-size: 14px;
+      font-weight: 500;
+
+      &:hover,
+      &:focus {
+        background-color: $bg-hover;
+      }
+    }
+
+    .numInputWrapper span,
+    .flatpickr-am-pm {
+      color: $primary;
+    }
+  }
+
+  .flatpickr-day {
+    &.selected {
+      background-color: $primary;
+      border-color: $primary;
+    }
+  }
+}
+
+// ===============================
+// Inputs (Date & Time fields)
+// ===============================
+.date-input,
+.time-input {
+  height: 48px;
+  border-radius: $radius-md;
+  border: 1px solid $border;
+  font-size: 14px;
+  padding: 0 14px;
+  font-family: $font-family;
+
+  &:focus {
+    border-color: $primary;
+    box-shadow: 0 0 0 0.15rem rgba($primary, 0.15);
+  }
+}

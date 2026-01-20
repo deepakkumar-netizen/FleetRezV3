@@ -1,0 +1,107 @@
+// GENERAL CSS START HERE
+
+* {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  font-family: $InterFont;
+  background: #F1F1EF;
+}
+
+input,
+select,
+textarea {
+  font-size: 15px;
+  outline: 0;
+  transition: all 0.225s ease;
+  font-family: $InterFont;
+  &:hover,
+  &:focus {
+    transition: all 0.225s ease;
+  }
+}
+
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+a,
+strong,
+b,
+i,
+img,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  border: 0px;
+}
+
+a {
+  outline: none;
+  transition: all 0.25s ease-in-out;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+.img-auto {
+  margin: 0 auto;
+}
+
+section {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  transition: all 0.25s ease-in;
+}
+
+button:hover {
+  transition: all 0.25s ease-out;
+}
+
+button:focus {
+  outline: none;
+}

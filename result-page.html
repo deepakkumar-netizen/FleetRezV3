@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/slick-slider/slick/slick.css">
+    <link rel="stylesheet" href="node_modules/slick-slider/slick/slick-theme.css">
+    <link rel="stylesheet" href="assets/scss/pages/index.css">
+    <title>FleetRez | Result Page</title>
+</head>
+
+<body>
+    <div class="header header-dark">
+        <nav class="navbar navbar-expand-lg py-3">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/icons/logo.svg" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Manage my booking</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex d-lg-none align-items-center justify-content-start gap-3">
+                        <div class="language-dropdown dropdown py-1 px-0">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center gap-2" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="assets/icons/currency-euro-icon.svg" alt="">
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"> <img
+                                            src="assets/icons/currency-euro-icon.svg" alt="">
+                                        English</a></li>
+                                <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><img
+                                            src="assets/icons/currency-euro-icon.svg" alt="">
+                                        Hebrew</a></li>
+                                <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><img
+                                            src="assets/icons/currency-euro-icon.svg" alt="">
+                                        Hindi</a></li>
+                            </ul>
+                        </div>
+                        <div class="language-dropdown dropdown py-1 px-0">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center gap-2" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="assets/icons/english.png" alt="">
+                                EN
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"> <img
+                                            src="assets/icons/english.png" alt="">
+                                        English</a></li>
+                                <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><img
+                                            src="assets/icons/english.png" alt="">
+                                        Hebrew</a></li>
+                                <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><img
+                                            src="assets/icons/english.png" alt="">
+                                        Hindi</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-none d-lg-flex align-items-center justify-content-end">
+                    <div class="language-dropdown dropdown d-md-block d-none py-1 px-3">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center gap-2" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/icons/currency-euro-icon.svg" alt="">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"> <img
+                                        src="assets/icons/currency-euro-icon.svg" alt="">
+                                    English</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><img
+                                        src="assets/icons/currency-euro-icon.svg" alt="">
+                                    Hebrew</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><img
+                                        src="assets/icons/currency-euro-icon.svg" alt="">
+                                    Hindi</a></li>
+                        </ul>
+                    </div>
+                    <div class="language-dropdown dropdown d-md-block d-none py-1 px-3">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center gap-2" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/icons/english.png" alt="">
+                            EN
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"> <img
+                                        src="assets/icons/english.png" alt="">
+                                    English</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><img
+                                        src="assets/icons/english.png" alt="">
+                                    Hebrew</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><img
+                                        src="assets/icons/english.png" alt="">
+                                    Hindi</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+    <section class="py-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="search-details p-4 bg-white my-4">
+                        <div class="search-details-text">
+                            <span class="d-block">Pick-up</span>
+                            <h5 class="mt-1">Indira Gandhi International Airport</h5>
+                            <h6 class="mt-1">Thu, 18 Jan, 2024 | 12:30PM</h6>
+                        </div>
+                        <div class="my-2 ms-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1" height="16" viewBox="0 0 1 16"
+                                fill="none">
+                                <path d="M0.5 0L0.499999 16" stroke="#989898" />
+                            </svg>
+                        </div>
+                        <div class="search-details-text">
+                            <span class="d-block">Drop-off</span>
+                            <h5 class="mt-1">Indira Gandhi International Airport</h5>
+                            <h6 class="mt-1">Thu, 25 Jan, 2024 | 1:00PM</h6>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="filter-heading d-flex align-items-center mb-3 gap-4">
+                            <span class="pe-2 text-nowrap">SORT BY</span>
+                            <div class="ps-2 filter-sorting position-relative">
+                                <select class="form-control form-control-sorting" name="" id="">
+                                    <option value="price_desc">Price (Highest to Lowest)</option>
+                                    <option value="price_asc">Price (Lowest to Highest)</option>
+                                    <option value="rating_desc">Rating (High to Low)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-heading d-flex align-items-center mb-3">
+                        <span class="pe-2">filters</span>
+                    </div>
+                    <div class="filter-card mb-2 overflow-hidden bg-white">
+                        <button class="filter-btn d-flex align-items-center justify-content-between w-100" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#filterGearbox" aria-expanded="false"
+                            aria-controls="filterGearbox">
+                            Gearbox <img src="assets/icons/chevron-down.svg" alt="">
+                        </button>
+                        <div class="collapse show" id="filterGearbox">
+                            <div class="px-3 py-2">
+                                <div class="filter-checkbox form-check d-flex align-items-center py-2">
+                                    <input class="form-check-input" type="checkbox" id="automatic"
+                                        value="Same drop-off location">
+                                    <label class="form-check-label" for="automatic">Automatic</label>
+                                </div>
+                                <div class="filter-checkbox form-check d-flex align-items-center py-2">
+                                    <input class="form-check-input" type="checkbox" id="manual"
+                                        value="Same drop-off location">
+                                    <label class="form-check-label" for="manual">Manual</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-card mb-2 overflow-hidden bg-white">
+                        <button class="filter-btn d-flex align-items-center justify-content-between w-100" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#filterPayment" aria-expanded="false"
+                            aria-controls="filterPayment">
+                            Payment type <img src="assets/icons/chevron-down.svg" alt="">
+                        </button>
+                        <div class="collapse show" id="filterPayment">
+                            <div class="px-3 py-2">
+                                <div class="filter-checkbox form-check d-flex align-items-center py-2">
+                                    <input class="form-check-input" type="checkbox" id="payNow-01"
+                                        value="Same drop-off location">
+                                    <label class="form-check-label" for="payNow-01">Pay now</label>
+                                </div>
+                                <div class="filter-checkbox form-check d-flex align-items-center py-2">
+                                    <input class="form-check-input" type="checkbox" id="payNow-02"
+                                        value="Same drop-off location">
+                                    <label class="form-check-label" for="payNow-02">Pay now</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <!-- SLider -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="car-slider pt-4 pb-3 mt-1">
+                                <div>
+                                    <div class="car-card py-3 px-4 position-relative">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="car-name">Small cars</div>
+                                            <div class="car-seater d-flex align-items-center gap-3">
+                                                <div class="d-flex align-items-center gap-1 car-seater-items">
+                                                    <img src="assets/icons/user-round-icon.svg" alt="">
+                                                    <span>4</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-1 car-seater-items">
+                                                    <img src="assets/icons/luggage-round-icon.svg" alt="">
+                                                    <span>1</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="car-card-image py-3 d-flex align-items-center">
+                                            <!-- <img src="assets/icons/large-car.svg" alt=""> -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="81" height="39"
+                                                viewBox="0 0 81 39" fill="none">
+                                                <path
+                                                    d="M60.0737 33.0888H19.9175V30.1975H60.0737V33.0888ZM73.245 33.0888V30.1975C75.4937 30.1975 76.7787 29.8763 78.0637 29.8763L77.4212 20.8812C76.7787 17.6687 65.8562 12.85 62.0012 12.85H61.68L60.395 11.8863C52.3637 7.0675 46.26 3.2125 36.9437 2.24875H29.555C23.7725 2.24875 19.275 2.57 15.7412 3.53375L16.3838 4.4975L14.7775 5.46125C10.9225 7.71 4.17625 13.8137 4.81875 17.0262C4.81875 18.9537 3.53375 20.2387 2.57 21.2025V27.6275C2.89125 28.27 4.17625 29.8762 6.74625 30.1975L6.425 32.7675C1.9275 32.125 0 28.5913 0 28.27V19.275L0.642499 18.9537C1.285 18.6325 2.24875 17.6687 2.24875 17.0262C1.60625 12.2075 8.67375 6.425 12.5287 3.855L11.565 2.24875L12.85 1.9275C17.0262 0.6425 22.1663 0 29.2337 0H36.6225C46.5812 0.96375 53.3275 5.14 61.3587 9.95875L62.0012 10.28C66.82 10.6013 78.7063 15.42 79.9912 20.56L80.6337 32.125L79.3487 32.4463C78.0638 32.7675 76.4575 33.0888 73.245 33.0888Z"
+                                                    fill="#008052" />
+                                                <path
+                                                    d="M13.1712 19.5962C15.7412 19.5962 18.3112 20.56 19.9175 22.4875C21.845 24.415 22.8087 26.6637 22.8087 29.2337V33.0887H20.8812C20.56 34.0525 19.9175 35.0162 19.275 35.6587C17.6687 37.265 15.7412 38.2287 13.4925 38.2287C11.2437 38.2287 8.99499 37.265 7.70999 35.6587C6.74624 34.695 6.10374 33.7312 5.78249 32.7675C5.46124 32.7675 5.13999 32.4462 4.49749 32.4462L3.53374 32.125V29.2337C3.53374 26.6637 4.49749 24.0937 6.42499 22.4875C8.03124 20.56 10.6012 19.5962 13.1712 19.5962ZM66.4987 24.0937C63.2862 24.0937 60.7162 26.6637 60.7162 29.8762C60.7162 33.0887 63.2862 35.6587 66.4987 35.6587C69.7112 35.6587 72.2812 33.0887 72.2812 29.8762C72.2812 26.6637 69.7112 24.0937 66.4987 24.0937ZM13.1712 24.0937C9.95874 24.0937 7.38874 26.6637 7.38874 29.8762C7.38874 33.0887 9.95874 35.6587 13.1712 35.6587C16.3837 35.6587 18.9537 33.0887 18.9537 29.8762C18.9537 26.6637 16.3837 24.0937 13.1712 24.0937ZM66.4987 19.5962C69.0687 19.5962 71.6387 20.56 73.245 22.4875C75.1725 24.415 76.1362 26.6637 76.1362 29.2337V32.7675H73.8875C73.5662 33.7312 72.9238 34.695 71.96 35.3375C70.3538 36.9437 68.4262 37.9075 66.1775 37.9075C63.9287 37.9075 61.68 36.9437 60.395 35.3375C59.7525 34.695 59.11 33.7312 58.7887 32.7675H56.8612V28.9125C56.8612 26.3425 57.825 23.7725 59.7525 22.1662C61.3587 20.56 63.9287 19.5962 66.4987 19.5962ZM14.135 5.46121C11.565 6.74621 7.38874 8.99496 5.46124 11.2437H9.95874L16.0625 4.81871L14.135 5.46121ZM16.0625 11.565C20.2387 6.74621 23.13 4.17621 26.6637 4.17621H36.6225C42.7262 4.81871 47.545 6.74621 52.3637 9.31621L52.0425 9.63746C51.0787 10.6012 50.7575 11.565 50.4362 12.85V13.4925L16.0625 11.565ZM2.89124 14.4562V17.99H6.74624C6.74624 17.99 9.31624 15.42 8.99499 13.4925C8.99499 13.4925 6.10374 13.4925 2.89124 14.4562Z"
+                                                    fill="#008052" />
+                                                <path
+                                                    d="M13.1712 31.8038C14.2358 31.8038 15.0987 30.9408 15.0987 29.8763C15.0987 28.8117 14.2358 27.9488 13.1712 27.9488C12.1067 27.9488 11.2437 28.8117 11.2437 29.8763C11.2437 30.9408 12.1067 31.8038 13.1712 31.8038Z"
+                                                    fill="#008052" />
+                                                <path
+                                                    d="M66.4988 31.8038C67.5633 31.8038 68.4263 30.9408 68.4263 29.8763C68.4263 28.8117 67.5633 27.9488 66.4988 27.9488C65.4343 27.9488 64.5713 28.8117 64.5713 29.8763C64.5713 30.9408 65.4343 31.8038 66.4988 31.8038Z"
+                                                    fill="#008052" />
+                                                <path
+                                                    d="M33.7313 15.4199H37.5863V17.3474H33.7313V15.4199ZM52.685 10.2799C52.0425 10.9224 51.4 11.8861 51.4 12.8499C51.4 13.1711 51.4 13.4924 51.7213 13.8136C52.0425 14.1349 52.3638 14.1349 52.685 14.1349H55.5763C56.2188 14.1349 56.54 13.8136 56.8613 13.4924C57.1825 13.1711 57.1825 12.5286 56.8613 12.2074C56.2188 11.2436 55.255 10.2799 53.97 9.95865C53.6488 9.95865 53.0063 9.95865 52.685 10.2799Z"
+                                                    fill="#008052" />
+                                                <path
+                                                    d="M55.255 15.7413C54.9338 15.7413 54.6125 15.7413 54.6125 15.4201L53.0063 13.1713C52.685 12.8501 52.685 12.2076 53.3275 11.8863C53.6488 11.5651 54.2913 11.5651 54.6125 12.2076L56.2188 14.4563C56.54 14.7776 56.54 15.4201 55.8975 15.7413H55.255ZM15.42 13.8138H19.275V15.7413H15.42V13.8138ZM69.0688 13.8138C72.6025 19.9176 73.5663 21.5238 78.0638 21.5238H78.7063V20.8813C78.0638 18.3113 74.2088 15.7413 70.0325 13.8138H69.0688Z"
+                                                    fill="#008052" />
+                                            </svg>
+                                        </div>
+                                        <div class="car-price">
+                                            From <strong>$6300</strong>
+                                        </div>
+                                        <div class="car-selected">
+                                            <img src="assets/icons/check-icon.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="car-card py-3 px-4 position-relative">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="car-name">Large cars</div>
+                                            <div class="car-seater d-flex align-items-center gap-3">
+                                                <div class="d-flex align-items-center gap-1 car-seater-items">
+                                                    <img src="assets/icons/user-round-icon.svg" alt="">
+                                                    <span>5</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-1 car-seater-items">
+                                                    <img src="assets/icons/luggage-round-icon.svg" alt="">
+                                                    <span>2</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="car-card-image py-3 d-flex align-items-center">
+                                            <!-- <img src="assets/icons/large-car.svg" alt=""> -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="115" height="42"
+                                                viewBox="0 0 115 42" fill="none">
+                                                <path
+                                                    d="M3.85498 15.7412V19.2749H5.46123C7.70998 19.2749 10.6012 17.6687 10.6012 15.7412V13.8137H3.53374L3.85498 15.7412ZM2.89124 30.8399V34.6949H12.85V34.3737C8.99499 34.0524 4.81874 31.8037 2.89124 30.8399ZM25.3787 9.95868C35.98 5.46118 37.9075 4.17618 49.7937 4.17618C58.1462 4.17618 63.9287 7.06743 70.0325 10.6012C69.0687 11.5649 68.4262 12.8499 68.4262 14.1349L28.9125 12.5287C28.9125 12.8499 26.3425 12.5287 25.3787 9.95868ZM70.675 11.5649C70.0325 12.5287 69.7112 13.4924 69.7112 14.4562C69.7112 14.7774 69.7112 15.0987 70.0325 15.4199C70.3537 15.7412 70.675 15.7412 70.9962 15.7412H73.8875C74.53 15.7412 74.8512 15.4199 75.1725 15.0987C75.4937 14.7774 75.4937 14.1349 75.1725 13.8137C74.53 12.8499 73.5662 11.8862 72.2812 11.5649C71.6387 11.2437 71.3175 11.2437 70.675 11.5649Z"
+                                                    fill="#989898" />
+                                                <path
+                                                    d="M73.245 17.3476C72.9237 17.3476 72.6025 17.3476 72.6025 17.0263L70.9962 14.7776C70.675 14.4563 70.675 13.8138 71.3175 13.4926C71.6387 13.1713 72.2812 13.1713 72.6025 13.8138L74.2087 16.0626C74.53 16.3838 74.53 17.0263 73.8875 17.3476C73.5662 17.0263 73.5662 17.3476 73.245 17.3476Z"
+                                                    fill="#989898" />
+                                                <path
+                                                    d="M13.4925 35.3375C7.38874 35.3375 0.96374 31.1613 0.64249 31.1613L0 30.84V22.1663L0.321245 21.845C0.963745 21.2025 2.24874 19.5963 2.24874 18.6325L2.57 9.95875L11.8862 8.995C27.6275 1.60625 33.41 0 49.4725 0C60.0738 0 66.4987 3.855 74.2087 8.03125C75.815 8.995 77.7425 9.95875 79.67 11.2438C81.5975 11.2438 92.1987 11.565 100.23 13.8137C107.94 15.7413 112.759 18.3113 113.08 20.8813L114.044 34.3737L112.759 34.695C110.51 35.3375 108.582 35.6588 103.764 35.6588H102.8V32.7675H103.764C107.619 32.7675 109.225 32.4463 110.831 32.125V31.4825L110.189 21.2025C109.867 20.8813 107.298 18.6325 99.2663 16.705C90.5925 14.4563 79.3487 14.135 79.0275 14.135L78.385 13.8137C76.1363 12.5287 74.2087 11.565 72.6025 10.6012C64.8925 6.10375 59.11 2.89125 49.1512 2.89125C33.7312 2.89125 27.9487 4.4975 12.5287 11.565H12.2075L5.14 12.5288L4.81875 18.6325C4.81875 20.56 3.2125 22.4875 2.57 23.13V28.9125C4.17625 29.8763 9.31624 32.4463 13.4925 32.4463H15.7412V35.3375H13.4925ZM84.1675 35.3375H32.125V32.4463H84.1675V35.3375Z"
+                                                    fill="#989898" />
+                                                <path
+                                                    d="M93.4837 18.9538C96.6962 18.9538 99.5875 20.2388 101.836 22.4876C104.085 24.7363 105.37 27.6276 105.37 30.8401V35.6588H101.194C101.836 34.3738 102.479 33.0888 102.479 31.4826C102.479 26.9851 98.6237 23.1301 94.1262 23.1301C89.6287 23.1301 85.7737 26.9851 85.7737 31.4826C85.7737 33.0888 86.095 34.3738 87.0587 35.6588H82.8824V30.8401C82.8824 27.6276 84.1675 24.7363 86.4162 22.4876C87.38 20.2388 90.2712 18.9538 93.4837 18.9538Z"
+                                                    fill="#989898" />
+                                                <path
+                                                    d="M86.4163 24.0937C88.3438 22.1662 90.5925 21.2024 93.4838 21.2024C96.0538 21.2024 98.6238 22.1662 100.551 24.0937C102.479 26.0212 103.443 28.2699 103.443 31.1612C103.443 33.7312 102.479 36.3012 100.551 38.2287C98.6238 40.1562 96.375 41.1199 93.4838 41.1199C90.9138 41.1199 88.3438 40.1562 86.4163 38.2287C84.4888 36.3012 83.525 34.0524 83.525 31.1612C83.525 28.5912 84.81 26.0212 86.4163 24.0937ZM93.4838 24.4149C89.6288 24.4149 86.7375 27.6274 86.7375 31.1612C86.7375 34.6949 89.95 37.9074 93.4838 37.9074C97.3388 37.9074 100.23 34.6949 100.23 31.1612C100.23 27.6274 97.3388 24.4149 93.4838 24.4149Z"
+                                                    fill="#989898" />
+                                                <path
+                                                    d="M93.4837 33.7313C94.9031 33.7313 96.0537 32.5807 96.0537 31.1613C96.0537 29.7419 94.9031 28.5913 93.4837 28.5913C92.0643 28.5913 90.9137 29.7419 90.9137 31.1613C90.9137 32.5807 92.0643 33.7313 93.4837 33.7313Z"
+                                                    fill="#989898" />
+                                                <path
+                                                    d="M39.835 27.3063V29.5551H78.385L39.835 27.3063ZM102.479 18.9538L105.049 23.7726C106.012 23.1301 107.297 22.8088 108.261 22.8088H112.437V22.4876C112.437 22.1663 111.152 19.9176 109.546 18.9538H102.479ZM109.225 27.6276H112.437V29.5551H109.225V27.6276Z"
+                                                    fill="#989898" />
+                                                <path
+                                                    d="M108.583 26.985H107.298C106.655 26.985 106.334 27.3062 106.334 27.9487V28.9125C106.334 29.555 106.655 29.8762 107.298 29.8762H108.583C109.225 29.8762 109.546 29.555 109.546 28.9125V27.9487C109.546 27.3062 109.225 26.985 108.583 26.985ZM41.4413 16.0625H47.8663V17.99H41.4413V16.0625ZM24.0938 18.9537C27.3063 18.9537 30.1975 20.2387 32.4463 22.4875C34.695 24.7362 35.98 27.6275 35.98 30.84V35.6587H31.1613C31.8038 34.3737 32.4463 33.0887 32.4463 31.4825C32.4463 26.985 28.5913 23.13 24.0938 23.13C19.5963 23.13 15.7413 26.985 15.7413 31.4825C15.7413 33.0887 16.0625 34.3737 17.0263 35.6587H12.85V30.84C12.85 27.6275 14.135 24.7362 16.3838 22.4875C17.99 20.2387 20.8813 18.9537 24.0938 18.9537Z"
+                                                    fill="#989898" />
+                                                <path
+                                                    d="M17.0263 24.0937C18.9538 22.1662 21.2025 21.2024 24.0938 21.2024C26.6638 21.2024 29.2338 22.1662 31.1613 24.0937C33.0888 26.0212 34.0525 28.2699 34.0525 31.1612C34.0525 33.7312 33.0888 36.3012 31.1613 38.2287C29.2338 40.1562 26.985 41.1199 24.0938 41.1199C21.5238 41.1199 18.9538 40.1562 17.0263 38.2287C15.0988 36.3012 14.135 34.0524 14.135 31.1612C14.135 28.5912 15.0988 26.0212 17.0263 24.0937ZM24.0938 24.4149C20.2388 24.4149 17.3475 27.6274 17.3475 31.1612C17.3475 34.6949 20.56 37.9074 24.0938 37.9074C27.9488 37.9074 30.84 34.6949 30.84 31.1612C30.84 27.6274 27.9488 24.4149 24.0938 24.4149Z"
+                                                    fill="#989898" />
+                                                <path
+                                                    d="M24.0938 33.7313C25.5131 33.7313 26.6637 32.5807 26.6637 31.1613C26.6637 29.7419 25.5131 28.5913 24.0938 28.5913C22.6744 28.5913 21.5237 29.7419 21.5237 31.1613C21.5237 32.5807 22.6744 33.7313 24.0938 33.7313Z"
+                                                    fill="#989898" />
+                                            </svg>
+                                        </div>
+                                        <div class="car-price">
+                                            From <strong>$6300</strong>
+                                        </div>
+                                        <div class="car-selected">
+                                            <img src="assets/icons/check-icon.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="car-card py-3 px-4 position-relative">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="car-name">SUVs</div>
+                                            <div class="car-seater d-flex align-items-center gap-3">
+                                                <div class="d-flex align-items-center gap-1 car-seater-items">
+                                                    <img src="assets/icons/user-round-icon.svg" alt="">
+                                                    <span>6</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-1 car-seater-items">
+                                                    <img src="assets/icons/luggage-round-icon.svg" alt="">
+                                                    <span>3</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="car-card-image py-3 d-flex align-items-center">
+                                            <!-- <img src="assets/icons/large-car.svg" alt=""> -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="125" height="52"
+                                                viewBox="0 0 125 52" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M34.0525 4.17622H61.68C68.4262 4.81872 75.1725 8.67372 81.2762 12.5287C80.955 12.5287 80.955 12.85 80.955 12.85C79.9912 13.8137 79.3487 15.0987 79.3487 16.3837V16.705L16.705 14.7775C23.13 9.63747 26.985 4.17622 34.0525 4.17622Z"
+                                                    fill="#989898" />
+                                                <path
+                                                    d="M9.95877 42.405C3.85502 42.405 0.32127 38.2287 0.32127 38.2287L0 37.9075V29.8762L0.32127 29.555C0.64252 28.9125 1.60625 27.3063 1.60625 26.0213V17.99C1.60625 15.7413 9.31619 7.38875 11.8862 5.14L11.565 2.24875L12.85 1.9275C18.3112 0.6425 28.9125 0 36.3012 0H62.0012C71.6387 0.96375 80.6337 6.425 88.3437 11.565C89.6287 12.5288 91.235 13.1713 92.52 14.135C93.1625 14.135 93.805 14.135 94.7687 14.4563C109.546 15.7413 123.681 17.99 124.966 23.7725V41.7625L124.003 42.0838C122.075 42.405 120.148 42.7262 115.971 42.7262H111.795V39.835H115.971C119.505 39.835 121.111 39.5137 122.396 39.5137V23.7725C121.754 20.8813 112.437 18.6325 94.7687 17.0262C93.805 17.0262 92.8412 16.705 92.1987 16.705L91.5562 16.3838C89.95 15.42 88.665 14.4563 87.0588 13.4925C79.0275 8.3525 70.675 3.2125 62.0012 2.24875H36.6225C29.8762 2.24875 20.5599 2.89125 15.0987 3.855L15.42 5.7825L14.135 6.425C12.85 7.38875 4.81871 16.3838 4.17621 17.99V26.0213C4.17621 27.9488 3.21248 29.555 2.89123 30.5188V36.9438C3.85498 37.9075 6.42496 39.835 10.6012 39.835H12.5287V42.7262H10.6012C10.28 42.405 9.95877 42.405 9.95877 42.405ZM91.235 42.0838H33.0887V39.1925H91.235V42.0838Z"
+                                                    fill="#989898" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M81.5975 13.8137C80.955 14.4562 80.3126 15.42 80.3126 16.3837C80.3126 16.705 80.3126 17.0262 80.6338 17.3475C80.9551 17.6687 81.2763 17.6687 81.5975 17.6687H84.4888C85.1313 17.6687 85.4525 17.3475 85.7738 17.0262C86.095 16.705 86.095 16.0625 85.7738 15.7412C85.1313 14.7775 84.1675 13.8137 82.8825 13.4925C82.5613 13.1712 81.9188 13.4925 81.5975 13.8137Z"
+                                                    fill="#989898" />
+                                                <path
+                                                    d="M84.1675 19.2751C83.8463 19.2751 83.5251 19.2751 83.5251 18.9539L81.5975 16.3839C81.2763 16.0626 81.2763 15.4201 81.9188 15.0989C82.2401 14.7776 82.8825 14.7776 83.2038 15.4201L84.81 17.6689C85.1313 17.9901 85.1313 18.6326 84.4888 18.9539C84.4888 19.2751 84.1675 19.2751 84.1675 19.2751Z"
+                                                    fill="#989898" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M2.89128 23.7726H4.49753C6.74628 23.7726 9.63755 22.1663 9.63755 20.2388V18.3113H2.57001C2.89126 20.2388 2.89128 22.1663 2.89128 23.7726ZM114.044 22.1663L117.256 27.9488C118.22 27.3063 119.826 26.9851 121.111 26.9851H123.681C123.681 24.7363 124.003 24.4151 121.754 22.8088L114.044 22.1663Z"
+                                                    fill="#989898" />
+                                                <path
+                                                    d="M56.5401 19.9176H62.9651V21.8451H56.5401V19.9176ZM28.27 19.2751H34.695V21.2026H28.27V19.2751Z"
+                                                    fill="#989898" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M40.4776 33.4101V35.6588H83.2038L40.4776 33.4101ZM122.717 30.1976H117.899C116.935 31.1613 116.935 32.7676 116.935 33.7313H122.717V30.1976ZM119.184 38.2288C118.863 37.2651 118.863 36.3013 118.863 35.6588H123.039V38.2288H119.184ZM16.705 7.06755L3.85498 18.3113L4.17625 15.7413C6.74625 12.2076 12.2075 6.1038 13.4925 5.4613L16.705 7.06755ZM15.0987 48.1876C13.4925 46.5813 11.8863 44.6538 11.5651 42.4051H9.63754V37.2651C9.63754 33.7313 11.2437 30.1976 13.4925 27.9488C15.7412 25.7001 19.2751 24.0938 22.8088 24.0938C26.3426 24.0938 29.8763 25.7001 32.125 27.9488C34.3738 30.1976 35.98 33.7313 35.98 37.2651V42.4051H34.0526C33.4101 44.6538 32.125 46.5813 30.5188 48.1876C28.5913 49.7938 26.0212 51.0788 23.13 51.0788C19.9175 50.7576 17.3475 49.7938 15.0987 48.1876ZM101.194 31.4826C97.0175 31.4826 93.4838 35.0163 93.4838 39.1926C93.4838 43.3688 97.0175 46.9026 101.194 46.9026C105.37 46.9026 108.904 43.3688 108.904 39.1926C108.904 35.0163 105.691 31.4826 101.194 31.4826ZM22.8088 31.4826C18.6326 31.4826 15.0987 35.0163 15.0987 39.1926C15.0987 43.3688 18.6326 46.9026 22.8088 46.9026C26.9851 46.9026 30.5188 43.3688 30.5188 39.1926C30.5188 35.0163 26.9851 31.4826 22.8088 31.4826ZM101.194 23.7726C104.728 23.7726 108.261 25.3788 110.51 27.6276C112.759 29.8763 114.365 33.4101 114.365 36.9438V42.0838H112.438C111.795 44.3326 110.51 46.2601 108.904 47.8663C106.976 49.4726 104.406 50.7576 101.515 50.7576C98.6238 50.7576 96.0537 49.7938 94.1263 47.8663C92.52 46.2601 90.9137 44.3326 90.5925 42.0838H88.0225V36.9438C88.0225 33.4101 89.6288 29.8763 91.8776 27.6276C94.4476 25.0576 97.66 23.7726 101.194 23.7726ZM101.194 36.3013C102.8 36.3013 104.085 37.5863 104.085 39.1926C104.085 40.7988 102.8 42.0838 101.194 42.0838C99.5875 42.0838 98.3026 40.7988 98.3026 39.1926C98.3026 37.5863 99.5875 36.3013 101.194 36.3013ZM22.8088 36.3013C21.2026 36.3013 19.9175 37.5863 19.9175 39.1926C19.9175 40.7988 21.2026 42.0838 22.8088 42.0838C24.4151 42.0838 25.7 40.7988 25.7 39.1926C25.7 37.5863 24.4151 36.3013 22.8088 36.3013Z"
+                                                    fill="#989898" />
+                                            </svg>
+                                        </div>
+                                        <div class="car-price">
+                                            From <strong>$6300</strong>
+                                        </div>
+                                        <div class="car-selected">
+                                            <img src="assets/icons/check-icon.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="car-card py-3 px-4 position-relative">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="car-name">Vans</div>
+                                            <div class="car-seater d-flex align-items-center gap-3">
+                                                <div class="d-flex align-items-center gap-1 car-seater-items">
+                                                    <img src="assets/icons/user-round-icon.svg" alt="">
+                                                    <span>7</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-1 car-seater-items">
+                                                    <img src="assets/icons/luggage-round-icon.svg" alt="">
+                                                    <span>4</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="car-card-image py-3 d-flex align-items-center">
+                                            <!-- <img src="assets/icons/large-car.svg" alt=""> -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="114" height="48"
+                                                viewBox="0 0 114 48" fill="none">
+                                                <path
+                                                    d="M60.0737 4.96146C62.6437 4.96146 65.535 5.60396 68.105 6.24646C74.53 8.17396 83.8463 14.599 89.3075 17.8115L85.1313 19.4177C84.8101 19.4177 84.4887 19.739 84.1675 19.739L75.1725 19.4177C74.8513 18.7752 74.2088 17.8115 73.8876 17.4902C72.9238 16.2052 71.96 14.9202 70.3538 14.599C69.39 14.2777 68.4263 14.599 67.7838 15.2415C66.8201 16.2052 66.1776 17.4902 66.1776 18.7752V19.0965L24.4151 17.8115L12.2075 15.2415L16.3838 6.56771C20.8813 5.92521 25.7 5.28271 29.8763 5.28271C40.7988 4.96146 49.1512 4.96146 60.0737 4.96146Z"
+                                                    fill="#989898" />
+                                                <path
+                                                    d="M8.67369 41.2628C2.24869 41.2628 0.32125 36.444 0 36.444V27.449L0.32127 27.1278C0.64252 26.4853 1.60625 24.879 1.60625 23.594L1.92752 17.169L7.70998 6.56778L7.38871 3.35528L8.67369 3.03403C12.5287 2.07028 22.4875 0.142778 30.1975 0.142778H39.1924C46.5812 0.142778 54.9338 -0.178472 61.0375 0.142778C71.6387 0.785278 80.955 6.56778 89.95 12.029C91.5563 12.9928 92.8412 13.9565 94.4475 14.599C95.4112 14.9203 96.0537 14.9203 97.0174 15.2415C103.764 16.8478 111.795 19.0965 113.08 24.5578V24.879L112.759 37.0865L113.08 39.9778L111.153 40.299C109.546 40.6203 108.261 40.9415 103.764 40.9415H97.66V38.0503H103.764C107.297 38.0503 108.582 37.729 109.867 37.4078V36.7653L110.189 24.879C109.225 21.024 101.194 19.0965 96.0537 17.8115C95.09 17.4903 94.1263 17.169 93.1625 17.169H92.8412C91.235 16.2053 89.6288 15.2415 88.3438 14.2778C79.67 8.81653 70.9963 3.35528 61.0375 3.03403C55.255 2.71278 46.9025 2.71278 39.5137 3.03403H30.5188C23.7725 3.03403 15.0987 4.64028 10.9225 5.60403L11.2438 6.88903L5.46119 18.1328L5.14002 23.594C5.14002 25.5215 4.17619 27.1278 3.85494 28.0915V35.4803C4.17619 36.1228 6.10369 38.6928 10.2799 38.3715H12.2075V41.2628H8.67369ZM81.5975 41.2628H27.9487V38.3715H81.5975V41.2628Z"
+                                                    fill="#989898" />
+                                                <path
+                                                    d="M89.3075 30.019C87.38 30.019 85.4525 30.6615 84.1675 31.9465C82.8825 33.2315 82.2401 35.159 82.2401 37.0865C82.2401 39.014 82.8825 40.9415 84.1675 42.2265C85.4525 43.5115 87.38 44.154 89.3075 44.154C91.235 44.154 93.1626 43.5115 94.4476 42.2265C95.7326 40.9415 96.3751 39.014 96.3751 37.0865C96.3751 35.159 95.7326 33.2315 94.4476 31.9465C93.1626 30.6615 91.235 30.019 89.3075 30.019ZM82.5613 30.019C84.4888 28.0915 86.7376 27.1278 89.6288 27.1278C92.1988 27.1278 94.7689 28.0915 96.6964 30.019C98.6239 31.9465 99.5876 34.1953 99.5876 37.0865C99.5876 39.6565 98.6239 42.2265 96.6964 44.154C94.7689 46.0815 92.5201 47.0453 89.6288 47.0453C87.0588 47.0453 84.4888 46.0815 82.5613 44.154C80.6338 42.2265 79.67 39.9778 79.67 37.0865C79.67 34.1953 80.6338 31.9465 82.5613 30.019Z"
+                                                    fill="#989898" />
+                                                <path
+                                                    d="M89.3075 39.6565C90.7269 39.6565 91.8776 38.5059 91.8776 37.0865C91.8776 35.6672 90.7269 34.5165 89.3075 34.5165C87.8881 34.5165 86.7375 35.6672 86.7375 37.0865C86.7375 38.5059 87.8881 39.6565 89.3075 39.6565Z"
+                                                    fill="#989898" />
+                                                <path
+                                                    d="M89.3076 24.879C92.5201 24.879 95.4113 26.164 97.6601 28.4127C99.9088 30.6615 101.194 33.5527 101.194 36.7652V41.2627H97.0175C97.66 39.9777 98.3026 38.6928 98.3026 37.0865C98.3026 34.8378 97.3388 32.589 95.7326 31.304C94.1263 29.6977 92.1989 28.734 89.9501 28.734C87.7013 28.734 85.4525 29.6977 84.1675 31.304C82.5613 32.9102 81.5976 34.8378 81.5976 37.0865C81.5976 38.6928 81.9188 39.9777 82.8826 41.2627H78.7064V36.444C78.7064 33.2315 79.9914 30.3402 82.2401 28.0915C83.2039 26.164 86.0951 24.879 89.3076 24.879ZM19.2751 24.879C22.4876 24.879 25.3789 26.164 27.6276 28.4127C29.8764 30.6615 31.1613 33.5527 31.1613 36.7652V41.2627H27.3064C27.9489 39.9777 28.2701 38.6928 28.2701 37.0865C28.2701 34.5165 27.3064 32.2677 25.7001 30.6615C24.0939 29.0552 21.8451 28.0915 19.2751 28.0915C16.7051 28.0915 14.4564 29.0552 12.8501 30.6615C11.2439 32.2677 10.28 34.5165 10.28 37.0865C10.28 38.6928 10.6014 39.9777 11.2439 41.2627H7.71008V36.444C7.71008 33.2315 8.9951 30.3402 11.2439 28.0915C13.1714 26.164 16.0626 24.879 19.2751 24.879Z"
+                                                    fill="#989898" />
+                                                <path
+                                                    d="M12.2075 30.019C14.135 28.0915 16.3838 27.1278 19.2751 27.1278C21.8451 27.1278 24.415 28.0915 26.3425 30.019C28.27 31.9465 29.2338 34.1953 29.2338 37.0865C29.2338 39.6565 28.27 42.2265 26.3425 44.154C24.415 46.0815 22.1663 47.0453 19.2751 47.0453C16.7051 47.0453 14.135 46.0815 12.2075 44.154C10.28 42.2265 9.31628 39.9778 9.31628 37.0865C9.31628 34.1953 10.6013 31.9465 12.2075 30.019ZM19.2751 30.3403C15.4201 30.3403 12.5288 33.5528 12.5288 37.0865C12.5288 40.9415 15.7413 43.8328 19.2751 43.8328C23.1301 43.8328 26.0213 40.6203 26.0213 37.0865C26.0213 33.2315 23.1301 30.3403 19.2751 30.3403Z"
+                                                    fill="#989898" />
+                                                <path
+                                                    d="M19.275 39.6565C20.6944 39.6565 21.845 38.5059 21.845 37.0865C21.845 35.6672 20.6944 34.5165 19.275 34.5165C17.8556 34.5165 16.705 35.6672 16.705 37.0865C16.705 38.5059 17.8556 39.6565 19.275 39.6565Z"
+                                                    fill="#989898" />
+                                                <path
+                                                    d="M97.66 21.6664L100.23 27.4489C101.194 27.1277 102.479 26.8064 103.442 26.8064C104.406 26.8064 107.94 26.8064 111.153 27.1277V25.2002C111.153 24.5577 110.831 24.2364 110.189 23.5939L97.66 21.6664ZM50.7575 21.0239H54.6125V22.9514H50.7575V21.0239ZM27.9487 20.0602H31.8038V21.9877H27.9487V20.0602ZM68.7475 15.8839C68.105 16.5264 67.4625 17.4902 67.4625 18.4539C67.4625 18.7752 67.4626 19.0964 67.7838 19.4177C68.1051 19.7389 68.4263 19.7389 68.7475 19.7389H71.6387C72.2812 19.7389 72.6025 19.4177 72.9237 19.0964C73.245 18.7752 73.245 18.1327 72.9237 17.8114C72.2812 16.8477 71.3175 15.8839 70.0325 15.5627C69.39 15.5627 69.0688 15.5627 68.7475 15.8839Z"
+                                                    fill="#989898" />
+                                                <path
+                                                    d="M70.9963 21.3453C70.675 21.3453 70.3537 21.3453 70.3537 21.0241L68.7475 18.7753C68.4262 18.4541 68.4262 17.8116 69.0687 17.4903C69.39 17.1691 70.0325 17.1691 70.3537 17.8116L71.96 20.0603C72.2812 20.3816 72.2812 21.0241 71.6387 21.3453H70.9963ZM2.56995 24.5578H3.85493C6.74618 24.5578 10.2799 22.3091 10.2799 20.0603V17.8116H2.89122C2.89122 20.3816 2.56995 22.9516 2.56995 24.5578ZM107.297 34.1953H110.51V36.1228H107.297V34.1953Z"
+                                                    fill="#989898" />
+                                                <path
+                                                    d="M106.976 33.5527H105.691C105.049 33.5527 104.728 33.874 104.728 34.5165V35.4802C104.728 36.1227 105.049 36.444 105.691 36.444H106.976C107.619 36.444 107.94 36.1227 107.94 35.4802V34.5165C107.94 33.874 107.298 33.5527 106.976 33.5527ZM33.41 33.2315V35.4802H76.1362L33.41 33.2315Z"
+                                                    fill="#989898" />
+                                            </svg>
+                                        </div>
+                                        <div class="car-price">
+                                            From <strong>$6300</strong>
+                                        </div>
+                                        <div class="car-selected">
+                                            <img src="assets/icons/check-icon.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="car-card py-3 px-4 position-relative">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="car-name">Vans</div>
+                                            <div class="car-seater d-flex align-items-center gap-3">
+                                                <div class="d-flex align-items-center gap-1 car-seater-items">
+                                                    <img src="assets/icons/user-round-icon.svg" alt="">
+                                                    <span>7</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-1 car-seater-items">
+                                                    <img src="assets/icons/luggage-round-icon.svg" alt="">
+                                                    <span>3</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="car-card-image py-3 d-flex align-items-center">
+                                            <!-- <img src="assets/icons/large-car.svg" alt=""> -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="114" height="48"
+                                                viewBox="0 0 114 48" fill="none">
+                                                <path
+                                                    d="M60.0737 4.96146C62.6437 4.96146 65.535 5.60396 68.105 6.24646C74.53 8.17396 83.8463 14.599 89.3075 17.8115L85.1313 19.4177C84.8101 19.4177 84.4887 19.739 84.1675 19.739L75.1725 19.4177C74.8513 18.7752 74.2088 17.8115 73.8876 17.4902C72.9238 16.2052 71.96 14.9202 70.3538 14.599C69.39 14.2777 68.4263 14.599 67.7838 15.2415C66.8201 16.2052 66.1776 17.4902 66.1776 18.7752V19.0965L24.4151 17.8115L12.2075 15.2415L16.3838 6.56771C20.8813 5.92521 25.7 5.28271 29.8763 5.28271C40.7988 4.96146 49.1512 4.96146 60.0737 4.96146Z"
+                                                    fill="#989898" />
+                                                <path
+                                                    d="M8.67369 41.2628C2.24869 41.2628 0.32125 36.444 0 36.444V27.449L0.32127 27.1278C0.64252 26.4853 1.60625 24.879 1.60625 23.594L1.92752 17.169L7.70998 6.56778L7.38871 3.35528L8.67369 3.03403C12.5287 2.07028 22.4875 0.142778 30.1975 0.142778H39.1924C46.5812 0.142778 54.9338 -0.178472 61.0375 0.142778C71.6387 0.785278 80.955 6.56778 89.95 12.029C91.5563 12.9928 92.8412 13.9565 94.4475 14.599C95.4112 14.9203 96.0537 14.9203 97.0174 15.2415C103.764 16.8478 111.795 19.0965 113.08 24.5578V24.879L112.759 37.0865L113.08 39.9778L111.153 40.299C109.546 40.6203 108.261 40.9415 103.764 40.9415H97.66V38.0503H103.764C107.297 38.0503 108.582 37.729 109.867 37.4078V36.7653L110.189 24.879C109.225 21.024 101.194 19.0965 96.0537 17.8115C95.09 17.4903 94.1263 17.169 93.1625 17.169H92.8412C91.235 16.2053 89.6288 15.2415 88.3438 14.2778C79.67 8.81653 70.9963 3.35528 61.0375 3.03403C55.255 2.71278 46.9025 2.71278 39.5137 3.03403H30.5188C23.7725 3.03403 15.0987 4.64028 10.9225 5.60403L11.2438 6.88903L5.46119 18.1328L5.14002 23.594C5.14002 25.5215 4.17619 27.1278 3.85494 28.0915V35.4803C4.17619 36.1228 6.10369 38.6928 10.2799 38.3715H12.2075V41.2628H8.67369ZM81.5975 41.2628H27.9487V38.3715H81.5975V41.2628Z"
+                                                    fill="#989898" />
+                                                <path
+                                                    d="M89.3075 30.019C87.38 30.019 85.4525 30.6615 84.1675 31.9465C82.8825 33.2315 82.2401 35.159 82.2401 37.0865C82.2401 39.014 82.8825 40.9415 84.1675 42.2265C85.4525 43.5115 87.38 44.154 89.3075 44.154C91.235 44.154 93.1626 43.5115 94.4476 42.2265C95.7326 40.9415 96.3751 39.014 96.3751 37.0865C96.3751 35.159 95.7326 33.2315 94.4476 31.9465C93.1626 30.6615 91.235 30.019 89.3075 30.019ZM82.5613 30.019C84.4888 28.0915 86.7376 27.1278 89.6288 27.1278C92.1988 27.1278 94.7689 28.0915 96.6964 30.019C98.6239 31.9465 99.5876 34.1953 99.5876 37.0865C99.5876 39.6565 98.6239 42.2265 96.6964 44.154C94.7689 46.0815 92.5201 47.0453 89.6288 47.0453C87.0588 47.0453 84.4888 46.0815 82.5613 44.154C80.6338 42.2265 79.67 39.9778 79.67 37.0865C79.67 34.1953 80.6338 31.9465 82.5613 30.019Z"
+                                                    fill="#989898" />
+                                                <path
+                                                    d="M89.3075 39.6565C90.7269 39.6565 91.8776 38.5059 91.8776 37.0865C91.8776 35.6672 90.7269 34.5165 89.3075 34.5165C87.8881 34.5165 86.7375 35.6672 86.7375 37.0865C86.7375 38.5059 87.8881 39.6565 89.3075 39.6565Z"
+                                                    fill="#989898" />
+                                                <path
+                                                    d="M89.3076 24.879C92.5201 24.879 95.4113 26.164 97.6601 28.4127C99.9088 30.6615 101.194 33.5527 101.194 36.7652V41.2627H97.0175C97.66 39.9777 98.3026 38.6928 98.3026 37.0865C98.3026 34.8378 97.3388 32.589 95.7326 31.304C94.1263 29.6977 92.1989 28.734 89.9501 28.734C87.7013 28.734 85.4525 29.6977 84.1675 31.304C82.5613 32.9102 81.5976 34.8378 81.5976 37.0865C81.5976 38.6928 81.9188 39.9777 82.8826 41.2627H78.7064V36.444C78.7064 33.2315 79.9914 30.3402 82.2401 28.0915C83.2039 26.164 86.0951 24.879 89.3076 24.879ZM19.2751 24.879C22.4876 24.879 25.3789 26.164 27.6276 28.4127C29.8764 30.6615 31.1613 33.5527 31.1613 36.7652V41.2627H27.3064C27.9489 39.9777 28.2701 38.6928 28.2701 37.0865C28.2701 34.5165 27.3064 32.2677 25.7001 30.6615C24.0939 29.0552 21.8451 28.0915 19.2751 28.0915C16.7051 28.0915 14.4564 29.0552 12.8501 30.6615C11.2439 32.2677 10.28 34.5165 10.28 37.0865C10.28 38.6928 10.6014 39.9777 11.2439 41.2627H7.71008V36.444C7.71008 33.2315 8.9951 30.3402 11.2439 28.0915C13.1714 26.164 16.0626 24.879 19.2751 24.879Z"
+                                                    fill="#989898" />
+                                                <path
+                                                    d="M12.2075 30.019C14.135 28.0915 16.3838 27.1278 19.2751 27.1278C21.8451 27.1278 24.415 28.0915 26.3425 30.019C28.27 31.9465 29.2338 34.1953 29.2338 37.0865C29.2338 39.6565 28.27 42.2265 26.3425 44.154C24.415 46.0815 22.1663 47.0453 19.2751 47.0453C16.7051 47.0453 14.135 46.0815 12.2075 44.154C10.28 42.2265 9.31628 39.9778 9.31628 37.0865C9.31628 34.1953 10.6013 31.9465 12.2075 30.019ZM19.2751 30.3403C15.4201 30.3403 12.5288 33.5528 12.5288 37.0865C12.5288 40.9415 15.7413 43.8328 19.2751 43.8328C23.1301 43.8328 26.0213 40.6203 26.0213 37.0865C26.0213 33.2315 23.1301 30.3403 19.2751 30.3403Z"
+                                                    fill="#989898" />
+                                                <path
+                                                    d="M19.275 39.6565C20.6944 39.6565 21.845 38.5059 21.845 37.0865C21.845 35.6672 20.6944 34.5165 19.275 34.5165C17.8556 34.5165 16.705 35.6672 16.705 37.0865C16.705 38.5059 17.8556 39.6565 19.275 39.6565Z"
+                                                    fill="#989898" />
+                                                <path
+                                                    d="M97.66 21.6664L100.23 27.4489C101.194 27.1277 102.479 26.8064 103.442 26.8064C104.406 26.8064 107.94 26.8064 111.153 27.1277V25.2002C111.153 24.5577 110.831 24.2364 110.189 23.5939L97.66 21.6664ZM50.7575 21.0239H54.6125V22.9514H50.7575V21.0239ZM27.9487 20.0602H31.8038V21.9877H27.9487V20.0602ZM68.7475 15.8839C68.105 16.5264 67.4625 17.4902 67.4625 18.4539C67.4625 18.7752 67.4626 19.0964 67.7838 19.4177C68.1051 19.7389 68.4263 19.7389 68.7475 19.7389H71.6387C72.2812 19.7389 72.6025 19.4177 72.9237 19.0964C73.245 18.7752 73.245 18.1327 72.9237 17.8114C72.2812 16.8477 71.3175 15.8839 70.0325 15.5627C69.39 15.5627 69.0688 15.5627 68.7475 15.8839Z"
+                                                    fill="#989898" />
+                                                <path
+                                                    d="M70.9963 21.3453C70.675 21.3453 70.3537 21.3453 70.3537 21.0241L68.7475 18.7753C68.4262 18.4541 68.4262 17.8116 69.0687 17.4903C69.39 17.1691 70.0325 17.1691 70.3537 17.8116L71.96 20.0603C72.2812 20.3816 72.2812 21.0241 71.6387 21.3453H70.9963ZM2.56995 24.5578H3.85493C6.74618 24.5578 10.2799 22.3091 10.2799 20.0603V17.8116H2.89122C2.89122 20.3816 2.56995 22.9516 2.56995 24.5578ZM107.297 34.1953H110.51V36.1228H107.297V34.1953Z"
+                                                    fill="#989898" />
+                                                <path
+                                                    d="M106.976 33.5527H105.691C105.049 33.5527 104.728 33.874 104.728 34.5165V35.4802C104.728 36.1227 105.049 36.444 105.691 36.444H106.976C107.619 36.444 107.94 36.1227 107.94 35.4802V34.5165C107.94 33.874 107.298 33.5527 106.976 33.5527ZM33.41 33.2315V35.4802H76.1362L33.41 33.2315Z"
+                                                    fill="#989898" />
+                                            </svg>
+                                        </div>
+                                        <div class="car-price">
+                                            From <strong>$6300</strong>
+                                        </div>
+                                        <div class="car-selected">
+                                            <img src="assets/icons/check-icon.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Result List -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="result-card-main diamond-value position-relative">
+                                <div
+                                    class="diamond-card d-flex align-items-center justify-content-center position-absolute">
+                                    <div class="diamond-icon">
+                                        <img src="assets/icons/diamond-icon.svg" alt="">
+                                    </div>
+                                    <div class="diamond-text">
+                                        <h5>Recommended for you</h5>
+                                        <h6 class="mt-1">Best value for your dates</h6>
+                                    </div>
+                                </div>
+                                <div class="result-card mb-3">
+                                    <div class="d-md-flex">
+                                        <div class="card result-left position-relative">
+                                            <div class="card-body d-flex align-items-center p-0">
+                                                <div
+                                                    class="result-car-image d-flex align-items-end justify-content-center w-100 h-100">
+                                                    <img src="assets/images/car-items.png" class="img-fluid" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="rating-card d-flex align-items-center gap-3">
+                                                <div class="rating-circle" style="--rating:9.2;">
+                                                    <span>9.2</span>
+                                                </div>
+                                                <div class="rating-text">
+                                                    <h4>Excellent</h4>
+                                                    <p class="mt-1">400+ reviews</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="result-right">
+                                            <div class="result-details">
+                                                <div
+                                                    class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+                                                    <div
+                                                        class="result-car-name d-flex align-items-center gap-2 flex-wrap">
+                                                        Kia
+                                                        Ceed <span class="mt-1">or similar</span></div>
+                                                    <div class="result-car-type">Compact hatchback</div>
+                                                </div>
+                                                <div class="result-amenities pt-3 pb-3">
+                                                    <ul class="list-unstyled d-flex flex-wrap align-items-center gap-3">
+                                                        <li class="d-flex align-items-center gap-2">
+                                                            <img src="assets/icons/seat-icon.svg" alt="">
+                                                            <span class="result-amenities-text">4 seats</span>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-2">
+                                                            <img src="assets/icons/air-conditioning-icon.svg" alt="">
+                                                            <span class="result-amenities-text">Air Conditioning</span>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-2">
+                                                            <img src="assets/icons/power-steering-icon.svg" alt="">
+                                                            <span class="result-amenities-text">Power Steering</span>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-2">
+                                                            <img src="assets/icons/luggage-icon.svg" alt="">
+                                                            <span class="result-amenities-text">1 bag</span>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-2">
+                                                            <img src="assets/icons/manual-icon.svg" alt="">
+                                                            <span class="result-amenities-text">Manual</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div
+                                                    class="d-flex flex-wrap align-items-end justify-content-between gap-3">
+                                                    <div class="result-feature">
+                                                        <ul class="list-unstyled d-flex flex-column gap-2">
+                                                            <li class="d-flex align-items-center gap-2">
+                                                                <svg width="16" height="16" viewBox="0 0 16 16"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M13.3334 4L6.00002 11.3333L2.66669 8"
+                                                                        stroke="#008052" stroke-width="1.33333"
+                                                                        stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+                                                                <span class="result-feature-text">Average
+                                                                    Deposit</span>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-2">
+                                                                <svg width="16" height="16" viewBox="0 0 16 16"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M13.3334 4L6.00002 11.3333L2.66669 8"
+                                                                        stroke="#008052" stroke-width="1.33333"
+                                                                        stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+
+                                                                <span class="result-feature-text">Limited
+                                                                    Mileage</span>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-2 active-feature">
+                                                                <svg width="16" height="16" viewBox="0 0 16 16"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M13.3334 4L6.00002 11.3333L2.66669 8"
+                                                                        stroke="#008052" stroke-width="1.33333"
+                                                                        stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+
+                                                                <span class="result-feature-text">Instant
+                                                                    Confirmation</span>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-2 active-feature">
+                                                                <svg width="16" height="16" viewBox="0 0 16 16"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M13.3334 4L6.00002 11.3333L2.66669 8"
+                                                                        stroke="#008052" stroke-width="1.33333"
+                                                                        stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+
+                                                                <span class="result-feature-text">Partial
+                                                                    Payment</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="pt-4">
+                                                            <a href="#!"
+                                                                class="d-inline-flex align-items-center gap-2 terms-btn"><img
+                                                                    src="assets/icons/file-icon.svg" alt="">Read
+                                                                Terms and Conditions</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="result-price">
+                                                        <span class="d-block pb-1">Starts at</span>
+                                                        <strong class="d-block pb-1">$6500</strong>
+                                                        <button
+                                                            class="offerBtn collapsed d-flex align-items-center gap-1 mt-2"
+                                                            type="button" data-bs-toggle="collapse"
+                                                            data-bs-target="#viewOffers-01" aria-expanded="false"
+                                                            aria-controls="viewOffers-01">
+                                                            View Offers <img src="assets/icons/chevron-right.svg"
+                                                                alt="">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-2 bg-white collapse" id="viewOffers-01">
+                                        <div class="available-car d-flex flex-wrap align-items-start gap-3">
+                                            <div class="available-car-items card h-100 p-2">
+                                                <div class="card-body p-3">
+                                                    <div
+                                                        class="available-car-type d-flex align-items-center justify-content-between pb-2">
+                                                        <h5>Comfort</h5>
+                                                    </div>
+                                                    <div class="available-car-price">
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <span class="offer-price">$6,500</span>
+                                                        </div>
+                                                        <h6 class="pt-1">Lowest price guaranteed</h6>
+                                                    </div>
+                                                    <div class="available-result-amenities pt-4">
+                                                        <ul class="list-unstyled d-flex flex-column gap-2">
+                                                            <li class="d-flex align-items-center gap-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" viewBox="0 0 16 16" fill="none">
+                                                                    <path d="M12 4L4 12M4 4L12 12" stroke="#3A3A3A"
+                                                                        stroke-opacity="0.7" stroke-width="1.33333"
+                                                                        stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+                                                                <span class="available-result-text">Average
+                                                                    Deposit</span>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-2"><svg
+                                                                    xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" viewBox="0 0 16 16" fill="none">
+                                                                    <path d="M13.3333 4L5.99996 11.3333L2.66663 8"
+                                                                        stroke="#3A3A3A" stroke-opacity="0.7"
+                                                                        stroke-width="1.33333" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+                                                                <span class="available-result-text">Limited
+                                                                    Mileage</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex h-100">
+                                                    <button type="button"
+                                                        class="select-btn border-0 w-100 text-center">Select</button>
+                                                </div>
+                                            </div>
+                                            <div class="available-car-items card h-100 p-2 active">
+                                                <div class="card-body p-3">
+                                                    <div
+                                                        class="available-car-type d-flex align-items-center justify-content-between pb-2">
+                                                        <h5>Comfort</h5>
+                                                        <span
+                                                            class="badge rounded-pill text-bg-success py-1 px-2 custom-badge-success">Most
+                                                            Popular</span>
+                                                    </div>
+                                                    <div class="available-car-price">
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <span class="offer-price">$7,220</span>
+                                                            <span class="current-price ps-1">$9,210</span>
+                                                        </div>
+                                                        <h6 class="pt-1">Lowest price guaranteed</h6>
+                                                    </div>
+                                                    <div class="available-result-amenities pt-4">
+                                                        <ul class="list-unstyled d-flex flex-column gap-2">
+                                                            <li class="d-flex align-items-center gap-2 active">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" viewBox="0 0 16 16" fill="none">
+                                                                    <g clip-path="url(#clip0_1_2352)">
+                                                                        <path
+                                                                            d="M8.00004 5.33331V10.6666M8.00004 5.33331V1.33331M8.00004 5.33331L4.66671 1.99998M8.00004 5.33331L11.3334 1.99998M8.00004 10.6666V14.6666M8.00004 10.6666L4.66671 14M8.00004 10.6666L11.3334 14M10.6667 7.99998H5.33337M10.6667 7.99998H14.6667M10.6667 7.99998L14 4.66665M10.6667 7.99998L14 11.3333M5.33337 7.99998H1.33337M5.33337 7.99998L2.00004 4.66665M5.33337 7.99998L2.00004 11.3333"
+                                                                            stroke="#219653" stroke-width="1.33333"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                    </g>
+                                                                    <defs>
+                                                                        <clipPath id="clip0_1_2352">
+                                                                            <rect width="16" height="16" fill="white" />
+                                                                        </clipPath>
+                                                                    </defs>
+                                                                </svg>
+                                                                <span class="available-result-text">Air
+                                                                    Conditioning</span>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-2 active"><svg
+                                                                    xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" viewBox="0 0 16 16" fill="none">
+                                                                    <g clip-path="url(#clip0_1_2355)">
+                                                                        <path
+                                                                            d="M3.33337 9.52422C2.09913 10.0687 1.33337 10.8274 1.33337 11.6666C1.33337 13.3235 4.31814 14.6666 8.00004 14.6666C11.6819 14.6666 14.6667 13.3235 14.6667 11.6666C14.6667 10.8274 13.9009 10.0687 12.6667 9.52422M12 5.33331C12 8.04245 9.00004 9.33331 8.00004 11.3333C7.00004 9.33331 4.00004 8.04245 4.00004 5.33331C4.00004 3.12417 5.7909 1.33331 8.00004 1.33331C10.2092 1.33331 12 3.12417 12 5.33331ZM8.66671 5.33331C8.66671 5.7015 8.36823 5.99998 8.00004 5.99998C7.63185 5.99998 7.33337 5.7015 7.33337 5.33331C7.33337 4.96512 7.63185 4.66665 8.00004 4.66665C8.36823 4.66665 8.66671 4.96512 8.66671 5.33331Z"
+                                                                            stroke="#219653" stroke-width="1.33333"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                    </g>
+                                                                    <defs>
+                                                                        <clipPath id="clip0_1_2355">
+                                                                            <rect width="16" height="16" fill="white" />
+                                                                        </clipPath>
+                                                                    </defs>
+                                                                </svg>
+                                                                <span class="available-result-text">GPS included</span>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-2 active"><svg
+                                                                    xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" viewBox="0 0 16 16" fill="none">
+                                                                    <path d="M13.3333 4L5.99996 11.3333L2.66663 8"
+                                                                        stroke="#219653" stroke-width="1.33333"
+                                                                        stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+                                                                <span class="available-result-text">Average
+                                                                    Deposit</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex h-100">
+                                                    <button type="button"
+                                                        class="select-btn border-0 w-100 text-center">Select</button>
+                                                </div>
+                                            </div>
+                                            <div class="available-car-items card h-100 p-2">
+                                                <div class="card-body p-3">
+                                                    <div
+                                                        class="available-car-type d-flex align-items-center justify-content-between pb-2">
+                                                        <h5>Comfort</h5>
+                                                    </div>
+                                                    <div class="available-car-price">
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <span class="offer-price">$9,430</span>
+                                                            <span class="current-price ps-1">$12,454</span>
+                                                        </div>
+                                                        <h6 class="pt-1">Lowest price guaranteed</h6>
+                                                    </div>
+                                                    <div class="available-result-amenities pt-4">
+                                                        <p class="pb-2 mb-1">Everything in Comfort, plus</p>
+                                                        <ul class="list-unstyled d-flex flex-column gap-2">
+                                                            <li class="d-flex align-items-center gap-2 active">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" viewBox="0 0 16 16" fill="none">
+                                                                    <g clip-path="url(#clip0_1_2370)">
+                                                                        <path
+                                                                            d="M3.33325 9.52422C2.09901 10.0687 1.33325 10.8274 1.33325 11.6666C1.33325 13.3235 4.31802 14.6666 7.99992 14.6666C11.6818 14.6666 14.6666 13.3235 14.6666 11.6666C14.6666 10.8274 13.9008 10.0687 12.6666 9.52422M11.9999 5.33331C11.9999 8.04245 8.99992 9.33331 7.99992 11.3333C6.99992 9.33331 3.99992 8.04245 3.99992 5.33331C3.99992 3.12417 5.79078 1.33331 7.99992 1.33331C10.2091 1.33331 11.9999 3.12417 11.9999 5.33331ZM8.66659 5.33331C8.66659 5.7015 8.36811 5.99998 7.99992 5.99998C7.63173 5.99998 7.33325 5.7015 7.33325 5.33331C7.33325 4.96512 7.63173 4.66665 7.99992 4.66665C8.36811 4.66665 8.66659 4.96512 8.66659 5.33331Z"
+                                                                            stroke="#219653" stroke-width="1.33333"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                    </g>
+                                                                    <defs>
+                                                                        <clipPath id="clip0_1_2370">
+                                                                            <rect width="16" height="16" fill="white" />
+                                                                        </clipPath>
+                                                                    </defs>
+                                                                </svg>
+                                                                <span class="available-result-text">Additional
+                                                                    Benefit</span>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-2 active"><svg
+                                                                    xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" viewBox="0 0 16 16" fill="none">
+                                                                    <g clip-path="url(#clip0_1_2373)">
+                                                                        <path
+                                                                            d="M7.99992 5.33331V10.6666M7.99992 5.33331V1.33331M7.99992 5.33331L4.66659 1.99998M7.99992 5.33331L11.3333 1.99998M7.99992 10.6666V14.6666M7.99992 10.6666L4.66659 14M7.99992 10.6666L11.3333 14M10.6666 7.99998H5.33325M10.6666 7.99998H14.6666M10.6666 7.99998L13.9999 4.66665M10.6666 7.99998L13.9999 11.3333M5.33325 7.99998H1.33325M5.33325 7.99998L1.99992 4.66665M5.33325 7.99998L1.99992 11.3333"
+                                                                            stroke="#219653" stroke-width="1.33333"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                    </g>
+                                                                    <defs>
+                                                                        <clipPath id="clip0_1_2373">
+                                                                            <rect width="16" height="16" fill="white" />
+                                                                        </clipPath>
+                                                                    </defs>
+                                                                </svg>
+                                                                <span class="available-result-text">Another Additional
+                                                                    Benefit</span>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-2 active">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" viewBox="0 0 16 16" fill="none">
+                                                                    <path d="M13.3334 4L6.00008 11.3333L2.66675 8"
+                                                                        stroke="#219653" stroke-width="1.33333"
+                                                                        stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+                                                                <span class="available-result-text">Lower Deposit</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex h-100">
+                                                    <button type="button"
+                                                        class="select-btn border-0 w-100 text-center">Select</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="result-card-main position-relative">
+                                <div class="result-card mb-3">
+                                    <div class="d-md-flex">
+                                        <div class="card result-left position-relative">
+                                            <div class="card-body d-flex align-items-center p-0">
+                                                <div
+                                                    class="result-car-image d-flex align-items-end justify-content-center w-100 h-100">
+                                                    <img src="assets/images/car-items.png" class="img-fluid" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="rating-card d-flex align-items-center gap-3">
+                                                <div class="rating-circle" style="--rating:9.2;">
+                                                    <span>9.2</span>
+                                                </div>
+                                                <div class="rating-text">
+                                                    <h4>Excellent</h4>
+                                                    <p class="mt-1">400+ reviews</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="result-right">
+                                            <div class="result-details">
+                                                <div
+                                                    class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+                                                    <div
+                                                        class="result-car-name d-flex align-items-center gap-2 flex-wrap">
+                                                        Kia
+                                                        Ceed <span class="mt-1">or similar</span></div>
+                                                    <div class="result-car-type">Compact hatchback</div>
+                                                </div>
+                                                <div class="result-amenities pt-3 pb-3">
+                                                    <ul class="list-unstyled d-flex flex-wrap align-items-center gap-3">
+                                                        <li class="d-flex align-items-center gap-2">
+                                                            <img src="assets/icons/seat-icon.svg" alt="">
+                                                            <span class="result-amenities-text">4 seats</span>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-2">
+                                                            <img src="assets/icons/air-conditioning-icon.svg" alt="">
+                                                            <span class="result-amenities-text">Air Conditioning</span>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-2">
+                                                            <img src="assets/icons/power-steering-icon.svg" alt="">
+                                                            <span class="result-amenities-text">Power Steering</span>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-2">
+                                                            <img src="assets/icons/luggage-icon.svg" alt="">
+                                                            <span class="result-amenities-text">1 bag</span>
+                                                        </li>
+                                                        <li class="d-flex align-items-center gap-2">
+                                                            <img src="assets/icons/manual-icon.svg" alt="">
+                                                            <span class="result-amenities-text">Manual</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div
+                                                    class="d-flex flex-wrap align-items-end justify-content-between gap-3">
+                                                    <div class="result-feature">
+                                                        <ul class="list-unstyled d-flex flex-column gap-2">
+                                                            <li class="d-flex align-items-center gap-2">
+                                                                <svg width="16" height="16" viewBox="0 0 16 16"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M13.3334 4L6.00002 11.3333L2.66669 8"
+                                                                        stroke="#008052" stroke-width="1.33333"
+                                                                        stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+                                                                <span class="result-feature-text">Average
+                                                                    Deposit</span>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-2">
+                                                                <svg width="16" height="16" viewBox="0 0 16 16"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M13.3334 4L6.00002 11.3333L2.66669 8"
+                                                                        stroke="#008052" stroke-width="1.33333"
+                                                                        stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+
+                                                                <span class="result-feature-text">Limited
+                                                                    Mileage</span>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-2">
+                                                                <svg width="16" height="16" viewBox="0 0 16 16"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M13.3334 4L6.00002 11.3333L2.66669 8"
+                                                                        stroke="#008052" stroke-width="1.33333"
+                                                                        stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+
+                                                                <span class="result-feature-text">Instant
+                                                                    Confirmation</span>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-2">
+                                                                <svg width="16" height="16" viewBox="0 0 16 16"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M13.3334 4L6.00002 11.3333L2.66669 8"
+                                                                        stroke="#008052" stroke-width="1.33333"
+                                                                        stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+
+                                                                <span class="result-feature-text">Partial
+                                                                    Payment</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="pt-4">
+                                                            <a href="#!"
+                                                                class="d-inline-flex align-items-center gap-2 terms-btn"><img
+                                                                    src="assets/icons/file-icon.svg" alt="">Read
+                                                                Terms and Conditions</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="result-price">
+                                                        <span class="d-block pb-1">Starts at</span>
+                                                        <strong class="d-block pb-1">$6500</strong>
+                                                        <button
+                                                            class="offerBtn collapsed d-flex align-items-center gap-1 mt-2"
+                                                            type="button" data-bs-toggle="collapse"
+                                                            data-bs-target="#viewOffers-02" aria-expanded="false"
+                                                            aria-controls="viewOffers-02">
+                                                            View Offers <img src="assets/icons/chevron-right.svg"
+                                                                alt="">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-2 bg-white collapse" id="viewOffers-02">
+                                        <div class="available-car d-flex flex-wrap align-items-start gap-3">
+                                            <div class="available-car-items card h-100 p-2">
+                                                <div class="card-body p-3">
+                                                    <div
+                                                        class="available-car-type d-flex align-items-center justify-content-between pb-2">
+                                                        <h5>Comfort</h5>
+                                                    </div>
+                                                    <div class="available-car-price">
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <span class="offer-price">$6,500</span>
+                                                        </div>
+                                                        <h6 class="pt-1">Lowest price guaranteed</h6>
+                                                    </div>
+                                                    <div class="available-result-amenities pt-4">
+                                                        <ul class="list-unstyled d-flex flex-column gap-2">
+                                                            <li class="d-flex align-items-center gap-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" viewBox="0 0 16 16" fill="none">
+                                                                    <path d="M12 4L4 12M4 4L12 12" stroke="#3A3A3A"
+                                                                        stroke-opacity="0.7" stroke-width="1.33333"
+                                                                        stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+                                                                <span class="available-result-text">Average
+                                                                    Deposit</span>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-2"><svg
+                                                                    xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" viewBox="0 0 16 16" fill="none">
+                                                                    <path d="M13.3333 4L5.99996 11.3333L2.66663 8"
+                                                                        stroke="#3A3A3A" stroke-opacity="0.7"
+                                                                        stroke-width="1.33333" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+                                                                <span class="available-result-text">Limited
+                                                                    Mileage</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex h-100">
+                                                    <button type="button"
+                                                        class="select-btn border-0 w-100 text-center">Select</button>
+                                                </div>
+                                            </div>
+                                            <div class="available-car-items card h-100 p-2 active">
+                                                <div class="card-body p-3">
+                                                    <div
+                                                        class="available-car-type d-flex align-items-center justify-content-between pb-2">
+                                                        <h5>Comfort</h5>
+                                                        <span
+                                                            class="badge rounded-pill text-bg-success py-1 px-2 custom-badge-success">Most
+                                                            Popular</span>
+                                                    </div>
+                                                    <div class="available-car-price">
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <span class="offer-price">$7,220</span>
+                                                            <span class="current-price ps-1">$9,210</span>
+                                                        </div>
+                                                        <h6 class="pt-1">Lowest price guaranteed</h6>
+                                                    </div>
+                                                    <div class="available-result-amenities pt-4">
+                                                        <ul class="list-unstyled d-flex flex-column gap-2">
+                                                            <li class="d-flex align-items-center gap-2 active">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" viewBox="0 0 16 16" fill="none">
+                                                                    <g clip-path="url(#clip0_1_2352)">
+                                                                        <path
+                                                                            d="M8.00004 5.33331V10.6666M8.00004 5.33331V1.33331M8.00004 5.33331L4.66671 1.99998M8.00004 5.33331L11.3334 1.99998M8.00004 10.6666V14.6666M8.00004 10.6666L4.66671 14M8.00004 10.6666L11.3334 14M10.6667 7.99998H5.33337M10.6667 7.99998H14.6667M10.6667 7.99998L14 4.66665M10.6667 7.99998L14 11.3333M5.33337 7.99998H1.33337M5.33337 7.99998L2.00004 4.66665M5.33337 7.99998L2.00004 11.3333"
+                                                                            stroke="#219653" stroke-width="1.33333"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                    </g>
+                                                                    <defs>
+                                                                        <clipPath id="clip0_1_2352">
+                                                                            <rect width="16" height="16" fill="white" />
+                                                                        </clipPath>
+                                                                    </defs>
+                                                                </svg>
+                                                                <span class="available-result-text">Air
+                                                                    Conditioning</span>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-2 active"><svg
+                                                                    xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" viewBox="0 0 16 16" fill="none">
+                                                                    <g clip-path="url(#clip0_1_2355)">
+                                                                        <path
+                                                                            d="M3.33337 9.52422C2.09913 10.0687 1.33337 10.8274 1.33337 11.6666C1.33337 13.3235 4.31814 14.6666 8.00004 14.6666C11.6819 14.6666 14.6667 13.3235 14.6667 11.6666C14.6667 10.8274 13.9009 10.0687 12.6667 9.52422M12 5.33331C12 8.04245 9.00004 9.33331 8.00004 11.3333C7.00004 9.33331 4.00004 8.04245 4.00004 5.33331C4.00004 3.12417 5.7909 1.33331 8.00004 1.33331C10.2092 1.33331 12 3.12417 12 5.33331ZM8.66671 5.33331C8.66671 5.7015 8.36823 5.99998 8.00004 5.99998C7.63185 5.99998 7.33337 5.7015 7.33337 5.33331C7.33337 4.96512 7.63185 4.66665 8.00004 4.66665C8.36823 4.66665 8.66671 4.96512 8.66671 5.33331Z"
+                                                                            stroke="#219653" stroke-width="1.33333"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                    </g>
+                                                                    <defs>
+                                                                        <clipPath id="clip0_1_2355">
+                                                                            <rect width="16" height="16" fill="white" />
+                                                                        </clipPath>
+                                                                    </defs>
+                                                                </svg>
+                                                                <span class="available-result-text">GPS included</span>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-2 active"><svg
+                                                                    xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" viewBox="0 0 16 16" fill="none">
+                                                                    <path d="M13.3333 4L5.99996 11.3333L2.66663 8"
+                                                                        stroke="#219653" stroke-width="1.33333"
+                                                                        stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+                                                                <span class="available-result-text">Average
+                                                                    Deposit</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex h-100">
+                                                    <button type="button"
+                                                        class="select-btn border-0 w-100 text-center">Select</button>
+                                                </div>
+                                            </div>
+                                            <div class="available-car-items card h-100 p-2">
+                                                <div class="card-body p-3">
+                                                    <div
+                                                        class="available-car-type d-flex align-items-center justify-content-between pb-2">
+                                                        <h5>Comfort</h5>
+                                                    </div>
+                                                    <div class="available-car-price">
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <span class="offer-price">$9,430</span>
+                                                            <span class="current-price ps-1">$12,454</span>
+                                                        </div>
+                                                        <h6 class="pt-1">Lowest price guaranteed</h6>
+                                                    </div>
+                                                    <div class="available-result-amenities pt-4">
+                                                        <p class="pb-2 mb-1">Everything in Comfort, plus</p>
+                                                        <ul class="list-unstyled d-flex flex-column gap-2">
+                                                            <li class="d-flex align-items-center gap-2 active">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" viewBox="0 0 16 16" fill="none">
+                                                                    <g clip-path="url(#clip0_1_2370)">
+                                                                        <path
+                                                                            d="M3.33325 9.52422C2.09901 10.0687 1.33325 10.8274 1.33325 11.6666C1.33325 13.3235 4.31802 14.6666 7.99992 14.6666C11.6818 14.6666 14.6666 13.3235 14.6666 11.6666C14.6666 10.8274 13.9008 10.0687 12.6666 9.52422M11.9999 5.33331C11.9999 8.04245 8.99992 9.33331 7.99992 11.3333C6.99992 9.33331 3.99992 8.04245 3.99992 5.33331C3.99992 3.12417 5.79078 1.33331 7.99992 1.33331C10.2091 1.33331 11.9999 3.12417 11.9999 5.33331ZM8.66659 5.33331C8.66659 5.7015 8.36811 5.99998 7.99992 5.99998C7.63173 5.99998 7.33325 5.7015 7.33325 5.33331C7.33325 4.96512 7.63173 4.66665 7.99992 4.66665C8.36811 4.66665 8.66659 4.96512 8.66659 5.33331Z"
+                                                                            stroke="#219653" stroke-width="1.33333"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                    </g>
+                                                                    <defs>
+                                                                        <clipPath id="clip0_1_2370">
+                                                                            <rect width="16" height="16" fill="white" />
+                                                                        </clipPath>
+                                                                    </defs>
+                                                                </svg>
+                                                                <span class="available-result-text">Additional
+                                                                    Benefit</span>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-2 active"><svg
+                                                                    xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" viewBox="0 0 16 16" fill="none">
+                                                                    <g clip-path="url(#clip0_1_2373)">
+                                                                        <path
+                                                                            d="M7.99992 5.33331V10.6666M7.99992 5.33331V1.33331M7.99992 5.33331L4.66659 1.99998M7.99992 5.33331L11.3333 1.99998M7.99992 10.6666V14.6666M7.99992 10.6666L4.66659 14M7.99992 10.6666L11.3333 14M10.6666 7.99998H5.33325M10.6666 7.99998H14.6666M10.6666 7.99998L13.9999 4.66665M10.6666 7.99998L13.9999 11.3333M5.33325 7.99998H1.33325M5.33325 7.99998L1.99992 4.66665M5.33325 7.99998L1.99992 11.3333"
+                                                                            stroke="#219653" stroke-width="1.33333"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                    </g>
+                                                                    <defs>
+                                                                        <clipPath id="clip0_1_2373">
+                                                                            <rect width="16" height="16" fill="white" />
+                                                                        </clipPath>
+                                                                    </defs>
+                                                                </svg>
+                                                                <span class="available-result-text">Another Additional
+                                                                    Benefit</span>
+                                                            </li>
+                                                            <li class="d-flex align-items-center gap-2 active">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" viewBox="0 0 16 16" fill="none">
+                                                                    <path d="M13.3334 4L6.00008 11.3333L2.66675 8"
+                                                                        stroke="#219653" stroke-width="1.33333"
+                                                                        stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+                                                                <span class="available-result-text">Lower Deposit</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex h-100">
+                                                    <button type="button"
+                                                        class="select-btn border-0 w-100 text-center">Select</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/slick-slider/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.car-slider').slick({
+                infinite: false,
+                speed: 300,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                variableWidth: true,
+                dots: false,
+            });
+        });
+    </script>
+
+    <script>
+        document.querySelectorAll('.result-card-main .collapse').forEach(collapse => {
+            collapse.addEventListener('show.bs.collapse', function () {
+                this.closest('.result-card-main').classList.add('is-open');
+            });
+
+            collapse.addEventListener('hide.bs.collapse', function () {
+                this.closest('.result-card-main').classList.remove('is-open');
+            });
+        });
+    </script>
+</body>
+
+</html>

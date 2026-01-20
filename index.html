@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="assets/scss/pages/index.css">
+    <title>FleetRez | Search Page</title>
+</head>
+
+<body>
+    <section class="main-section">
+        <div class="header">
+            <nav class="navbar navbar-expand-lg py-3">
+                <div class="container">
+                    <a class="navbar-brand" href="#">FleetRez</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Support</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Manage my booking</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex d-lg-none align-items-center justify-content-start gap-3">
+                            <div class="language-dropdown dropdown py-1 px-0">
+                                <a class="nav-link dropdown-toggle d-flex align-items-center gap-2" href="#"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="assets/icons/currency-euro.svg" alt="">
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"> <img
+                                                src="assets/icons/currency-euro-icon.svg" alt="">
+                                            English</a></li>
+                                    <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><img
+                                                src="assets/icons/currency-euro-icon.svg" alt="">
+                                            Hebrew</a></li>
+                                    <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><img
+                                                src="assets/icons/currency-euro-icon.svg" alt="">
+                                            Hindi</a></li>
+                                </ul>
+                            </div>
+                            <div class="language-dropdown dropdown py-1 px-0">
+                                <a class="nav-link dropdown-toggle d-flex align-items-center gap-2" href="#"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="assets/icons/english.png" alt="">
+                                    EN
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"> <img
+                                                src="assets/icons/english.png" alt="">
+                                            English</a></li>
+                                    <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><img
+                                                src="assets/icons/english.png" alt="">
+                                            Hebrew</a></li>
+                                    <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><img
+                                                src="assets/icons/english.png" alt="">
+                                            Hindi</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-none d-lg-flex align-items-center justify-content-end">
+                        <div class="language-dropdown dropdown d-md-block d-none py-1 px-3">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center gap-2" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="assets/icons/currency-euro.svg" alt="">
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"> <img
+                                            src="assets/icons/currency-euro-icon.svg" alt="">
+                                        English</a></li>
+                                <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><img
+                                            src="assets/icons/currency-euro-icon.svg" alt="">
+                                        Hebrew</a></li>
+                                <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><img
+                                            src="assets/icons/currency-euro-icon.svg" alt="">
+                                        Hindi</a></li>
+                            </ul>
+                        </div>
+                        <div class="language-dropdown dropdown d-md-block d-none py-1 px-3">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center gap-2" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="assets/icons/english.png" alt="">
+                                EN
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"> <img
+                                            src="assets/icons/english.png" alt="">
+                                        English</a></li>
+                                <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><img
+                                            src="assets/icons/english.png" alt="">
+                                        Hebrew</a></li>
+                                <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><img
+                                            src="assets/icons/english.png" alt="">
+                                        Hindi</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+
+        <div class="center-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="search-heading text-center pb-4">
+                            <h1>Find the car that fits your trip</h1>
+                            <p class="mt-3 px-sm-0 px-4">Compare options, choose your offer, and book with confidence.
+                            </p>
+                        </div>
+                        <div class="search-bar py-3 my-1">
+                            <ul class="nav nav-tabs border-bottom-0 justify-content-center" id="myTab" role="tablist">
+                                <li class="nav-item d-flex align-items-end" role="presentation">
+                                    <button
+                                        class="nav-link d-flex align-items-center justify-content-center gap-2 active"
+                                        id="car-rentals-tab" data-bs-toggle="tab" data-bs-target="#car-rentals-tab-pane"
+                                        type="button" role="tab" aria-controls="car-rentals-tab-pane"
+                                        aria-selected="true">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M5 13H8M2 9L4 10L5.27064 6.18807C5.53292 5.40125 5.66405 5.00784 5.90729 4.71698C6.12208 4.46013 6.39792 4.26132 6.70951 4.13878C7.06236 4 7.47705 4 8.30643 4H15.6936C16.523 4 16.9376 4 17.2905 4.13878C17.6021 4.26132 17.8779 4.46013 18.0927 4.71698C18.3359 5.00784 18.4671 5.40125 18.7294 6.18807L20 10L22 9M16 13H19M6.8 10H17.2C18.8802 10 19.7202 10 20.362 10.327C20.9265 10.6146 21.3854 11.0735 21.673 11.638C22 12.2798 22 13.1198 22 14.8V17.5C22 17.9647 22 18.197 21.9616 18.3902C21.8038 19.1836 21.1836 19.8038 20.3902 19.9616C20.197 20 19.9647 20 19.5 20H19C17.8954 20 17 19.1046 17 18C17 17.7239 16.7761 17.5 16.5 17.5H7.5C7.22386 17.5 7 17.7239 7 18C7 19.1046 6.10457 20 5 20H4.5C4.03534 20 3.80302 20 3.60982 19.9616C2.81644 19.8038 2.19624 19.1836 2.03843 18.3902C2 18.197 2 17.9647 2 17.5V14.8C2 13.1198 2 12.2798 2.32698 11.638C2.6146 11.0735 3.07354 10.6146 3.63803 10.327C4.27976 10 5.11984 10 6.8 10Z"
+                                                stroke="#008857" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                        Car rentals</button>
+                                </li>
+                                <li class="nav-item d-flex align-items-end" role="presentation">
+                                    <button class="nav-link d-flex align-items-center justify-content-center gap-2"
+                                        id="airport-transfers-tab" data-bs-toggle="tab"
+                                        data-bs-target="#airport-transfers-tab-pane" type="button" role="tab"
+                                        aria-controls="airport-transfers-tab-pane" aria-selected="false">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M17.7448 2.8128C18.7095 1.81632 20.3036 1.80343 21.2843 2.78418C22.2382 3.73805 22.2559 5.27902 21.3243 6.25463L18.5456 9.16439C18.3278 9.39246 18.219 9.5065 18.1518 9.64006C18.0924 9.75829 18.0571 9.88714 18.0478 10.0191C18.0374 10.1682 18.0728 10.3219 18.1438 10.6292L19.8717 18.1167C19.9444 18.4321 19.9808 18.5898 19.9691 18.7424C19.9587 18.8774 19.921 19.0089 19.8582 19.1289C19.7873 19.2645 19.6729 19.379 19.444 19.6079L19.0732 19.9786C18.4671 20.5848 18.164 20.8878 17.8538 20.9427C17.583 20.9906 17.3043 20.9248 17.0835 20.7609C16.8306 20.5731 16.695 20.1665 16.424 19.3532L14.4142 13.3239L11.0689 16.6693C10.8692 16.869 10.7694 16.9688 10.7026 17.0864C10.6434 17.1905 10.6034 17.3045 10.5846 17.4228C10.5633 17.5563 10.5789 17.6967 10.61 17.9773L10.7937 19.6307C10.8249 19.9114 10.8405 20.0517 10.8192 20.1853C10.8004 20.3036 10.7604 20.4175 10.7012 20.5217C10.6344 20.6393 10.5346 20.7391 10.3349 20.9388L10.1374 21.1363C9.66434 21.6093 9.42781 21.8459 9.16496 21.9144C8.93442 21.9745 8.68999 21.9503 8.47571 21.8461C8.2314 21.7274 8.04585 21.4491 7.67475 20.8924L6.10643 18.54C6.04013 18.4405 6.00698 18.3908 5.96849 18.3457C5.9343 18.3056 5.89701 18.2683 5.85694 18.2341C5.81184 18.1956 5.76212 18.1625 5.66267 18.0962L3.31018 16.5279C2.75354 16.1568 2.47521 15.9712 2.35649 15.7269C2.25236 15.5126 2.22816 15.2682 2.28824 15.0377C2.35674 14.7748 2.59327 14.5383 3.06633 14.0652L3.26384 13.8677C3.46352 13.668 3.56337 13.5682 3.68095 13.5014C3.78511 13.4422 3.89906 13.4023 4.01736 13.3834C4.15089 13.3621 4.29123 13.3777 4.5719 13.4089L6.22529 13.5926C6.50596 13.6238 6.6463 13.6394 6.77983 13.6181C6.89813 13.5992 7.01208 13.5592 7.11624 13.5001C7.23382 13.4333 7.33366 13.3334 7.53335 13.1337L10.8787 9.78841L4.84939 7.77865C4.03616 7.50758 3.62955 7.37204 3.44176 7.11913C3.27777 6.89829 3.212 6.61966 3.2599 6.3488C3.31477 6.03861 3.61784 5.73554 4.22399 5.12939L4.59476 4.75862C4.82365 4.52973 4.9381 4.41528 5.07369 4.34439C5.1937 4.28164 5.3252 4.24393 5.46023 4.23353C5.61278 4.22178 5.77049 4.25818 6.0859 4.33096L13.545 6.0523C13.855 6.12383 14.01 6.15959 14.1596 6.14895C14.3041 6.13868 14.4446 6.09715 14.5714 6.02724C14.7028 5.95482 14.8134 5.84055 15.0347 5.61202L17.7448 2.8128Z"
+                                                stroke="white" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                        Airport
+                                        transfers</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="car-rentals-tab-pane" role="tabpanel"
+                                    aria-labelledby="car-rentals-tab" tabindex="0">
+                                    <div class="main-search-card p-3">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="search-top ps-2 ms-1 pb-3">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="sameDropOff"
+                                                            value="Same drop-off location">
+                                                        <label class="form-check-label" for="sameDropOff">Same drop-off
+                                                            location</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="driverAge"
+                                                            value="Driver's age between 30-65">
+                                                        <label class="form-check-label" for="driverAge">Driver’s age
+                                                            between
+                                                            30-65</label>
+                                                    </div>
+                                                </div>
+                                                <div class="search-form d-lg-flex d-block">
+                                                    <div class="row gx-5">
+                                                        <div class="col-lg-4">
+                                                            <div class="position-relative">
+                                                                <input id="locationSearch" type="text"
+                                                                    class="form-control location-input"
+                                                                    placeholder="Pick-up location" autocomplete="off">
+                                                                <div id="locationSearch-list"
+                                                                    class="autocomplete-list d-none"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <div class="flt-border">
+                                                                <div class="row">
+                                                                    <div class="col-7">
+                                                                        <div class="py-2">
+                                                                            <label class="form-label mb-2"
+                                                                                for="pickUp">Pick-up
+                                                                                date</label>
+                                                                            <input id="pickUp" type="text"
+                                                                                class="form-control date-input"
+                                                                                placeholder="Day, DD MMM"
+                                                                                value="Wed, 31 Dec">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-5">
+                                                                        <div class="py-2">
+                                                                            <label class="form-label mb-2"
+                                                                                for="pickUpTime">Time</label>
+                                                                            <input id="pickUpTime" type="text"
+                                                                                class="form-control time-input"
+                                                                                placeholder="HH:MM" value="10:00">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <div class="row">
+                                                                <div class="col-7">
+                                                                    <div class="py-2">
+                                                                        <label class="form-label mb-2"
+                                                                            for="dropOff">Drop-off date</label>
+                                                                        <input id="dropOff" type="text"
+                                                                            class="form-control date-input"
+                                                                            placeholder="Day, DD MMM"
+                                                                            value="Mon, 05 Jan">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="py-2">
+                                                                        <label class="form-label mb-2"
+                                                                            for="dropOffTime">Time</label>
+                                                                        <input id="dropOffTime" type="text"
+                                                                            class="form-control time-input"
+                                                                            placeholder="HH:MM" value="10:00">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <button class="search-btn btn btn-success w-lg-auto w-100"
+                                                            type="button">Search</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="airport-transfers-tab-pane" role="tabpanel"
+                                    aria-labelledby="airport-transfers-tab" tabindex="0">
+                                    ....
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="trust-indicators d-flex flex-wrap justify-content-center pt-4">
+                            <div class="trust-indicators-item d-flex align-items-center">
+                                <img src="assets/icons/users-icon.svg" alt="">
+                                <span>35+ years of operation</span>
+                            </div>
+                            <div class="trust-indicators-item d-flex align-items-center">
+                                <img src="assets/icons/award-icon.svg" alt="">
+                                <span>Trusted by 1M+ travellers</span>
+                            </div>
+                            <div class="trust-indicators-item d-flex align-items-center">
+                                <img src="assets/icons/map-icon.svg" alt="">
+                                <span>2,000 locations</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Moment & DateRangePicker -->
+    <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <script>
+        // // ✅ Bootstrap Date Range Picker
+        $(function () {
+            $('#pickUp').daterangepicker({
+                singleDatePicker: true,   // ✅ single date
+                showDropdowns: true,
+                autoUpdateInput: true,
+                locale: {
+                    format: 'ddd, DD MMM' // Wed, 31 Dec
+                }
+            });
+            $('#dropOff').daterangepicker({
+                singleDatePicker: true,   // ✅ single date
+                showDropdowns: true,
+                autoUpdateInput: true,
+                locale: {
+                    format: 'ddd, DD MMM' // Wed, 31 Dec
+                }
+            });
+        });
+
+        // ✅ Flatpickr Time Picker
+        flatpickr("#pickUpTime, #dropOffTime", {
+            enableTime: true,
+            noCalendar: true,
+            dateFormat: "H:i",   // 24h format
+            time_24hr: true
+        });
+
+        // ✅ Autocomplete List
+        const destinations = ["Hotel 01", "Hotel 02", "Hotel 03", "Hotel 04", "Hotel 05", "Hotel 06", "Hotel 07", "Hotel 08", "Hotel 09", "Hotel 10"];
+
+        $('#locationSearch').on('input', function () {
+            const value = $(this).val().toLowerCase();
+            const filtered = destinations.filter(d => d.toLowerCase().startsWith(value));
+            const list = $('#locationSearch-list');
+            list.empty().removeClass('d-none');
+            if (value && filtered.length > 0) {
+                filtered.forEach(dest => {
+                    list.append(`<div class="autocomplete-item">${dest}</div>`);
+                });
+            } else {
+                list.addClass('d-none');
+            }
+        });
+
+        // Click handler for autocomplete item
+        $(document).on('click', '.autocomplete-item', function () {
+            $('#locationSearch').val($(this).text());
+            $('#locationSearch-list').addClass('d-none').empty();
+        });
+
+        // Hide list when clicking outside
+        $(document).on('click', function (e) {
+            if (!$(e.target).closest('#locationSearch').length) {
+                $('#locationSearch-list').addClass('d-none');
+            }
+        });
+
+    </script>
+</body>
+
+</html>
