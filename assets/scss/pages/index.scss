@@ -1,3 +1,30 @@
 @import "../layout/index.scss";
 @import "searchbar.scss";
 @import "results.scss";
+@import "home.scss";
+@import "details.scss";
+
+.filter-card {
+    overflow: hidden;
+  &.card {
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #fff;
+  }
+  .card-header {
+    background: #FFF;
+    h5 {
+      color: #000;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: -0.14px;
+    }
+  }
+}
+
+.reset-filter-btn {
+  color: #007c50;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: -0.12px;
+}

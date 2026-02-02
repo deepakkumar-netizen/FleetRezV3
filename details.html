@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/slick-slider/slick/slick.css">
+    <link rel="stylesheet" href="node_modules/slick-slider/slick/slick-theme.css">
+    <link rel="stylesheet" href="assets/scss/pages/index.css">
+    <title>FleetRez | Result Page</title>
+</head>
+
+<body>
+    <div class="header header-dark">
+        <nav class="navbar navbar-expand-lg py-3">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/icons/logo.svg" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Manage my booking</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex d-lg-none align-items-center justify-content-start gap-3">
+                        <div class="language-dropdown dropdown py-1 px-0">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center gap-2" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="assets/icons/currency-euro-icon.svg" alt="">
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"> <img
+                                            src="assets/icons/currency-euro-icon.svg" alt="">
+                                        English</a></li>
+                                <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><img
+                                            src="assets/icons/currency-euro-icon.svg" alt="">
+                                        Hebrew</a></li>
+                                <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><img
+                                            src="assets/icons/currency-euro-icon.svg" alt="">
+                                        Hindi</a></li>
+                            </ul>
+                        </div>
+                        <div class="language-dropdown dropdown py-1 px-0">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center gap-2" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="assets/icons/english.png" alt="">
+                                EN
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"> <img
+                                            src="assets/icons/english.png" alt="">
+                                        English</a></li>
+                                <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><img
+                                            src="assets/icons/english.png" alt="">
+                                        Hebrew</a></li>
+                                <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><img
+                                            src="assets/icons/english.png" alt="">
+                                        Hindi</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-none d-lg-flex align-items-center justify-content-end">
+                    <div class="language-dropdown dropdown d-md-block d-none py-1 px-3">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center gap-2" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/icons/currency-euro-icon.svg" alt="">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"> <img
+                                        src="assets/icons/currency-euro-icon.svg" alt="">
+                                    English</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><img
+                                        src="assets/icons/currency-euro-icon.svg" alt="">
+                                    Hebrew</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><img
+                                        src="assets/icons/currency-euro-icon.svg" alt="">
+                                    Hindi</a></li>
+                        </ul>
+                    </div>
+                    <div class="language-dropdown dropdown d-md-block d-none py-1 px-3">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center gap-2" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/icons/english.png" alt="">
+                            EN
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"> <img
+                                        src="assets/icons/english.png" alt="">
+                                    English</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><img
+                                        src="assets/icons/english.png" alt="">
+                                    Hebrew</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><img
+                                        src="assets/icons/english.png" alt="">
+                                    Hindi</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+    <section class="pb-5 mb-5">
+        <div class="container">
+            <div class="row gx-4">
+                <div class="col-md-8">
+                    <!-- Progress Bar -->
+                    <div class="progress-bar-section my-4 pb-2">
+                        <ul class="list-unstyled d-flex align-items-center justify-content-between gap-3 mb-0">
+                            <li class="step completed d-flex flex-column align-items-center gap-3">
+                                <div class="step-icon d-flex align-items-center justify-content-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M20 6L9 17L4 12" stroke="#018857" stroke-opacity="0.5" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <span class="step-text d-block">Select Vehicle</span>
+                            </li>
+
+                            <li class="step current d-flex flex-column align-items-center gap-3">
+                                <div class="step-icon d-flex align-items-center justify-content-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M21 12L9 12M21 6L9 6M21 18L9 18M5 12C5 12.5523 4.55228 13 4 13C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11C4.55228 11 5 11.4477 5 12ZM5 6C5 6.55228 4.55228 7 4 7C3.44772 7 3 6.55228 3 6C3 5.44772 3.44772 5 4 5C4.55228 5 5 5.44772 5 6ZM5 18C5 18.5523 4.55228 19 4 19C3.44772 19 3 18.5523 3 18C3 17.4477 3.44772 17 4 17C4.55228 17 5 17.4477 5 18Z"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <span class="step-text d-block">Booking Details</span>
+                            </li>
+
+                            <li class="step pending d-flex flex-column align-items-center gap-3">
+                                <div class="step-icon d-flex align-items-center justify-content-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M6 16C6 18.2091 7.79086 20 10 20H14C16.2091 20 18 18.2091 18 16C18 13.7909 16.2091 12 14 12H10C7.79086 12 6 10.2091 6 8C6 5.79086 7.79086 4 10 4H14C16.2091 4 18 5.79086 18 8M12 2V22"
+                                            stroke="#018857" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <span class="step-text d-block">Payment</span>
+                            </li>
+
+                            <li class="step pending d-flex flex-column align-items-center gap-3">
+                                <div class="step-icon d-flex align-items-center justify-content-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M20 6L9 17L4 12" stroke="#018857" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <span class="step-text d-block">Confirmation</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Car Details -->
+                    <div class="result-card result-details-page mb-3">
+                        <div class="d-md-flex">
+                            <div class="card result-left position-relative">
+                                <div class="card-body d-flex align-items-center p-0">
+                                    <div
+                                        class="result-car-image d-flex align-items-end justify-content-center w-100 h-100">
+                                        <img src="assets/images/car-items.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                                <div class="rating-card d-flex align-items-center gap-3">
+                                    <div class="rating-circle" style="--rating:9.2;">
+                                        <span>9.2</span>
+                                    </div>
+                                    <div class="rating-text">
+                                        <h4>Excellent</h4>
+                                        <p class="mt-1">400+ reviews</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="result-right">
+                                <div class="result-details">
+                                    <div class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+                                        <div class="result-car-name d-flex align-items-center gap-2 flex-wrap">
+                                            Kia
+                                            Ceed <span class="mt-1">or similar</span></div>
+                                        <button
+                                            class="diamond-value-btn d-flex align-items-center justify-content-center gap-2"
+                                            type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M1.66636 6H14.333M6.66636 2L5.33302 6L7.99969 13.6667L10.6664 6L9.33302 2M8.40941 13.5083L14.3818 6.34143C14.4831 6.21997 14.5337 6.15924 14.553 6.09144C14.5701 6.03167 14.5701 5.96833 14.553 5.90856C14.5337 5.84076 14.4831 5.78003 14.3818 5.65857L11.4929 2.1919C11.4342 2.12136 11.4048 2.08609 11.3687 2.06074C11.3368 2.03827 11.3012 2.02159 11.2635 2.01145C11.221 2 11.175 2 11.0832 2H4.91616C4.82434 2 4.77843 2 4.73588 2.01145C4.69819 2.02159 4.66257 2.03827 4.63064 2.06074C4.59461 2.08609 4.56522 2.12136 4.50644 2.1919L1.61755 5.65857C1.51633 5.78003 1.46572 5.84076 1.44638 5.90855C1.42933 5.96832 1.42933 6.03167 1.44638 6.09144C1.46572 6.15924 1.51633 6.21997 1.61755 6.34143L7.58997 13.5083C7.73068 13.6772 7.80103 13.7616 7.88526 13.7924C7.95916 13.8194 8.04023 13.8194 8.11412 13.7924C8.19835 13.7616 8.26871 13.6772 8.40941 13.5083Z"
+                                                    stroke="white" stroke-width="1.33333" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg> Best value for your dates</button>
+
+                                    </div>
+                                    <div class="result-amenities pt-3 pb-3">
+                                        <ul class="list-unstyled d-flex flex-wrap align-items-center gap-3">
+                                            <li class="d-flex align-items-center gap-2">
+                                                <img src="assets/icons/seat-icon.svg" alt="">
+                                                <span class="result-amenities-text">4</span>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2">
+                                                <img src="assets/icons/luggage-icon.svg" alt="">
+                                                <span class="result-amenities-text">2 bag</span>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2">
+                                                <img src="assets/icons/air-conditioning-icon.svg" alt="">
+                                                <span class="result-amenities-text">Air Conditioning</span>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2">
+                                                <img src="assets/icons/power-steering-icon.svg" alt="">
+                                                <span class="result-amenities-text">Power Steering</span>
+                                            </li>
+
+                                            <li class="d-flex align-items-center gap-2">
+                                                <img src="assets/icons/manual-icon.svg" alt="">
+                                                <span class="result-amenities-text">Manual</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="d-flex flex-wrap align-items-end justify-content-between gap-3">
+                                        <div class="result-feature">
+                                            <ul class="list-unstyled d-flex flex-column gap-2">
+                                                <li class="d-flex align-items-center gap-2">
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M13.3334 4L6.00002 11.3333L2.66669 8" stroke="#008052"
+                                                            stroke-width="1.33333" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    <span class="result-feature-text">Average
+                                                        Deposit</span>
+                                                </li>
+                                                <li class="d-flex align-items-center gap-2">
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M13.3334 4L6.00002 11.3333L2.66669 8" stroke="#008052"
+                                                            stroke-width="1.33333" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+
+                                                    <span class="result-feature-text">Limited
+                                                        Mileage</span>
+                                                </li>
+                                                <li class="d-flex align-items-center gap-2 active-feature">
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M13.3334 4L6.00002 11.3333L2.66669 8" stroke="#008052"
+                                                            stroke-width="1.33333" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+
+                                                    <span class="result-feature-text">Instant
+                                                        Confirmation</span>
+                                                </li>
+                                                <li class="d-flex align-items-center gap-2 active-feature">
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M13.3334 4L6.00002 11.3333L2.66669 8" stroke="#008052"
+                                                            stroke-width="1.33333" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+
+                                                    <span class="result-feature-text">Partial
+                                                        Payment</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="result-price">
+                                            <button type="button"
+                                                class="custom-success-outline btn btn-outline-success d-flex align-items-center justify-content-center gap-2 mb-2"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 16 16" fill="none">
+                                                    <path
+                                                        d="M9.33366 1.51302V4.26671C9.33366 4.64008 9.33366 4.82676 9.40632 4.96937C9.47024 5.09481 9.57222 5.1968 9.69767 5.26071C9.84027 5.33338 10.027 5.33338 10.4003 5.33338H13.154M9.33366 11.3333H5.33366M10.667 8.66666H5.33366M13.3337 6.65881V11.4667C13.3337 12.5868 13.3337 13.1468 13.1157 13.5746C12.9239 13.951 12.618 14.2569 12.2416 14.4487C11.8138 14.6667 11.2538 14.6667 10.1337 14.6667H5.86699C4.74689 14.6667 4.18683 14.6667 3.75901 14.4487C3.38269 14.2569 3.07673 13.951 2.88498 13.5746C2.66699 13.1468 2.66699 12.5868 2.66699 11.4667V4.53333C2.66699 3.41322 2.66699 2.85317 2.88498 2.42535C3.07673 2.04902 3.38269 1.74306 3.75901 1.55132C4.18683 1.33333 4.74689 1.33333 5.86699 1.33333H8.00818C8.49736 1.33333 8.74195 1.33333 8.97212 1.38859C9.17619 1.43758 9.37128 1.51839 9.55023 1.62805C9.75206 1.75173 9.92501 1.92468 10.2709 2.27059L12.3964 4.39607C12.7423 4.74197 12.9153 4.91493 13.0389 5.11676C13.1486 5.2957 13.2294 5.49079 13.2784 5.69486C13.3337 5.92504 13.3337 6.16963 13.3337 6.65881Z"
+                                                        stroke="#037F4E" stroke-width="1.33333" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg> Rental Conditions</button>
+                                            <button type="button"
+                                                class="custom-success-outline btn btn-outline-success d-flex align-items-center justify-content-center gap-2"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 16 16" fill="none">
+                                                    <path
+                                                        d="M12.7917 6.33333C12.5707 6.33333 12.3587 6.24554 12.2024 6.08926C12.0461 5.93297 11.9583 5.72101 11.9583 5.5C11.9583 5.27899 12.0461 5.06702 12.2024 4.91074C12.3587 4.75446 12.5707 4.66667 12.7917 4.66667C13.0127 4.66667 13.2246 4.75446 13.3809 4.91074C13.5372 5.06702 13.625 5.27899 13.625 5.5C13.625 5.72101 13.5372 5.93297 13.3809 6.08926C13.2246 6.24554 13.0127 6.33333 12.7917 6.33333ZM7.79167 6.33333H2.79167V2.16667H7.79167M14.2667 4.025L14.275 4.01667L11.175 0.916667L10.2917 1.8L12.05 3.55833C11.2667 3.83333 10.7083 4.60833 10.7083 5.5C10.7083 5.77359 10.7622 6.0445 10.8669 6.29726C10.9716 6.55002 11.1251 6.77968 11.3185 6.97314C11.7092 7.36384 12.2391 7.58333 12.7917 7.58333C13.0917 7.58333 13.3667 7.51667 13.625 7.40833V13.4167C13.625 13.6377 13.5372 13.8496 13.3809 14.0059C13.2246 14.1622 13.0127 14.25 12.7917 14.25C12.5707 14.25 12.3587 14.1622 12.2024 14.0059C12.0461 13.8496 11.9583 13.6377 11.9583 13.4167V9.66667C11.9583 9.22464 11.7827 8.80072 11.4702 8.48816C11.1576 8.17559 10.7337 8 10.2917 8H9.45833V2.16667C9.45833 1.72464 9.28274 1.30072 8.97018 0.988155C8.65762 0.675595 8.23369 0.5 7.79167 0.5H2.79167C1.86667 0.5 1.125 1.24167 1.125 2.16667V15.5H9.45833V9.25H10.7083V13.4167C10.7083 13.9692 10.9278 14.4991 11.3185 14.8898C11.7092 15.2805 12.2391 15.5 12.7917 15.5C13.0653 15.5 13.3362 15.4461 13.5889 15.3414C13.8417 15.2367 14.0714 15.0833 14.2648 14.8898C14.4583 14.6964 14.6117 14.4667 14.7164 14.2139C14.8211 13.9612 14.875 13.6903 14.875 13.4167V5.5C14.875 4.925 14.6417 4.4 14.2667 4.025Z"
+                                                        fill="#037F4E" />
+                                                </svg> Full to Full</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="additional-services-section">
+                                <ul class="nav nav-tabs border-bottom-0" id="myTab" role="tablist">
+                                    <li class="nav-item d-flex align-items-end" role="presentation">
+                                        <button
+                                            class="nav-link d-flex align-items-center justify-content-center gap-2 active"
+                                            id="car-rentals-tab" data-bs-toggle="tab"
+                                            data-bs-target="#car-rentals-tab-pane" type="button" role="tab"
+                                            aria-controls="car-rentals-tab-pane" aria-selected="true">
+                                            <div class="icon d-flex align-items-center justify-content-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path
+                                                        d="M12 6V22M12 6H8.46429C7.94332 6 7.4437 5.78929 7.07533 5.41421C6.70695 5.03914 6.5 4.53043 6.5 4C6.5 3.46957 6.70695 2.96086 7.07533 2.58579C7.4437 2.21071 7.94332 2 8.46429 2C11.2143 2 12 6 12 6ZM12 6H15.5357C16.0567 6 16.5563 5.78929 16.9247 5.41421C17.293 5.03914 17.5 4.53043 17.5 4C17.5 3.46957 17.293 2.96086 16.9247 2.58579C16.5563 2.21071 16.0567 2 15.5357 2C12.7857 2 12 6 12 6ZM20 11V18.8C20 19.9201 20 20.4802 19.782 20.908C19.5903 21.2843 19.2843 21.5903 18.908 21.782C18.4802 22 17.9201 22 16.8 22L7.2 22C6.07989 22 5.51984 22 5.09202 21.782C4.71569 21.5903 4.40973 21.2843 4.21799 20.908C4 20.4802 4 19.9201 4 18.8V11M2 7.6L2 9.4C2 9.96005 2 10.2401 2.10899 10.454C2.20487 10.6422 2.35785 10.7951 2.54601 10.891C2.75992 11 3.03995 11 3.6 11L20.4 11C20.9601 11 21.2401 11 21.454 10.891C21.6422 10.7951 21.7951 10.6422 21.891 10.454C22 10.2401 22 9.96005 22 9.4V7.6C22 7.03995 22 6.75992 21.891 6.54601C21.7951 6.35785 21.6422 6.20487 21.454 6.10899C21.2401 6 20.9601 6 20.4 6L3.6 6C3.03995 6 2.75992 6 2.54601 6.10899C2.35785 6.20487 2.20487 6.35785 2.10899 6.54601C2 6.75992 2 7.03995 2 7.6Z"
+                                                        stroke="white" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            Comfort Package
+                                        </button>
+                                    </li>
+                                    <li class="nav-item d-flex align-items-end" role="presentation">
+                                        <button class="nav-link d-flex align-items-center justify-content-center gap-2"
+                                            id="airport-transfers-tab" data-bs-toggle="tab"
+                                            data-bs-target="#airport-transfers-tab-pane" type="button" role="tab"
+                                            aria-controls="airport-transfers-tab-pane" aria-selected="false">
+                                            <div class="icon d-flex align-items-center justify-content-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 16 16" fill="none">
+                                                    <path
+                                                        d="M1.33301 6.66667C1.33301 6.66667 1.41389 6.10051 3.75703 3.75736C6.10018 1.41421 9.89917 1.41421 12.2423 3.75736C13.0725 4.58754 13.6085 5.60048 13.8505 6.66667M1.33301 6.66667V2.66667M1.33301 6.66667H5.33301M14.6663 9.33333C14.6663 9.33333 14.5855 9.8995 12.2423 12.2426C9.89917 14.5858 6.10018 14.5858 3.75703 12.2426C2.92685 11.4125 2.3908 10.3995 2.14889 9.33333M14.6663 9.33333V13.3333M14.6663 9.33333H10.6663"
+                                                        stroke="#037F4E" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            Change Package
+                                        </button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="car-rentals-tab-pane" role="tabpanel"
+                                        aria-labelledby="car-rentals-tab" tabindex="0">
+                                        <div class="p-4">
+                                            <div class="available-result-amenities">
+                                                <ul class="list-unstyled d-flex align-items-center gap-4">
+                                                    <li class="d-flex align-items-center gap-2 active">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            viewBox="0 0 16 16" fill="none">
+                                                            <g clip-path="url(#clip0_229_765)">
+                                                                <path
+                                                                    d="M7.99967 5.33334V10.6667M7.99967 5.33334V1.33334M7.99967 5.33334L4.66634 2.00001M7.99967 5.33334L11.333 2.00001M7.99967 10.6667V14.6667M7.99967 10.6667L4.66634 14M7.99967 10.6667L11.333 14M10.6663 8.00001H5.33301M10.6663 8.00001H14.6663M10.6663 8.00001L13.9997 4.66668M10.6663 8.00001L13.9997 11.3333M5.33301 8.00001H1.33301M5.33301 8.00001L1.99967 4.66668M5.33301 8.00001L1.99967 11.3333"
+                                                                    stroke="#219653" stroke-width="1.33333"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_229_765">
+                                                                    <rect width="16" height="16" fill="white" />
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                        <span class="available-result-text">Air
+                                                            Conditioning</span>
+                                                    </li>
+                                                    <li class="d-flex align-items-center gap-2 active">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            viewBox="0 0 16 16" fill="none">
+                                                            <g clip-path="url(#clip0_229_768)">
+                                                                <path
+                                                                    d="M3.33301 9.52425C2.09877 10.0687 1.33301 10.8275 1.33301 11.6667C1.33301 13.3235 4.31778 14.6667 7.99967 14.6667C11.6816 14.6667 14.6663 13.3235 14.6663 11.6667C14.6663 10.8275 13.9006 10.0687 12.6663 9.52425M11.9997 5.33334C11.9997 8.04248 8.99967 9.33334 7.99967 11.3333C6.99967 9.33334 3.99967 8.04248 3.99967 5.33334C3.99967 3.1242 5.79054 1.33334 7.99967 1.33334C10.2088 1.33334 11.9997 3.1242 11.9997 5.33334ZM8.66634 5.33334C8.66634 5.70153 8.36786 6.00001 7.99967 6.00001C7.63148 6.00001 7.33301 5.70153 7.33301 5.33334C7.33301 4.96515 7.63148 4.66668 7.99967 4.66668C8.36786 4.66668 8.66634 4.96515 8.66634 5.33334Z"
+                                                                    stroke="#219653" stroke-width="1.33333"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_229_768">
+                                                                    <rect width="16" height="16" fill="white" />
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                        <span class="available-result-text">GPS included</span>
+                                                    </li>
+                                                    <li class="d-flex align-items-center gap-2 active">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            viewBox="0 0 16 16" fill="none">
+                                                            <path d="M13.3337 4L6.00033 11.3333L2.66699 8"
+                                                                stroke="#219653" stroke-width="1.33333"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span class="available-result-text">Average
+                                                            Deposit</span>
+                                                    </li>
+                                                    <li class="d-flex align-items-center gap-2 active">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            viewBox="0 0 16 16" fill="none">
+                                                            <g clip-path="url(#clip0_229_774)">
+                                                                <path
+                                                                    d="M3.33301 9.52425C2.09877 10.0687 1.33301 10.8275 1.33301 11.6667C1.33301 13.3235 4.31778 14.6667 7.99967 14.6667C11.6816 14.6667 14.6663 13.3235 14.6663 11.6667C14.6663 10.8275 13.9006 10.0687 12.6663 9.52425M11.9997 5.33334C11.9997 8.04248 8.99967 9.33334 7.99967 11.3333C6.99967 9.33334 3.99967 8.04248 3.99967 5.33334C3.99967 3.1242 5.79054 1.33334 7.99967 1.33334C10.2088 1.33334 11.9997 3.1242 11.9997 5.33334ZM8.66634 5.33334C8.66634 5.70153 8.36786 6.00001 7.99967 6.00001C7.63148 6.00001 7.33301 5.70153 7.33301 5.33334C7.33301 4.96515 7.63148 4.66668 7.99967 4.66668C8.36786 4.66668 8.66634 4.96515 8.66634 5.33334Z"
+                                                                    stroke="#219653" stroke-width="1.33333"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_229_774">
+                                                                    <rect width="16" height="16" fill="white" />
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                        <span class="available-result-text">Additional Driver</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="airport-transfers-tab-pane" role="tabpanel"
+                                        aria-labelledby="airport-transfers-tab" tabindex="0">
+                                        <div class="p-4">
+                                            <div class="available-result-amenities">
+                                                <ul class="list-unstyled d-flex align-items-center gap-4">
+                                                    <li class="d-flex align-items-center gap-2 active">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            viewBox="0 0 16 16" fill="none">
+                                                            <g clip-path="url(#clip0_229_765)">
+                                                                <path
+                                                                    d="M7.99967 5.33334V10.6667M7.99967 5.33334V1.33334M7.99967 5.33334L4.66634 2.00001M7.99967 5.33334L11.333 2.00001M7.99967 10.6667V14.6667M7.99967 10.6667L4.66634 14M7.99967 10.6667L11.333 14M10.6663 8.00001H5.33301M10.6663 8.00001H14.6663M10.6663 8.00001L13.9997 4.66668M10.6663 8.00001L13.9997 11.3333M5.33301 8.00001H1.33301M5.33301 8.00001L1.99967 4.66668M5.33301 8.00001L1.99967 11.3333"
+                                                                    stroke="#219653" stroke-width="1.33333"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_229_765">
+                                                                    <rect width="16" height="16" fill="white" />
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                        <span class="available-result-text">Air
+                                                            Conditioning</span>
+                                                    </li>
+                                                    <li class="d-flex align-items-center gap-2 active">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            viewBox="0 0 16 16" fill="none">
+                                                            <g clip-path="url(#clip0_229_768)">
+                                                                <path
+                                                                    d="M3.33301 9.52425C2.09877 10.0687 1.33301 10.8275 1.33301 11.6667C1.33301 13.3235 4.31778 14.6667 7.99967 14.6667C11.6816 14.6667 14.6663 13.3235 14.6663 11.6667C14.6663 10.8275 13.9006 10.0687 12.6663 9.52425M11.9997 5.33334C11.9997 8.04248 8.99967 9.33334 7.99967 11.3333C6.99967 9.33334 3.99967 8.04248 3.99967 5.33334C3.99967 3.1242 5.79054 1.33334 7.99967 1.33334C10.2088 1.33334 11.9997 3.1242 11.9997 5.33334ZM8.66634 5.33334C8.66634 5.70153 8.36786 6.00001 7.99967 6.00001C7.63148 6.00001 7.33301 5.70153 7.33301 5.33334C7.33301 4.96515 7.63148 4.66668 7.99967 4.66668C8.36786 4.66668 8.66634 4.96515 8.66634 5.33334Z"
+                                                                    stroke="#219653" stroke-width="1.33333"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_229_768">
+                                                                    <rect width="16" height="16" fill="white" />
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                        <span class="available-result-text">GPS included</span>
+                                                    </li>
+                                                    <li class="d-flex align-items-center gap-2 active">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            viewBox="0 0 16 16" fill="none">
+                                                            <path d="M13.3337 4L6.00033 11.3333L2.66699 8"
+                                                                stroke="#219653" stroke-width="1.33333"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span class="available-result-text">Average
+                                                            Deposit</span>
+                                                    </li>
+                                                    <li class="d-flex align-items-center gap-2 active">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            viewBox="0 0 16 16" fill="none">
+                                                            <g clip-path="url(#clip0_229_774)">
+                                                                <path
+                                                                    d="M3.33301 9.52425C2.09877 10.0687 1.33301 10.8275 1.33301 11.6667C1.33301 13.3235 4.31778 14.6667 7.99967 14.6667C11.6816 14.6667 14.6663 13.3235 14.6663 11.6667C14.6663 10.8275 13.9006 10.0687 12.6663 9.52425M11.9997 5.33334C11.9997 8.04248 8.99967 9.33334 7.99967 11.3333C6.99967 9.33334 3.99967 8.04248 3.99967 5.33334C3.99967 3.1242 5.79054 1.33334 7.99967 1.33334C10.2088 1.33334 11.9997 3.1242 11.9997 5.33334ZM8.66634 5.33334C8.66634 5.70153 8.36786 6.00001 7.99967 6.00001C7.63148 6.00001 7.33301 5.70153 7.33301 5.33334C7.33301 4.96515 7.63148 4.66668 7.99967 4.66668C8.36786 4.66668 8.66634 4.96515 8.66634 5.33334Z"
+                                                                    stroke="#219653" stroke-width="1.33333"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_229_774">
+                                                                    <rect width="16" height="16" fill="white" />
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                        <span class="available-result-text">Additional Driver</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Driver Details -->
+                    <div class="driver-details-card card p-3 mt-2">
+                        <div class="p-3">
+                            <div class="add-heading">
+                                <h4 class="pb-4 mb-1">Driver Details <span>(Required)</span></h4>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="custom-input mb-3 pb-4 pt-1">
+                                        <label for="title" class="form-label mb-2">Title</label>
+                                        <select class="form-select" id="title">
+                                            <option selected hidden></option>
+                                            <option value="Mr">Mr</option>
+                                            <option value="Mrs">Mrs</option>
+                                            <option value="Miss">Miss</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="custom-input mb-3 pb-4 pt-1">
+                                                <label for="firstName" class="form-label mb-2">First Name</label>
+                                                <input type="text" class="form-control" id="firstName">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="custom-input mb-3 pb-4 pt-1">
+                                                <label for="lastName" class="form-label mb-2">Last Name</label>
+                                                <input type="text" class="form-control" id="lastName">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="custom-input mb-3 pb-4 pt-1">
+                                        <label for="driversAge" class="form-label mb-2">Driver’s age</label>
+                                        <select class="form-select" id="title">
+                                            <option selected hidden></option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="24">24</option>
+                                            <option value="25">25</option>
+                                            <option value="26">26</option>
+                                            <option value="27">27</option>
+                                            <option value="28">28</option>
+                                            <option value="29">29</option>
+                                            <option value="30">30 - 65</option>
+                                            <option value="66">66</option>
+                                            <option value="67">67</option>
+                                            <option value="68">68</option>
+                                            <option value="69">69</option>
+                                            <option value="70">70</option>
+                                            <option value="71">71</option>
+                                            <option value="72">72</option>
+                                            <option value="73">73</option>
+                                            <option value="74">74</option>
+                                            <option value="75">75</option>
+                                            <option value="76">76</option>
+                                            <option value="77">77</option>
+                                            <option value="78">78</option>
+                                            <option value="79">79</option>
+                                            <option value="80">80</option>
+                                            <option value="81">81+</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="custom-input mb-3 pb-4 pt-1">
+                                                <label for="emailAddress" class="form-label mb-2">Email</label>
+                                                <input type="email" class="form-control" id="emailAddress">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="custom-input mb-3 pb-4 pt-1">
+                                                <label for="phoneNumber" class="form-label mb-2">Phone
+                                                    Number</label>
+                                                <input type="text" class="form-control" id="phoneNumber">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div>
+                                        <a href="#!" class="d-inline-flex align-items-center gap-2 terms-btn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_229_669)">
+                                                    <path
+                                                        d="M11.8298 1.87518C12.473 1.21086 13.5357 1.20227 14.1895 1.8561C14.8254 2.49201 14.8373 3.51933 14.2162 4.16973L12.3637 6.10957C12.2185 6.26162 12.1459 6.33765 12.1012 6.42669C12.0616 6.50551 12.038 6.59141 12.0319 6.6794C12.0249 6.77881 12.0485 6.88123 12.0958 7.08609L13.2477 12.0778C13.2963 12.2881 13.3205 12.3932 13.3127 12.4949C13.3058 12.5849 13.2806 12.6726 13.2388 12.7526C13.1915 12.843 13.1152 12.9193 12.9626 13.0719L12.7154 13.3191C12.3113 13.7232 12.1093 13.9252 11.9025 13.9618C11.7219 13.9937 11.5362 13.9499 11.389 13.8406C11.2203 13.7154 11.13 13.4443 10.9493 12.9021L9.60943 8.88261L7.37921 11.1128C7.24609 11.246 7.17953 11.3125 7.135 11.3909C7.09556 11.4603 7.06891 11.5363 7.05633 11.6152C7.04213 11.7042 7.05253 11.7978 7.07332 11.9849L7.19579 13.0871C7.21658 13.2742 7.22698 13.3678 7.21278 13.4568C7.2002 13.5357 7.17355 13.6117 7.13411 13.6811C7.08958 13.7595 7.02302 13.826 6.8899 13.9592L6.75823 14.0908C6.44285 14.4062 6.28517 14.5639 6.10993 14.6096C5.95624 14.6496 5.79329 14.6335 5.65043 14.5641C5.48756 14.4849 5.36386 14.2994 5.11646 13.9283L4.07091 12.3599C4.02671 12.2936 4.00461 12.2605 3.97895 12.2304C3.95616 12.2037 3.9313 12.1789 3.90459 12.1561C3.87452 12.1304 3.84137 12.1083 3.77507 12.0641L2.20675 11.0186C1.83565 10.7712 1.6501 10.6475 1.57095 10.4846C1.50153 10.3417 1.4854 10.1788 1.52545 10.0251C1.57112 9.84985 1.72881 9.69216 2.04418 9.37679L2.17585 9.24512C2.30898 9.112 2.37554 9.04544 2.45392 9.00091C2.52337 8.96146 2.59933 8.93482 2.6782 8.92224C2.76722 8.90804 2.86078 8.91844 3.04789 8.93923L4.15015 9.0617C4.33727 9.08249 4.43082 9.09289 4.51985 9.07869C4.59871 9.06611 4.67468 9.03946 4.74412 9.00002C4.82251 8.95549 4.88907 8.88893 5.02219 8.7558L7.25241 6.52559L3.23289 5.18575C2.69074 5.00503 2.41966 4.91467 2.29446 4.74607C2.18514 4.59884 2.14129 4.41309 2.17323 4.23251C2.20981 4.02572 2.41185 3.82367 2.81595 3.41957L3.06313 3.17239C3.21573 3.0198 3.29202 2.9435 3.38242 2.89624C3.46243 2.85441 3.5501 2.82927 3.64011 2.82233C3.74181 2.8145 3.84695 2.83876 4.05723 2.88729L9.02999 4.03485C9.23662 4.08253 9.33994 4.10638 9.43969 4.09928C9.536 4.09243 9.62967 4.06475 9.71423 4.01814C9.80181 3.96986 9.87556 3.89368 10.0231 3.74132L11.8298 1.87518Z"
+                                                        stroke="#008857" stroke-width="1.33333" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_229_669">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>Add flight details <span> (optional)</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Addons -->
+                    <div class="addon-card card p-3 mt-2">
+                        <div class="p-3">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="add-heading">
+                                        <h4 class="pb-4 mb-1">Add-ons</h4>
+                                        <h5 class="pb-4">Insurance</h5>
+                                    </div>
+                                    <div class="row gx-4 gy-4">
+                                        <div class="col-md-6">
+                                            <div class="add-card card p-3">
+                                                <div class="addon-checkbox d-flex align-items-top py-2 gap-3">
+                                                    <div>
+                                                        <input class="form-check-input" type="checkbox" id="addOn-01"
+                                                            value="Theft Protection">
+                                                    </div>
+                                                    <div class="add-text">
+                                                        <h6>Theft Protection</h6>
+                                                        <p class="pt-2 pb-3">Reduced excess amount if it can't be
+                                                            reduced to 300
+                                                        </p>
+                                                        <strong class="d-block">$8/day</strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="add-card card p-3">
+                                                <div class="addon-checkbox d-flex align-items-top py-2 gap-3">
+                                                    <div>
+                                                        <input class="form-check-input" type="checkbox" id="addOn-02"
+                                                            value="Collision Detection">
+                                                    </div>
+                                                    <div class="add-text">
+                                                        <h6>Collision Detection</h6>
+                                                        <p class="pt-2 pb-3">Reduced excess amount if it can't be
+                                                            reduced to 300
+                                                        </p>
+                                                        <strong class="d-block">$8/day</strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="add-card card p-3">
+                                                <div class="addon-checkbox d-flex align-items-top py-2 gap-3">
+                                                    <div>
+                                                        <input class="form-check-input" type="checkbox" id="addOn-03"
+                                                            value="Bajaj Allianz Car Insurance">
+                                                    </div>
+                                                    <div class="add-text">
+                                                        <h6>Bajaj Allianz Car Insurance</h6>
+                                                        <p class="pt-2 pb-3">Reduced excess amount if it can't be
+                                                            reduced to 300
+                                                        </p>
+                                                        <strong class="d-block">$8/day</strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="add-card card p-3">
+                                                <div class="addon-checkbox d-flex align-items-top py-2 gap-3">
+                                                    <div>
+                                                        <input class="form-check-input" type="checkbox" id="addOn-04"
+                                                            value="ICICI Lombard Car Insurance">
+                                                    </div>
+                                                    <div class="add-text">
+                                                        <h6>ICICI Lombard Car Insurance</h6>
+                                                        <p class="pt-2 pb-3">Reduced excess amount if it can't be
+                                                            reduced to 300
+                                                        </p>
+                                                        <strong class="d-block">$8/day</strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="add-heading pb-4">
+                                        <h5>Extras</h5>
+                                    </div>
+                                    <div class="row gx-4 gy-4">
+                                        <div class="col-md-6">
+                                            <div class="add-card card p-3">
+                                                <div class="addon-checkbox d-flex align-items-center py-2 gap-3">
+                                                    <div
+                                                        class="addon-icon d-flex align-items-center justify-content-center">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            viewBox="0 0 20 20" fill="none">
+                                                            <path
+                                                                d="M15.8337 8.33337V3.33337M13.3337 5.83337H18.3337M13.3337 17.5V16.5C13.3337 15.0999 13.3337 14.3998 13.0612 13.8651C12.8215 13.3947 12.439 13.0122 11.9686 12.7725C11.4339 12.5 10.7338 12.5 9.33366 12.5H5.66699C4.26686 12.5 3.5668 12.5 3.03202 12.7725C2.56161 13.0122 2.17916 13.3947 1.93948 13.8651C1.66699 14.3998 1.66699 15.0999 1.66699 16.5V17.5M10.417 6.25004C10.417 7.86087 9.11116 9.16671 7.50033 9.16671C5.8895 9.16671 4.58366 7.86087 4.58366 6.25004C4.58366 4.63921 5.8895 3.33337 7.50033 3.33337C9.11116 3.33337 10.417 4.63921 10.417 6.25004Z"
+                                                                stroke="#008857" stroke-width="1.66667"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="add-text">
+                                                        <h6 class="pb-2">Additional Driver</h6>
+                                                        <strong class="d-block">$8/day</strong>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <input class="form-check-input" type="checkbox" id="extras-01"
+                                                            value="Additional Driver">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="add-card card p-3">
+                                                <div class="addon-checkbox d-flex align-items-center py-2 gap-3">
+                                                    <div
+                                                        class="addon-icon d-flex align-items-center justify-content-center">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                                            viewBox="0 0 20 21" fill="none">
+                                                            <g clip-path="url(#clip0_229_692)">
+                                                                <path
+                                                                    d="M9.84811 7.00063C9.65478 7.1104 9.40903 7.04323 9.29926 6.84826C9.18949 6.65494 9.25667 6.40919 9.45163 6.29942C9.85302 6.07169 10.2167 5.82757 10.5247 5.55888C10.818 5.3033 11.0572 5.02642 11.2243 4.7266C11.2653 4.65288 11.2997 4.58079 11.3308 4.5087C11.5274 4.04996 11.5733 3.55518 11.4553 3.11283C11.3406 2.68686 11.0703 2.3084 10.628 2.06429C10.569 2.03152 10.5084 2.00203 10.4477 1.97582C10.2855 1.90537 10.1299 1.86932 9.98081 1.86441C9.83336 1.85949 9.68755 1.88407 9.54501 1.93813C9.21407 2.06101 8.95849 2.27891 8.79793 2.52958C8.70618 2.67211 8.6472 2.82612 8.62426 2.97685C8.60296 3.11938 8.61279 3.257 8.65703 3.37824C8.70782 3.51586 8.80776 3.64202 8.9634 3.74196C9.05515 3.80094 9.17639 3.82879 9.33039 3.82715C9.52044 3.82387 9.75145 3.77308 10.0267 3.67151C10.2364 3.59614 10.4674 3.70427 10.5428 3.91234C10.6181 4.12205 10.51 4.35306 10.3019 4.42842C9.94313 4.55949 9.62529 4.62666 9.34186 4.63158C9.02402 4.63649 8.75205 4.56604 8.52596 4.42023C8.21631 4.22199 8.01152 3.95658 7.90175 3.6584C7.80673 3.40118 7.78215 3.12594 7.82475 2.85561C7.86407 2.59347 7.96565 2.33298 8.11965 2.09214C8.36868 1.70385 8.76025 1.36963 9.26486 1.18286C9.50733 1.09275 9.75472 1.05015 10.007 1.05998C10.2593 1.06817 10.5116 1.12551 10.7639 1.23528C10.8541 1.2746 10.9392 1.31556 11.0179 1.35816C11.6667 1.71696 12.0681 2.27563 12.2368 2.9064C12.4023 3.52242 12.3417 4.20397 12.0746 4.82654C12.032 4.92648 11.9845 5.02314 11.9337 5.11653C11.7175 5.50809 11.4193 5.85542 11.0572 6.16999C10.7082 6.47144 10.3003 6.74669 9.84811 7.00063ZM6.88925 14.0095C6.75327 13.8669 6.75982 13.6425 6.90236 13.5065C7.0449 13.3705 7.26935 13.3771 7.40533 13.5196C8.37523 14.5387 9.33203 14.981 10.2741 14.9466C11.2292 14.9122 12.2024 14.3961 13.1871 13.5016C13.3329 13.3689 13.5573 13.3804 13.69 13.5245C13.8227 13.6703 13.8113 13.8948 13.6671 14.0275C12.5596 15.0334 11.4373 15.6167 10.3003 15.656C9.14853 15.697 8.01152 15.1891 6.88925 14.0095ZM7.41352 9.04529C7.99678 9.04529 8.47026 9.51877 8.47026 10.102C8.47026 10.6853 7.99678 11.1588 7.41352 11.1588C6.83027 11.1588 6.35679 10.6853 6.35679 10.102C6.35679 9.51877 6.83027 9.04529 7.41352 9.04529ZM13.1297 9.04529C13.713 9.04529 14.1865 9.51877 14.1865 10.102C14.1865 10.6853 13.713 11.1588 13.1297 11.1588C12.5465 11.1588 12.073 10.6853 12.073 10.102C12.073 9.51877 12.5465 9.04529 13.1297 9.04529ZM13.2788 5.94062C13.0806 5.85215 12.9905 5.61623 13.0757 5.41307C13.1608 5.20992 13.3902 5.11489 13.5885 5.20336C14.5698 5.64244 15.4365 6.25682 16.1361 7.00063C16.7456 7.64778 17.2305 8.39486 17.5598 9.20912L17.586 9.20257C17.7286 9.17144 17.8744 9.15506 18.0202 9.15506C18.6018 9.15506 19.1293 9.39917 19.5127 9.79401C19.8945 10.1889 20.1304 10.7328 20.1304 11.3324C20.1304 11.9321 19.8945 12.476 19.5127 12.8708C19.1293 13.2657 18.6018 13.5098 18.0202 13.5098C17.9448 13.5098 17.8695 13.5049 17.7941 13.4967C17.3648 15.0187 16.4048 16.3474 15.1039 17.3091C13.7294 18.3265 11.9747 18.936 10.0644 18.936C8.1557 18.936 6.39939 18.3249 5.02481 17.3091C3.72396 16.3458 2.76389 15.0187 2.33465 13.4967C2.25928 13.5049 2.18392 13.5098 2.10855 13.5098C1.52694 13.5098 0.999392 13.2657 0.616019 12.8708C0.235922 12.4793 0 11.9353 0 11.3341C0 10.7344 0.235922 10.1905 0.617657 9.79565C1.00103 9.40081 1.52858 9.1567 2.11019 9.1567C2.25601 9.1567 2.40182 9.17308 2.54435 9.20421L2.57057 9.21076C2.89988 8.39486 3.38483 7.64942 3.99429 7.00227C4.6955 6.25682 5.56219 5.64244 6.54192 5.205C6.74016 5.11653 6.96953 5.21155 7.05473 5.41471C7.13992 5.61786 7.04817 5.85542 6.85157 5.94226C5.96686 6.3371 5.18537 6.8925 4.55461 7.56422C3.93859 8.21956 3.46511 8.98467 3.18003 9.8235C3.17512 9.84152 3.16856 9.85791 3.16201 9.87429C3.07518 10.0774 2.84417 10.1708 2.64757 10.0807C2.56238 10.043 2.47554 10.0136 2.38707 9.99389C2.30188 9.97587 2.20849 9.96604 2.11183 9.96604C1.7432 9.96604 1.41226 10.1184 1.17306 10.3658C0.93222 10.6132 0.784769 10.9572 0.784769 11.3373C0.784769 11.7174 0.933858 12.0598 1.17306 12.3089C1.41226 12.5563 1.74484 12.7086 2.11183 12.7086C2.18064 12.7086 2.24781 12.7037 2.31335 12.6939C2.3838 12.6824 2.44933 12.6677 2.50831 12.648C2.51814 12.6447 2.52797 12.6431 2.5378 12.6398C2.74751 12.5907 2.95722 12.7267 3.00473 12.9446C3.32912 14.4305 4.22694 15.7347 5.48519 16.6636C6.72869 17.5844 8.32608 18.1365 10.0693 18.1365C11.8125 18.1365 13.4082 17.5844 14.6534 16.6636C15.9084 15.7347 16.8062 14.4322 17.1322 12.9495C17.1338 12.938 17.1371 12.9265 17.1404 12.9151C17.2043 12.7021 17.4222 12.5841 17.6286 12.648C17.6892 12.6677 17.7531 12.6824 17.8236 12.6939C17.8875 12.7037 17.9547 12.7086 18.0251 12.7086C18.3937 12.7086 18.7247 12.5563 18.9639 12.3089C19.2047 12.0615 19.3522 11.7174 19.3522 11.3373C19.3522 10.9572 19.2031 10.6148 18.9639 10.3658C18.7247 10.1184 18.3921 9.96604 18.0251 9.96604C17.9268 9.96604 17.8351 9.97587 17.7499 9.99389C17.6614 10.0136 17.5746 10.043 17.4894 10.0807C17.4795 10.0856 17.4697 10.0889 17.4599 10.0922C17.2567 10.1659 17.0339 10.0545 16.9635 9.8448C16.6784 8.99778 16.2016 8.22447 15.5807 7.56422C14.9434 6.89086 14.1635 6.33546 13.2788 5.94062Z"
+                                                                    fill="#008857" />
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_229_692">
+                                                                    <rect width="20" height="21" fill="white" />
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="add-text">
+                                                        <h6 class="pb-2">Baby seat</h6>
+                                                        <strong class="d-block">$8/day</strong>
+                                                    </div>
+                                                    <div class="number-input">
+                                                        <button class="decrement-btn" onclick="decrement()">−</button>
+                                                        <input type="number" id="qty" value="1" min="0" max="9">
+                                                        <button class="increment-btn" onclick="increment()">+</button>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <input class="form-check-input" type="checkbox" id="extras-02"
+                                                            value="Baby seat">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="add-card card p-3">
+                                                <div class="addon-checkbox d-flex align-items-center py-2 gap-3">
+                                                    <div
+                                                        class="addon-icon d-flex align-items-center justify-content-center">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            viewBox="0 0 16 16" fill="none">
+                                                            <g clip-path="url(#clip0_229_707)">
+                                                                <path
+                                                                    d="M2.27596 7.16299C1.87906 7.00864 1.68062 6.93146 1.62268 6.82026C1.57245 6.72386 1.57239 6.60903 1.6225 6.51257C1.6803 6.4013 1.87866 6.32389 2.27538 6.16908L13.5339 1.77552C13.892 1.63576 14.0711 1.56588 14.1855 1.60411C14.2848 1.6373 14.3628 1.71528 14.396 1.81465C14.4342 1.92907 14.3644 2.10813 14.2246 2.46625L9.83105 13.7247C9.67623 14.1215 9.59882 14.3198 9.48755 14.3776C9.39109 14.4277 9.27626 14.4277 9.17986 14.3774C9.06866 14.3195 8.99148 14.1211 8.83714 13.7242L7.08506 9.21883C7.05373 9.13826 7.03806 9.09798 7.01387 9.06406C6.99242 9.03399 6.96613 9.0077 6.93607 8.98625C6.90215 8.96206 6.86186 8.94639 6.7813 8.91506L2.27596 7.16299Z"
+                                                                    stroke="#008857" stroke-width="1.33333"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_229_707">
+                                                                    <rect width="16" height="16" fill="white" />
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="add-text">
+                                                        <h6 class="pb-2">GPS Navigation</h6>
+                                                        <strong class="d-block">$8/day</strong>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <input class="form-check-input" type="checkbox" id="extras-03"
+                                                            value="GPS Navigation">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="add-card card p-3">
+                                                <div class="addon-checkbox d-flex align-items-center py-2 gap-3">
+                                                    <div
+                                                        class="addon-icon d-flex align-items-center justify-content-center">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="26"
+                                                            viewBox="0 0 20 26" fill="none">
+                                                            <g clip-path="url(#clip0_229_716)">
+                                                                <path
+                                                                    d="M7.54337 0H12.3914C12.6471 0 12.8924 0.0523999 13.1166 0.144624C13.3493 0.24104 13.5589 0.383567 13.7328 0.557535C13.9089 0.733599 14.0493 0.941102 14.1458 1.17376C14.238 1.39803 14.2904 1.64326 14.2904 1.89897V4.02012C14.2904 4.2402 14.2527 4.45399 14.1814 4.65102C14.1206 4.8187 14.0389 4.97799 13.9362 5.12052C14.3365 5.1813 14.7159 5.30287 15.068 5.47684C15.4641 5.67177 15.8226 5.92957 16.1307 6.23769C16.8475 6.95452 17.2919 7.94383 17.2919 9.03165V17.4576C17.447 17.4052 17.6021 17.3674 17.7551 17.3486C17.9374 17.3255 18.1198 17.3276 18.2979 17.3569C18.5348 17.3947 18.7611 17.4764 18.9645 17.6043C19.1594 17.7279 19.3375 17.8935 19.4906 18.1073C19.7945 18.5328 19.9894 19.1532 19.9999 19.9916C20.0083 20.7231 19.8762 21.6202 19.5534 22.6996L19.1154 24.1626C19.0818 24.2737 19.0567 24.366 19.0357 24.4456C19.0127 24.5294 18.9959 24.5986 18.9812 24.6615C18.9414 24.8229 18.9121 24.9486 18.868 25.0555C18.8219 25.1687 18.7632 25.2589 18.671 25.3469C18.4321 25.567 18.191 25.567 17.6377 25.567H17.5245C13.626 26.0365 6.59388 25.5083 2.30338 25.5691C1.79405 25.5733 1.55301 25.5753 1.31616 25.3678L1.30149 25.3574C1.10028 25.175 1.05836 24.9696 0.978709 24.5902C0.964037 24.5232 0.949365 24.4477 0.930501 24.3639C0.911637 24.28 0.888581 24.1815 0.859237 24.062L0.494533 22.6179C0.456805 22.4649 0.425365 22.3496 0.393925 22.2343L0.389733 22.2155C0.217862 21.5636 0.029222 20.851 -0.000121946 20.1446C-0.0294659 19.432 0.106774 18.7277 0.586757 18.1115C0.702037 17.9648 0.829893 17.839 0.970325 17.7342C1.11076 17.6294 1.26586 17.5498 1.42725 17.4932C1.58026 17.4408 1.73956 17.4093 1.90304 17.401C2.06443 17.3926 2.23002 17.4073 2.3977 17.445C2.43123 17.4534 2.46477 17.4617 2.49621 17.4701L2.50669 17.4722V9.02955C2.50669 8.49717 2.61359 7.98575 2.80642 7.52044C3.00763 7.03626 3.30317 6.60029 3.66787 6.23559C3.99066 5.91281 4.36794 5.64452 4.78713 5.44749C5.15813 5.27353 5.56056 5.15406 5.98395 5.10166C5.88544 4.96122 5.80579 4.80612 5.7471 4.64054C5.67793 4.44561 5.64021 4.23391 5.64021 4.01803V1.89897C5.64021 1.64326 5.69261 1.39803 5.78483 1.17376C5.88125 0.941102 6.02377 0.731503 6.19774 0.557535L6.20193 0.553343C6.3759 0.379375 6.5834 0.238944 6.81396 0.144624C7.04243 0.0523999 7.28766 0 7.54337 0ZM13.1229 9.85328C13.1942 9.74429 13.3032 9.67512 13.4205 9.65206C13.5379 9.62691 13.6637 9.64787 13.7706 9.71704L13.7769 9.72123C13.8838 9.7925 13.9529 9.89939 13.976 10.0168C13.999 10.1341 13.9802 10.2599 13.911 10.3668L13.9068 10.371C13.5945 10.8447 13.3116 11.3435 13.0621 11.8696C12.8127 12.3957 12.5968 12.947 12.4208 13.5276C12.2447 14.1102 12.1064 14.7223 12.012 15.3699C11.9177 16.0176 11.8674 16.6988 11.8632 17.4177C11.8632 17.5477 11.8108 17.6651 11.7249 17.7489C11.6389 17.8348 11.5216 17.8872 11.3916 17.8872C11.2617 17.8872 11.1443 17.8348 11.0584 17.7489L11.0542 17.7447C10.9724 17.6609 10.92 17.5435 10.92 17.4156C10.9221 16.6485 10.9766 15.9191 11.0793 15.2274C11.1799 14.5357 11.3287 13.8776 11.5174 13.253C11.7081 12.6263 11.9387 12.031 12.207 11.4672C12.4794 10.9034 12.7855 10.3668 13.1229 9.85328ZM6.05312 10.3752L6.04473 10.3626C5.97766 10.2557 5.9567 10.132 5.98185 10.0168C6.00491 9.90149 6.07198 9.79459 6.17678 9.72333L6.18936 9.71494C6.29625 9.64787 6.41992 9.62691 6.5352 9.65206C6.65257 9.67722 6.76156 9.74638 6.83283 9.85328C7.17028 10.3668 7.4763 10.9034 7.74459 11.4672C8.01287 12.0331 8.24553 12.6263 8.43626 13.253C8.627 13.8797 8.77372 14.5357 8.87433 15.2274C8.97494 15.9191 9.02943 16.6464 9.03153 17.4156C9.03153 17.5456 8.97913 17.663 8.89319 17.7468C8.80935 17.8327 8.68988 17.8851 8.56202 17.8851C8.43207 17.8851 8.3147 17.8327 8.23086 17.7468C8.14492 17.6609 8.09252 17.5435 8.09252 17.4135C8.09043 16.6946 8.04012 16.0134 7.9458 15.3658C7.85148 14.7181 7.71315 14.1061 7.53708 13.5234C7.36102 12.9428 7.14513 12.3915 6.89571 11.8654C6.64838 11.3456 6.36542 10.8489 6.05312 10.3752ZM16.3487 18.013V9.02955C16.3487 8.62293 16.2669 8.23517 16.1202 7.88095C15.9672 7.51205 15.7429 7.18088 15.4641 6.90212C15.1854 6.62335 14.8542 6.39908 14.4853 6.24607C14.1311 6.09935 13.7433 6.01761 13.3367 6.01761H6.46603C6.0594 6.01761 5.67165 6.09935 5.31742 6.24607C4.94853 6.39908 4.61736 6.62335 4.33859 6.90212C4.05982 7.18088 3.83555 7.51205 3.68254 7.88095C3.53582 8.23517 3.45408 8.62293 3.45408 9.02955V17.9857C3.72866 18.2184 4.00114 18.5223 4.25685 18.9059C4.4916 19.2559 4.71168 19.673 4.91289 20.1572C5.65907 19.7799 6.4304 19.5012 7.22478 19.3167C8.04222 19.126 8.88481 19.0358 9.75255 19.04C10.6161 19.0442 11.5027 19.1469 12.4103 19.3398C13.2948 19.5284 14.2003 19.803 15.1246 20.1635C15.2189 19.7275 15.3719 19.3314 15.5668 18.9855C15.7827 18.5978 16.0531 18.2708 16.3487 18.013ZM2.8169 18.6816C2.77707 18.6669 2.74144 18.646 2.70791 18.6229C2.67437 18.5978 2.64293 18.5684 2.61568 18.537C2.54442 18.493 2.47525 18.4552 2.40608 18.4259C2.33482 18.3945 2.26355 18.3714 2.19439 18.3546C2.11264 18.3358 2.03299 18.3295 1.95754 18.3316C1.88208 18.3337 1.80872 18.3484 1.73956 18.3714C1.6641 18.3966 1.59284 18.4364 1.52367 18.4888C1.4545 18.5412 1.39162 18.6041 1.33084 18.6816C0.997573 19.1113 0.915829 19.6521 0.953557 20.2222C0.991285 20.8007 1.15477 21.4127 1.30149 21.9702L1.30778 21.9975C1.34551 22.1442 1.38324 22.2846 1.40839 22.3811L1.77309 23.8252C1.82549 24.0369 1.86741 24.2318 1.90095 24.3911L1.90304 24.3974C1.924 24.5043 1.93658 24.5798 1.94496 24.628C1.94496 24.6342 1.94496 24.6363 1.94287 24.6405C1.94706 24.6384 1.95544 24.6363 1.96592 24.6363C2.0288 24.6322 2.1357 24.6238 2.30128 24.6217L2.59891 24.6175H17.5077L17.5245 24.6196H17.6356C17.8158 24.6196 17.9311 24.6259 17.9982 24.6301C18.0087 24.6301 18.0171 24.6322 18.0254 24.6363V24.628C18.0338 24.5881 18.0443 24.5232 18.0674 24.433L18.0695 24.4288C18.1051 24.28 18.1512 24.0935 18.2141 23.886L18.6522 22.423C18.933 21.4861 19.0588 20.7231 19.0672 20.1153C19.0776 19.4341 18.9456 18.952 18.7255 18.6439C18.6501 18.5391 18.5641 18.4573 18.4698 18.3966C18.3713 18.3337 18.2665 18.2939 18.1554 18.2771C18.038 18.2582 17.9102 18.2624 17.7802 18.2897C17.6482 18.3169 17.5119 18.3651 17.3757 18.4364C17.0131 18.6229 16.6693 18.952 16.4115 19.3964C16.1789 19.7946 16.0175 20.2872 15.9756 20.8552L15.9735 20.8677C15.9714 20.8887 15.9672 20.9097 15.963 20.9306V20.9327C15.9567 20.9558 15.9504 20.9788 15.9399 21.0019C15.8896 21.1214 15.7953 21.2094 15.6842 21.2555C15.5731 21.3016 15.4453 21.3037 15.3258 21.2534C14.3428 20.8384 13.3849 20.5219 12.4543 20.306C11.5258 20.0922 10.6245 19.9811 9.75255 19.9748C8.889 19.9707 8.0506 20.0692 7.24155 20.2767C6.43249 20.4842 5.65069 20.8007 4.89822 21.2283L4.86049 21.2471C4.84792 21.2534 4.83325 21.2597 4.82067 21.2639L4.81648 21.266C4.69491 21.3058 4.56915 21.2953 4.46226 21.2429C4.35326 21.1905 4.26523 21.0962 4.22331 20.9746C4.03048 20.4213 3.81459 19.9623 3.58403 19.5871C3.33461 19.193 3.0768 18.8912 2.8169 18.6816ZM18.0359 24.6426L18.038 24.6447C18.038 24.6426 18.038 24.6426 18.0359 24.6426ZM12.3914 0.943198H7.54337C7.41551 0.943198 7.29185 0.96835 7.17867 1.01656C7.06129 1.06477 6.95649 1.13603 6.86846 1.22406L6.86427 1.22825C6.77833 1.31629 6.70707 1.42109 6.65886 1.53637C6.61275 1.64745 6.5855 1.77112 6.5855 1.90107V4.02222C6.5855 4.28422 6.6924 4.52316 6.86636 4.69713L6.87055 4.70132C7.04243 4.87319 7.28137 4.97799 7.54127 4.97799H12.3893C12.6513 4.97799 12.8903 4.8711 13.0642 4.69713L13.0684 4.69294C13.2403 4.51897 13.3451 4.28212 13.3451 4.02222V1.89897C13.3451 1.77112 13.3199 1.64745 13.2717 1.53427C13.2235 1.41689 13.1523 1.31209 13.0621 1.22406C12.9741 1.13603 12.8672 1.06477 12.7519 1.01656C12.6429 0.96835 12.5214 0.943198 12.3914 0.943198Z"
+                                                                    fill="#008857" />
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_229_716">
+                                                                    <rect width="20" height="25.7556" fill="white" />
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="add-text">
+                                                        <h6 class="pb-2">Child seat</h6>
+                                                        <strong class="d-block">$8/day</strong>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <input class="form-check-input" type="checkbox" id="extras-04"
+                                                            value="Child seat">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <!-- <div class="bg-danger text-white">dgsdgdg</div> -->
+
+                    <div class="price-card card mt-4">
+                        <div class="card-header d-flex align-items-center gap-3">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M5 14.2864C3.14864 15.1031 2 16.2412 2 17.5C2 19.9853 6.47715 22 12 22C17.5228 22 22 19.9853 22 17.5C22 16.2412 20.8514 15.1031 19 14.2864M18 8C18 12.0637 13.5 14 12 17C10.5 14 6 12.0637 6 8C6 4.68629 8.68629 2 12 2C15.3137 2 18 4.68629 18 8ZM13 8C13 8.55228 12.5523 9 12 9C11.4477 9 11 8.55228 11 8C11 7.44772 11.4477 7 12 7C12.5523 7 13 7.44772 13 8Z"
+                                        stroke="#037F4E" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h5>Pick-up and Drop-off</h5>
+                        </div>
+                        <div class="card-body px-4 py-0">
+                            <div class="location-card py-2 px-2">
+                                <ul class="list-unstyled d-flex flex-column py-1">
+                                    <li class="">
+                                        <div class="d-flex align-items-center gap-2 flex-wrap">
+                                            <span class="d-date">Jan 18, 2026</span>
+                                            <span class="d-time">10:00</span>
+                                        </div>
+                                        <h5 class="d-location-name">
+                                            Indira Gandhi International Airport
+                                        </h5>
+                                    </li>
+                                    <li class="explanatory">
+                                        <div class="d-flex align-items-center gap-2 flex-wrap">
+                                            <span class="d-date">Jan 21, 2026</span>
+                                            <span class="d-time">17:00</span>
+                                        </div>
+                                        <h5 class="d-location-name">
+                                            Indira Gandhi International Airport
+                                        </h5>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="pb-4 px-2">
+                                <div class="px-1">
+                                    <button class="change-details-btn px-3 w-100" type="button">Change
+                                        Details</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="price-card card mt-3">
+                        <div class="card-header d-flex align-items-center gap-3">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M6 16C6 18.2091 7.79086 20 10 20H14C16.2091 20 18 18.2091 18 16C18 13.7909 16.2091 12 14 12H10C7.79086 12 6 10.2091 6 8C6 5.79086 7.79086 4 10 4H14C16.2091 4 18 5.79086 18 8M12 2V22"
+                                        stroke="#018857" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h5>Pricing</h5>
+                        </div>
+                        <div class="card-body py-4 px-3">
+                            <div class="px-3">
+                                <div class="explanatory-card pb-3">
+                                    <h6 class="pb-2">Rental Charges</h6>
+                                    <ul class="list-unstyled d-flex justify-content-between gap-4 py-1">
+                                        <li class="d-flex align-items-center">
+                                            <div class="price-label">
+                                                <h6>7 Days (Comfort package)</h6>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <div class="price-text"><span>$1,932.34</span></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="explanatory-card pb-3">
+                                    <h6 class="pb-2">Extras</h6>
+                                    <ul class="list-unstyled d-flex justify-content-between gap-4 py-1">
+                                        <li class="d-flex align-items-center">
+                                            <div class="price-label">
+                                                <h6>Benefit one</h6>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <div class="price-text d-flex align-items-center gap-3 flex-wrap"><s
+                                                    class="text-decoration-line-through">$80 per day</s>
+                                                <div class="free-text">Free</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-unstyled d-flex justify-content-between gap-4 py-1">
+                                        <li>
+                                            <div class="price-label">
+                                                <h6>Benefit two</h6>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="price-text d-flex align-items-center gap-3 flex-wrap"><s
+                                                    class="text-decoration-line-through">$80 per day</s>
+                                                <div class="free-text">Free</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="explanatory-card">
+                                    <h6 class="pb-2">Taxes</h6>
+                                    <ul class="list-unstyled d-flex justify-content-between gap-4 py-1">
+                                        <li class="d-flex align-items-center">
+                                            <div class="price-label">
+                                                <h6>Service Tax</h6>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <div class="price-text"><span>$32.84</span></div>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-unstyled d-flex justify-content-between gap-4 py-1">
+                                        <li class="d-flex align-items-center">
+                                            <div class="price-label">
+                                                <h6>VAT</h6>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <div class="price-text"><span>$41.99</span></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div class="explanatory-card pb-3">
+                                    <ul class="list-unstyled d-flex justify-content-between gap-4 py-1">
+                                        <li class="d-flex align-items-center">
+                                            <div class="price-label">
+                                                <h5>VAT</h5>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <div class="price-text">
+                                                <h5>$41.99</h5>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="px-1 pt-3 mt-1">
+                                    <button
+                                        class="proceed-btn px-3 w-100 d-flex align-items-center justify-content-center gap-2 border-0"
+                                        type="button">Proceed to Payment <svg xmlns="http://www.w3.org/2000/svg"
+                                            width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                            <path
+                                                d="M3.33301 7.99998H12.6663M12.6663 7.99998L7.99967 3.33331M12.6663 7.99998L7.99967 12.6666"
+                                                stroke="white" stroke-width="1.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/slick-slider/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.car-slider').slick({
+                infinite: false,
+                speed: 300,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                variableWidth: true,
+                dots: false,
+            });
+        });
+    </script>
+
+    <script>
+        document.querySelectorAll('.result-card-main .collapse').forEach(collapse => {
+            collapse.addEventListener('show.bs.collapse', function () {
+                this.closest('.result-card-main').classList.add('is-open');
+            });
+
+            collapse.addEventListener('hide.bs.collapse', function () {
+                this.closest('.result-card-main').classList.remove('is-open');
+            });
+        });
+
+        /// NUMBER INPUT INCREMENT AND DECREMENT FUNCTIONS
+        function increment() {
+            document.getElementById('qty').stepUp();
+        }
+
+        function decrement() {
+            document.getElementById('qty').stepDown();
+        }
+
+    </script>
+</body>
+
+</html>

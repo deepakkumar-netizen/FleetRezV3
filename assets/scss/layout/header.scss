@@ -17,7 +17,12 @@
         font-weight: 500;
         line-height: 100%; /* 16px */
         letter-spacing: -0.16px;
-        padding: 0.5rem 1rem;
+
+        border-radius: 12px;
+        background: transparent;
+        // &.active {
+        //   background: rgba(255, 255, 255, 0.1);
+        // }
       }
     }
   }
@@ -71,32 +76,179 @@
       font-weight: 500;
       letter-spacing: -0.32px;
       text-transform: uppercase;
+      border-radius: 12px;
+      &.show {
+        background: rgba(255, 255, 255, 0.1);
+      }
     }
     .dropdown-menu {
-      min-width: 60px;
+      width: 254px;
+      border-radius: 22px;
+      border: 1px solid #ebebeb;
+      background: #fff;
+      box-shadow: 0 4px 7.8px -5px rgba(0, 0, 0, 0.15);
+      max-height: 334px;
+      overflow-y: auto;
+      h5 {
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 100%; /* 16px */
+        letter-spacing: -0.16px;
+      }
       li {
         a {
-          font-size: 14px;
-          font-weight: 400;
-          line-height: 100%;
-          letter-spacing: -0.14px;
           color: #000;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 100%; /* 14px */
+          letter-spacing: -0.14px;
+          border-radius: 12px;
+          border: 1px solid transparent;
+          span {
+            color: rgba(0, 0, 0, 0.6);
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 100%; /* 12px */
+            letter-spacing: -0.12px;
+          }
+          &:hover {
+            border-color: #f4f4f4;
+            background: #f4f4f4;
+          }
+          &.active {
+            border-color: rgba(2, 100, 65, 0.04);
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M13.3337 4L6.00033 11.3333L2.66699 8' stroke='%23026441' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+              no-repeat right 24px center #ecfff8;
+            color: #026441;
+            span {
+              color: rgba(2, 100, 65, 0.8);
+            }
+          }
         }
       }
     }
     .dropdown-toggle {
       &::after {
-        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M4 6L8 10L12 6' stroke='white' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+        // background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M4 6L8 10L12 6' stroke='white' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+        //   no-repeat center center;
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M12.3539 6.35379C12.4475 6.26004 12.5001 6.13296 12.5001 6.00046C12.5001 5.86796 12.4475 5.74088 12.3539 5.64713H3.6472C3.55357 5.74088 3.50098 5.86796 3.50098 6.00046C3.50098 6.13296 3.55357 6.26004 3.6472 6.35379L7.6472 10.3538C7.74095 10.4474 7.86804 10.5 8.00054 10.5C8.13304 10.5 8.26012 10.4474 8.35387 10.3538L12.3539 6.35379Z' fill='white'/%3E%3C/svg%3E")
           no-repeat center center;
         content: "";
         border: none;
         width: 16px;
         height: 16px;
         background-size: contain;
-        margin-bottom: -1px;
-        margin-left: 3px;
+        margin-bottom: 0;
+        margin-left: 0;
       }
     }
+  }
+  &.currency-dropdown {
+    &.dropdown {
+      .dropdown-menu {
+        li {
+          a {
+            color: rgba(0, 0, 0, 0.7);
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 100%; /* 14px */
+            letter-spacing: -0.14px;
+            img {
+              width: 16px;
+            }
+            &:hover {
+              border-color: #f4f4f4;
+              background: #f4f4f4;
+            }
+            &.active {
+              border-color: rgba(2, 100, 65, 0.04);
+              background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M13.3337 4L6.00033 11.3333L2.66699 8' stroke='%23026441' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+                no-repeat right 24px center #ecfff8;
+              color: #026441;
+              span {
+                color: rgba(2, 100, 65, 0.8);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/// BOOKING DROPDOWN
+/// =================================================
+.booking-dropdown {
+  &.dropdown {
+    .nav-link {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 100%; /* 16px */
+      letter-spacing: -0.16px;
+      border-radius: 12px;
+      &.show {
+        background: rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+}
+
+.booking-dropdown-menu {
+  border-radius: 22px;
+  border: 1px solid #ebebeb;
+  background: #fff;
+  box-shadow: 0 4px 7.8px -5px rgba(0, 0, 0, 0.15);
+  width: 477px;
+}
+.booking-dropdown-content {
+  .booking-dropdown-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+    h5 {
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 100%; /* 16px */
+      letter-spacing: -0.16px;
+    }
+  }
+  .form-label {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 100%; /* 12px */
+    letter-spacing: -0.12px;
+  }
+  .form-control {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 100%; /* 14px */
+    letter-spacing: -0.14px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    background: #f6f6f6;
+    line-height: 14px;
+  }
+}
+
+.view-booking-btn {
+  border-radius: 16px;
+  background: linear-gradient(180deg, #048451 0%, #00683f 100%);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px; /* 16px */
+  letter-spacing: -0.32px;
+}
+
+.navbar-toggler {
+  width: 24px;
+  height: 24px;
+  .navbar-toggler-icon {
+    width: 24px;
+    height: 24px;
   }
 }
 
@@ -110,4 +262,10 @@
       }
     }
   }
+}
+
+@media screen and (max-width: 575.99px) {
+.booking-dropdown-menu {
+  width: 250px;
+}
 }

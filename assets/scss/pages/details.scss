@@ -1,0 +1,508 @@
+.addon-card {
+  &.card {
+    border-radius: 8px;
+    border: 1px solid #eaeaea;
+    background: #fff;
+    box-shadow: 0 4px 12.7px -5px rgba(0, 0, 0, 0.07);
+    hr {
+      opacity: 1;
+      border-color: #dfdfdf;
+    }
+  }
+}
+
+.add-card {
+  &.card {
+    border-radius: 8px;
+    border: 2px solid #f2f2f2;
+    background: #fafafa;
+    &:has(input[type="checkbox"]:checked) {
+      border: 2px solid #008857;
+      background: #fafafa;
+    }
+  }
+}
+
+.add-heading {
+  h4 {
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.48px;
+    span {
+      color: rgba(0, 0, 0, 0.25);
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: -0.48px;
+    }
+  }
+  h5 {
+    color: #000;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: -0.34px;
+  }
+}
+
+.addon-icon {
+  border-radius: 32px;
+  border: 1px solid rgba(0, 136, 87, 0.17);
+  background: #f4fffb;
+  min-width: 45px;
+  height: 45px;
+}
+
+.addon-checkbox {
+  .form-check-input {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.27);
+    background: #fff;
+    &:checked[type="checkbox"] {
+      background:
+        url("data:image/svg+xml,%0A%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='10' height='10' rx='2' fill='%23008857'/%3E%3C/svg%3E%0A")
+          no-repeat center center,
+        #fff;
+    }
+  }
+}
+
+.add-text {
+  width: 256px;
+  max-width: 100%;
+  h6 {
+    color: #000;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: -0.34px;
+  }
+  p {
+    color: #4d4d4d;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: -0.26px;
+  }
+  strong {
+    color: #000;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: -0.34px;
+  }
+}
+
+.driver-details-card {
+  &.card {
+    border-radius: 8px;
+    border: 1px solid #b5b5b5;
+    background: #fff;
+    box-shadow: 0 4px 12.7px -5px rgba(0, 0, 0, 0.07);
+  }
+}
+
+//
+
+.number-input {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: 69px;
+  position: relative;
+  input {
+    width: 69px;
+    text-align: center;
+    color: #000;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: -0.34px;
+    border-radius: 4px;
+    border: 1px solid #ededed;
+    background: #fff;
+  }
+  input[type="number"] {
+    @include hide-number-arrows;
+  }
+  button {
+    width: 12px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    color: #008857;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: -0.34px;
+    background: transparent;
+    border: none;
+    padding: 0;
+    &.decrement-btn {
+      left: 10px;
+    }
+    &.increment-btn {
+      right: 10px;
+    }
+  }
+}
+
+.custom-input {
+  .form-label {
+    color: #343434;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: -0.26px;
+  }
+  .form-control,
+  .form-select {
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    background: #fafafa;
+    color: #797979;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: -0.3px;
+    padding: 12px 20px;
+  }
+  .form-select {
+    background:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6 9L12 15L18 9' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+        no-repeat right 16px center,
+      #fafafa;
+  }
+}
+
+/// RIGHT SIDE PRICE CARD
+
+.price-card {
+  &.card {
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid #e3e3e3;
+    background: #fff;
+    box-shadow: 0 4px 12.7px -5px rgba(0, 0, 0, 0.07);
+  }
+  .card-header {
+    border-color: #e8e8e8;
+    background: #fff;
+    padding: 14px 16px;
+    .icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 7px;
+      background: linear-gradient(
+        180deg,
+        rgba(4, 132, 81, 0.05) 0%,
+        rgba(0, 104, 63, 0.05) 100%
+      );
+    }
+    h5 {
+      color: #323232;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.36px;
+    }
+  }
+}
+
+.d-date {
+  color: #5c5c5c;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.28px;
+}
+.d-time {
+  color: #626262;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.28px;
+}
+.d-location-name {
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.32px;
+}
+.change-details-btn {
+  border-radius: 14px;
+  border: 1px solid rgba(3, 127, 78, 0.11);
+  background: rgba(4, 132, 81, 0.05);
+  color: #037f4e;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.32px;
+  height: 45px;
+}
+
+.explanatory-card {
+  h6 {
+    color: #767676;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.28px;
+  }
+}
+
+.location-card {
+  ul {
+    li {
+      position: relative;
+      padding: 12px 0 12px 28px;
+      &::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #9f9f9f;
+        position: absolute;
+        left: 0;
+        top: 40px;
+      }
+      &:after {
+        content: "";
+        width: 2px;
+        height: calc(100% - 8px);
+        background: #d4d4d4;
+        position: absolute;
+        left: 3px;
+        top: 48px;
+      }
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.price-label {
+  h6 {
+    color: #0f0f0f;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.32px;
+  }
+  h5 {
+    color: #0f0f0f;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.36px;
+  }
+}
+
+.price-text {
+  span {
+    color: #272727;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.32px;
+  }
+  s {
+    color: #a3a3a3;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.32px;
+  }
+  h5 {
+    color: #272727;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.36px;
+  }
+}
+
+.free-text {
+  color: #007e51;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.32px;
+}
+
+.proceed-btn {
+  border-radius: 14px;
+  background: linear-gradient(180deg, #048451 0%, #00683f 100%);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.32px;
+  height: 45px;
+}
+
+/// RESULT CARD DETAILS PAGE
+///
+.result-card {
+  &.result-details-page {
+    box-shadow: 0 4px 12.7px -5px rgba(0, 0, 0, 0.07);
+    .result-details {
+      padding: 30px;
+    }
+  }
+}
+
+.custom-success-outline {
+  border-radius: 14px;
+  border: 1px solid rgba(3, 127, 78, 0.15);
+  color: #037f4e;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.28px;
+  height: 41px;
+  width: 234px;
+  max-width: 100%;
+  &:hover {
+    border-color: #008857;
+    background: #008857;
+    svg {
+      path {
+        stroke: #fff;
+      }
+    }
+  }
+}
+
+.diamond-value-btn {
+  border-radius: 8px;
+  background: linear-gradient(180deg, #008455 0%, #005637 100%);
+  border: none;
+  padding: 5px 12px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: -0.24px;
+}
+
+// PROGRESS BAR - DETAILS PAGE
+.progress-bar-section {
+  margin: 0 -70px;
+  .step {
+    position: relative;
+    flex: 1;
+    text-align: center;
+    .step-icon {
+      position: relative;
+      z-index: 1;
+      width: 48px;
+      height: 48px;
+      background: #fff;
+      border-radius: 50%;
+      border: 2px solid #ffffff;
+      svg {
+        path {
+          stroke: #018857;
+        }
+      }
+    }
+    .step-text {
+      color: #434343;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: -0.12px;
+    }
+    /* line */
+    &::after {
+      content: "";
+      position: absolute;
+      top: 21px; // center of 48px icon
+      left: 50%;
+      width: 100%;
+      height: 6px;
+      background: #fff; // default (black)
+      z-index: 0;
+    }
+
+    /* last item has no line */
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+
+    /* completed steps = green line */
+    &.completed {
+      &::after {
+        background: #018857;
+      }
+      .step-icon {
+        background: #fff;
+        border-color: rgba(1, 136, 87, 0.5);
+        svg {
+          path {
+            stroke: #018857;
+          }
+        }
+      }
+    }
+
+    /* current step → left side green only */
+    &.current {
+      &::after {
+        background: #fff;
+      }
+      .step-icon {
+        background: #018857;
+        border-color: #018857;
+        svg {
+          path {
+            stroke: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* icons must be above the line */
+
+.additional-services-section {
+  border-radius: 16px;
+  border: 1px solid rgba(4, 129, 79, 0.3);
+  background: #fff;
+  box-shadow: 0 4px 12.7px -5px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+  .nav-tabs {
+    .nav-link {
+      color: #037f4e;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: -0.28px;
+      padding: 16px;
+      border-radius: 0 0 28px 0;
+      border: none;
+      background: #ffffff;
+      color: #037f4e;
+      .icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        border: 1px solid #ffffff;
+        background: #ffffff;
+        svg {
+            path {
+              stroke: #037f4e;
+            }
+          }
+      }
+      &.active {
+        background: linear-gradient(180deg, #048451 0%, #00683f 100%);
+        color: #ffffff;
+        .icon {
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          background:
+            linear-gradient(
+              0deg,
+              rgba(242, 248, 246, 0.1) 0%,
+              rgba(242, 248, 246, 0.1) 100%
+            ),
+            linear-gradient(
+              180deg,
+              rgba(4, 132, 81, 0.05) 0%,
+              rgba(0, 104, 63, 0.05) 100%
+            );
+          svg {
+            path {
+              stroke: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

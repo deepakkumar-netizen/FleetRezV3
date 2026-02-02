@@ -1,25 +1,152 @@
 // AUTO COMPLEAT SCSS
-.autocomplete-list {
-  position: absolute;
-  left: 0;
-  right: 0;
-  border-radius: 0.375rem;
-  background: #ffffff;
-  border: 1px solid #dee2e6;
-  z-index: 999;
-  max-height: 320px;
-  overflow: auto;
-  .autocomplete-item {
-    padding: 12px 15px;
-    color: #212427;
-    font-size: 16px;
-    border-bottom: 1px solid #dee2e6;
-    cursor: pointer;
-    &:hover {
-      background: linear-gradient(180deg, #008857 27.38%, #007148 100%);
-      color: #ffffff;
+.location-picker {
+  position: relative;
+
+  .location-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    // width: 100%; // better than fixed 486px
+    width: 486px;
+    border-radius: 22px;
+    border: 1px solid #ebebeb;
+    background: #fff;
+    box-shadow: 0 4px 7.8px -5px rgba(0, 0, 0, 0.15);
+    margin-top: 18px;
+    max-height: 338px;
+    overflow-y: auto;
+    display: none;
+    z-index: 1000;
+
+    .location-item {
+      display: flex;
+      gap: 12px;
+      padding: 12px 14px;
+      cursor: pointer;
+      align-items: center;
+      transition: background 0.15s ease;
+
+      &:hover {
+        background: #f4f4f4;
+      }
+
+      .location-icon {
+        min-width: 107px;
+        span {
+          text-align: center;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 100%; /* 14px */
+          letter-spacing: -0.14px;
+        }
+
+        &.airport {
+          border-radius: 12px;
+          border: 1px solid rgba(0, 109, 226, 0.1);
+          background: #eff7ff;
+          color: #0065d1;
+        }
+
+        &.city {
+          border-radius: 12px;
+          border: 1px solid rgba(0, 136, 87, 0.1);
+          background: #edfff9;
+          color: #008857;
+        }
+      }
+
+      .location-text {
+        strong {
+          color: #626262;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 100%; /* 16px */
+          letter-spacing: -0.16px;
+          .highlight {
+            color: #0f0f0f;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 100%; /* 16px */
+            letter-spacing: -0.16px;
+          }
+        }
+
+        span {
+          color: #747474;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 100%; /* 14px */
+          letter-spacing: -0.14px;
+        }
+      }
     }
   }
 }
 
+// CUSTOM TIME DROPDOWN
 
+.time-picker {
+  position: relative;
+}
+
+.time-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 112px;
+  max-height: 334px;
+  overflow-y: auto;
+  border-radius: 22px;
+  border: 1px solid #ebebeb;
+  background: #fff;
+  box-shadow: 0 4px 7.8px -5px rgba(0, 0, 0, 0.15);
+  list-style: none;
+  display: none;
+  z-index: 1000;
+  li {
+    padding: 12px 24px;
+    cursor: pointer;
+    color: #0f0f0f;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 100%; /* 18px */
+    letter-spacing: -0.18px;
+    &:hover {
+      background: #f4f4f4;
+    }
+    &.active {
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M13.3332 4L5.99984 11.3333L2.6665 8' stroke='%23026441' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+        no-repeat right 16px center #ecfff8;
+      color: #026441;
+      font-weight: 500;
+    }
+  }
+}
+
+@media screen and (max-width: 1199.99px) {
+  .location-picker {
+    .location-dropdown {
+      margin-top: 8px;
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 575.99px) {
+  .location-picker {
+    .location-dropdown {
+      .location-item {
+        .location-icon {
+          height: 34px;
+          min-width: 34px;
+          &.airport {
+            border-radius: 34px;
+          }
+          &.city {
+            border-radius: 34px;
+          }
+        }
+      }
+    }
+  }
+}

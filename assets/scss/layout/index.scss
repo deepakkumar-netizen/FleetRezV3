@@ -4,9 +4,28 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1200px,
+  xl: 1224px,
   xxl: 1320px,
 );
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * .375, // custom spacer (6px
+  10: $spacer * .625, // custom spacer (10px
+  12: $spacer * .75, // custom spacer (12px
+  18: $spacer * 1.125, // custom spacer (18px
+  19: $spacer * 1.1875, // custom spacer (19px
+  20: $spacer * 1.25, // custom spacer (20px
+  32: $spacer * 2, // custom spacer (32px
+);
+
+
 
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "main.scss";
