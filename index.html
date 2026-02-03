@@ -25,17 +25,251 @@
 <body>
     <section class="main-section">
         <div class="header">
+        <nav class="navbar navbar-expand-lg py-2">
+            <div class="container">
+                <a class="navbar-brand col-lg-3 me-6" href="#">FleetRez</a>
+                <div class="d-flex gap-2 align-items-center d-lg-none">
+                    <div class="booking-dropdown dropdown">
+                        <a class="nav-link px-3 py-12" type="button" id="dropdownMenubookingMob"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Manage my booking
+                        </a>
+                        <div class="booking-dropdown-menu dropdown-menu dropdown-menu-end p-0"
+                            aria-labelledby="dropdownMenubookingMob">
+                            <div class="booking-dropdown-content">
+                                <div class="booking-dropdown-header p-4 pb-20">
+                                    <h5>Enter your booking details</h5>
+                                </div>
+                                <div class="p-4 pb-20">
+                                    <form>
+                                        <div class="mb-20">
+                                            <label for="bookingNumberMob" class="form-label d-block mb-12">Booking
+                                                number</label>
+                                            <input type="text" class="form-control p-3" id="bookingNumberMob"
+                                                placeholder="XXX-123456">
+                                        </div>
+                                        <div class="mb-20">
+                                            <label for="lastNameMob" class="form-label d-block mb-12">Last
+                                                Name</label>
+                                            <input type="text" class="form-control p-3" id="lastNameMob"
+                                                placeholder="Smith">
+                                        </div>
+                                        <button type="submit"
+                                            class="btn btn-primary view-booking-btn d-flex align-items-center justify-content-center w-100 p-3 border-0 gap-2">View
+                                            my booking <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M3.33301 7.99992H12.6663M12.6663 7.99992L7.99967 3.33325M12.6663 7.99992L7.99967 12.6666"
+                                                    stroke="white" stroke-width="1.33333" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse my-2" id="navbarText">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
+                        <li class="nav-item">
+                            <a class="nav-link px-lg-3 px-12 py-12 active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-lg-3 px-12 py-12" href="#">Support</a>
+                        </li>
+                        <li class="nav-item d-none d-lg-block">
+                            <div class="booking-dropdown dropdown">
+                                <a class="nav-link px-3 py-12" type="button" id="dropdownMenubooking"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Manage my booking
+                                </a>
+                                <div class="booking-dropdown-menu dropdown-menu dropdown-menu-end p-0"
+                                    aria-labelledby="dropdownMenubooking">
+                                    <div class="booking-dropdown-content">
+                                        <div class="booking-dropdown-header p-4 pb-20">
+                                            <h5>Enter your booking details</h5>
+                                        </div>
+                                        <div class="p-4 pb-20">
+                                            <form>
+                                                <div class="mb-20">
+                                                    <label for="bookingNumber" class="form-label d-block mb-12">Booking
+                                                        number</label>
+                                                    <input type="text" class="form-control p-3" id="bookingNumber"
+                                                        placeholder="XXX-123456">
+                                                </div>
+                                                <div class="mb-20">
+                                                    <label for="lastName" class="form-label d-block mb-12">Last
+                                                        Name</label>
+                                                    <input type="text" class="form-control p-3" id="lastName"
+                                                        placeholder="Smith">
+                                                </div>
+                                                <button type="submit"
+                                                    class="btn btn-primary view-booking-btn d-flex align-items-center justify-content-center w-100 p-3 border-0 gap-2">View
+                                                    my booking <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                        height="16" viewBox="0 0 16 16" fill="none">
+                                                        <path
+                                                            d="M3.33301 7.99992H12.6663M12.6663 7.99992L7.99967 3.33325M12.6663 7.99992L7.99967 12.6666"
+                                                            stroke="white" stroke-width="1.33333" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="d-block d-lg-none align-items-center justify-content-start gap-3">
+                        <div class="language-dropdown dropdown d-md-block">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center gap-2 p-12 w-100" href="#"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                EUR
+                            </a>
+                            <ul class="dropdown-menu p-2">
+                                <h5 class="py-3 px-12">Popular Currencies</h5>
+                                <li>
+                                    <a class="dropdown-item active d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                        EUR <span>Euro</span> </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                        USD <span>US Dollar</span> </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                        GBP <span>GB Pound</span> </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                        RUB <span>Russian Ruble</span> </a>
+                                </li>
+                                <h5 class="pt-20 pb-3 px-12">All Currencies</h5>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                        AED <span>UAE Dirhams</span> </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="language-dropdown currency-dropdown dropdown d-md-block">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center gap-2 p-12 w-100" href="#"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                EN
+                            </a>
+                            <ul class="dropdown-menu p-2">
+                                <h5 class="py-3 px-12">All languages</h5>
+                                <li>
+                                    <a class="dropdown-item active d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                        <img src="assets/icons/english.png" alt=""> English (US) </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                        <img src="assets/icons/english.png" alt=""> Español </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                        <img src="assets/icons/english.png" alt=""> Português </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center gap-12 px-4 py-3" href="#">
+                                        <img src="assets/icons/english.png" alt=""> Français </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center gap-12 px-4 py-3" href="#">
+                                        <img src="assets/icons/english.png" alt=""> Polski </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center gap-12 px-4 py-3" href="#">
+                                        <img src="assets/icons/english.png" alt=""> Deutsch </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-lg-flex align-items-center justify-content-end gap-2">
+                    <div class="language-dropdown dropdown d-md-block d-none">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center gap-2 p-12" href="#"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            EUR
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end p-2">
+                            <h5 class="py-3 px-12">Popular Currencies</h5>
+                            <li>
+                                <a class="dropdown-item active d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                    EUR <span>Euro</span> </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                    USD <span>US Dollar</span> </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                    GBP <span>GB Pound</span> </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                    RUB <span>Russian Ruble</span> </a>
+                            </li>
+                            <h5 class="pt-20 pb-3 px-12">All Currencies</h5>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                    AED <span>UAE Dirhams</span> </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="language-dropdown currency-dropdown dropdown d-md-block d-none">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center gap-2 p-12" href="#"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            EN
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end p-2">
+                            <h5 class="py-3 px-12">All languages</h5>
+                            <li>
+                                <a class="dropdown-item active d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                    <img src="assets/icons/english.png" alt=""> English (US) </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                    <img src="assets/icons/english.png" alt=""> Español </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                    <img src="assets/icons/english.png" alt=""> Português </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-12 px-4 py-3" href="#">
+                                    <img src="assets/icons/english.png" alt=""> Français </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-12 px-4 py-3" href="#">
+                                    <img src="assets/icons/english.png" alt=""> Polski </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-12 px-4 py-3" href="#">
+                                    <img src="assets/icons/english.png" alt=""> Deutsch </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+        <!-- <div class="header">
             <nav class="navbar navbar-expand-lg py-2">
                 <div class="container py-1">
                     <a class="navbar-brand" href="#">FleetRez</a>
                     <div class="d-flex gap-2 align-items-center d-lg-none">
                         <div class="booking-dropdown dropdown">
-                            <a class="nav-link px-3 py-12" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                            <a class="nav-link px-3 py-12" type="button" id="dropdownMenubookingMob" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Manage my booking
                             </a>
                             <div class="booking-dropdown-menu dropdown-menu dropdown-menu-end p-0"
-                                aria-labelledby="dropdownMenu2">
+                                aria-labelledby="dropdownMenubookingMob">
                                 <div class="booking-dropdown-content">
                                     <div class="booking-dropdown-header p-4 pb-20">
                                         <h5>Enter your booking details</h5>
@@ -43,15 +277,15 @@
                                     <div class="p-4 pb-20">
                                         <form>
                                             <div class="mb-20">
-                                                <label for="bookingNumber" class="form-label d-block mb-12">Booking
+                                                <label for="bookingNumberMob" class="form-label d-block mb-12">Booking
                                                     number</label>
-                                                <input type="text" class="form-control p-3" id="bookingNumber"
+                                                <input type="text" class="form-control p-3" id="bookingNumberMob"
                                                     placeholder="XXX-123456">
                                             </div>
                                             <div class="mb-20">
-                                                <label for="lastName" class="form-label d-block mb-12">Last
+                                                <label for="lastNameMob" class="form-label d-block mb-12">Last
                                                     Name</label>
-                                                <input type="text" class="form-control p-3" id="lastName"
+                                                <input type="text" class="form-control p-3" id="lastNameMob"
                                                     placeholder="Smith">
                                             </div>
                                             <button type="submit"
@@ -84,12 +318,12 @@
                             </li>
                             <li class="nav-item d-none d-lg-block">
                                 <div class="booking-dropdown dropdown">
-                                    <a class="nav-link px-3 py-12" type="button" id="dropdownMenu2"
+                                    <a class="nav-link px-3 py-12" type="button" id="dropdownMenubooking"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         Manage my booking
                                     </a>
                                     <div class="booking-dropdown-menu dropdown-menu dropdown-menu-end p-0"
-                                        aria-labelledby="dropdownMenu2">
+                                        aria-labelledby="dropdownMenubooking">
                                         <div class="booking-dropdown-content">
                                             <div class="booking-dropdown-header p-4 pb-20">
                                                 <h5>Enter your booking details</h5>
@@ -128,7 +362,7 @@
                         <div class="d-block d-lg-none align-items-center justify-content-start gap-3">
                             <div class="language-dropdown dropdown d-md-block">
                                 <a class="nav-link dropdown-toggle d-flex align-items-center gap-2 p-12 w-100" href="#"
-                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     EUR
                                 </a>
                                 <ul class="dropdown-menu p-2">
@@ -159,7 +393,7 @@
                             </div>
                             <div class="language-dropdown currency-dropdown dropdown d-md-block">
                                 <a class="nav-link dropdown-toggle d-flex align-items-center gap-2 p-12 w-100" href="#"
-                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    data-bs-toggle="dropdown" aria-expanded="false">
                                     EN
                                 </a>
                                 <ul class="dropdown-menu p-2">
@@ -193,11 +427,10 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="d-none d-lg-flex align-items-center justify-content-end gap-2">
                         <div class="language-dropdown dropdown d-md-block d-none">
                             <a class="nav-link dropdown-toggle d-flex align-items-center gap-2 p-12" href="#"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 EUR
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end p-2">
@@ -226,8 +459,7 @@
                             </ul>
                         </div>
                         <div class="language-dropdown currency-dropdown dropdown d-md-block d-none">
-                            <a class="nav-link dropdown-toggle d-flex align-items-center gap-2 p-12" href="#"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center gap-2 p-12" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                                 EN
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end p-2">
@@ -259,10 +491,9 @@
                             </ul>
                         </div>
                     </div>
-
                 </div>
             </nav>
-        </div>
+        </div> -->
         <div class="center-section">
             <div class="container">
                 <div class="row">
@@ -273,8 +504,8 @@
                             </p>
                         </div>
                         <div class="search-bar py-xl-3 px-xl-0 p-2 my-1">
-                            <ul class="nav nav-tabs border-bottom-0 justify-content-center" id="myTab" role="tablist">
-                                <li class="nav-item d-flex align-items-end" role="presentation">
+                            <ul class="nav nav-tabs border-bottom-0 justify-content-center" id="myTab" >
+                                <li class="nav-item d-flex align-items-end" >
                                     <button
                                         class="nav-link d-flex flex-column flex-xl-row align-items-center justify-content-center gap-2 active"
                                         id="car-rentals-tab" data-bs-toggle="tab" data-bs-target="#car-rentals-tab-pane"
@@ -291,7 +522,7 @@
                                         </span>
                                         Car rentals</button>
                                 </li>
-                                <li class="nav-item d-flex align-items-end" role="presentation">
+                                <li class="nav-item d-flex align-items-end">
                                     <button
                                         class="nav-link d-flex flex-column flex-xl-row align-items-center justify-content-center gap-2"
                                         id="airport-transfers-tab" data-bs-toggle="tab"
@@ -311,8 +542,7 @@
                                 </li>
                             </ul>
                             <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="car-rentals-tab-pane" role="tabpanel"
-                                    aria-labelledby="car-rentals-tab" tabindex="0">
+                                <div class="tab-pane fade show active" id="car-rentals-tab-pane">
                                     <div class="main-search-card p-3 pt-12 ">
                                         <div class="row">
                                             <div class="col-12">
@@ -377,8 +607,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-
-                                                <div class="search-form d-xl-flex d-block py-xl-12 px-xl-16">
+                                                <div class="search-form d-xl-flex d-block py-xl-12 px-xl-3">
                                                     <div class="row gx-5 gy-xl-0 gy-12">
                                                         <div class="col-xl-4">
                                                             <div class="location-picker">
@@ -414,8 +643,7 @@
                                                                                      value="10:00">
                                                                                 <label for="pickUpTime">Time</label>
                                                                             </div>
-                                                                            <ul class="time-dropdown mt-6 py-3"
-                                                                                id="timeDropdown">
+                                                                            <ul class="time-dropdown mt-6 py-3">
                                                                                 <!-- times injected by JS -->
                                                                             </ul>
                                                                         </div>
@@ -449,8 +677,7 @@
                                                                                 value="10:00">
                                                                             <label for="dropOffTime">Time</label>
                                                                         </div>
-                                                                        <ul class="time-dropdown mt-6 py-3"
-                                                                            id="timeDropdown">
+                                                                        <ul class="time-dropdown mt-6 py-3">
                                                                             <!-- times injected by JS -->
                                                                         </ul>
                                                                     </div>
@@ -520,8 +747,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="airport-transfers-tab-pane" role="tabpanel"
-                                    aria-labelledby="airport-transfers-tab" tabindex="0">
+                                <div class="tab-pane fade" id="airport-transfers-tab-pane">
                                     ....
                                 </div>
                             </div>
@@ -1040,17 +1266,13 @@
             </div>
         </div>
     </section>
-
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Moment & DateRangePicker -->
     <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> -->
-
     <script src="node_modules/slick-slider/slick/slick.min.js"></script>
-
     <script>
         // // ✅ Bootstrap Date Range Picker
         $(function () {
@@ -1140,7 +1362,6 @@
 
         // SLIDER
         $(document).ready(function () {
-
             $('.customer-slider').slick({
                 centerMode: true,
                 variableWidth: true,

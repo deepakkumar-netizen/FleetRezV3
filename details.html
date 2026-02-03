@@ -16,6 +16,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="node_modules/slick-slider/slick/slick.css">
     <link rel="stylesheet" href="node_modules/slick-slider/slick/slick-theme.css">
+    <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
     <link rel="stylesheet" href="assets/scss/pages/index.css">
     <title>FleetRez | Result Page</title>
 </head>
@@ -184,21 +185,50 @@
                     <div class="result-card result-details-page mb-3">
                         <div class="d-md-flex">
                             <div class="card result-left position-relative">
+
                                 <div class="card-body d-flex align-items-center p-0">
-                                    <div
-                                        class="result-car-image d-flex align-items-end justify-content-center w-100 h-100">
-                                        <img src="assets/images/car-items.png" class="img-fluid" alt="">
+                                    <div class="result-car-image">
+                                        <div class="px-20 pt-3">
+                                            <div
+                                                class="rating-card rating-sm-card d-flex align-items-center gap-6 px-12 py-2">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="rating-reviews">
+                                                        9.2
+                                                    </div>
+                                                    <div class="rating-star d-flex align-items-center">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            viewBox="0 0 16 16" fill="none">
+                                                            <path
+                                                                d="M8.00022 11.5161L5.23355 13.1828C5.11133 13.2606 4.98355 13.2939 4.85022 13.2828C4.71689 13.2717 4.60022 13.2273 4.50022 13.1495C4.40022 13.0717 4.32244 12.9746 4.26689 12.8581C4.21133 12.7417 4.20022 12.611 4.23355 12.4661L4.96689 9.31615L2.51689 7.19948C2.40577 7.09948 2.33644 6.98548 2.30889 6.85748C2.28133 6.72948 2.28955 6.60459 2.33355 6.48281C2.37755 6.36103 2.44422 6.26103 2.53355 6.18281C2.62289 6.10459 2.74511 6.05459 2.90022 6.03281L6.13355 5.74948L7.38355 2.78281C7.43911 2.64948 7.52533 2.54948 7.64222 2.48281C7.75911 2.41615 7.87844 2.38281 8.00022 2.38281C8.122 2.38281 8.24133 2.41615 8.35822 2.48281C8.47511 2.54948 8.56133 2.64948 8.61689 2.78281L9.86689 5.74948L13.1002 6.03281C13.2558 6.05503 13.378 6.10503 13.4669 6.18281C13.5558 6.26059 13.6224 6.36059 13.6669 6.48281C13.7113 6.60503 13.7198 6.73015 13.6922 6.85815C13.6647 6.98615 13.5951 7.09992 13.4836 7.19948L11.0336 9.31615L11.7669 12.4661C11.8002 12.6106 11.7891 12.7413 11.7336 12.8581C11.678 12.975 11.6002 13.0721 11.5002 13.1495C11.4002 13.2268 11.2836 13.2713 11.1502 13.2828C11.0169 13.2944 10.8891 13.261 10.7669 13.1828L8.00022 11.5161Z"
+                                                                fill="#5B3900" />
+                                                        </svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            viewBox="0 0 16 16" fill="none">
+                                                            <path
+                                                                d="M8.00022 11.5161L5.23355 13.1828C5.11133 13.2606 4.98355 13.2939 4.85022 13.2828C4.71689 13.2717 4.60022 13.2273 4.50022 13.1495C4.40022 13.0717 4.32244 12.9746 4.26689 12.8581C4.21133 12.7417 4.20022 12.611 4.23355 12.4661L4.96689 9.31615L2.51689 7.19948C2.40577 7.09948 2.33644 6.98548 2.30889 6.85748C2.28133 6.72948 2.28955 6.60459 2.33355 6.48281C2.37755 6.36103 2.44422 6.26103 2.53355 6.18281C2.62289 6.10459 2.74511 6.05459 2.90022 6.03281L6.13355 5.74948L7.38355 2.78281C7.43911 2.64948 7.52533 2.54948 7.64222 2.48281C7.75911 2.41615 7.87844 2.38281 8.00022 2.38281C8.122 2.38281 8.24133 2.41615 8.35822 2.48281C8.47511 2.54948 8.56133 2.64948 8.61689 2.78281L9.86689 5.74948L13.1002 6.03281C13.2558 6.05503 13.378 6.10503 13.4669 6.18281C13.5558 6.26059 13.6224 6.36059 13.6669 6.48281C13.7113 6.60503 13.7198 6.73015 13.6922 6.85815C13.6647 6.98615 13.5951 7.09992 13.4836 7.19948L11.0336 9.31615L11.7669 12.4661C11.8002 12.6106 11.7891 12.7413 11.7336 12.8581C11.678 12.975 11.6002 13.0721 11.5002 13.1495C11.4002 13.2268 11.2836 13.2713 11.1502 13.2828C11.0169 13.2944 10.8891 13.261 10.7669 13.1828L8.00022 11.5161Z"
+                                                                fill="#5B3900" />
+                                                        </svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            viewBox="0 0 16 16" fill="none">
+                                                            <path
+                                                                d="M8.00022 11.5161L5.23355 13.1828C5.11133 13.2606 4.98355 13.2939 4.85022 13.2828C4.71689 13.2717 4.60022 13.2273 4.50022 13.1495C4.40022 13.0717 4.32244 12.9746 4.26689 12.8581C4.21133 12.7417 4.20022 12.611 4.23355 12.4661L4.96689 9.31615L2.51689 7.19948C2.40577 7.09948 2.33644 6.98548 2.30889 6.85748C2.28133 6.72948 2.28955 6.60459 2.33355 6.48281C2.37755 6.36103 2.44422 6.26103 2.53355 6.18281C2.62289 6.10459 2.74511 6.05459 2.90022 6.03281L6.13355 5.74948L7.38355 2.78281C7.43911 2.64948 7.52533 2.54948 7.64222 2.48281C7.75911 2.41615 7.87844 2.38281 8.00022 2.38281C8.122 2.38281 8.24133 2.41615 8.35822 2.48281C8.47511 2.54948 8.56133 2.64948 8.61689 2.78281L9.86689 5.74948L13.1002 6.03281C13.2558 6.05503 13.378 6.10503 13.4669 6.18281C13.5558 6.26059 13.6224 6.36059 13.6669 6.48281C13.7113 6.60503 13.7198 6.73015 13.6922 6.85815C13.6647 6.98615 13.5951 7.09992 13.4836 7.19948L11.0336 9.31615L11.7669 12.4661C11.8002 12.6106 11.7891 12.7413 11.7336 12.8581C11.678 12.975 11.6002 13.0721 11.5002 13.1495C11.4002 13.2268 11.2836 13.2713 11.1502 13.2828C11.0169 13.2944 10.8891 13.261 10.7669 13.1828L8.00022 11.5161Z"
+                                                                fill="#5B3900" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="rating-text d-flex align-items-center justify-content-between w-100">
+                                                    <h4>Excellent</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-end justify-content-center w-100 h-100">
+
+                                            <img src="assets/images/car-items.png" class="img-fluid" alt="">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="rating-card d-flex align-items-center gap-3">
-                                    <div class="rating-circle" style="--rating:9.2;">
-                                        <span>9.2</span>
-                                    </div>
-                                    <div class="rating-text">
-                                        <h4>Excellent</h4>
-                                        <p class="mt-1">400+ reviews</p>
-                                    </div>
-                                </div>
+
                             </div>
                             <div class="result-right">
                                 <div class="result-details">
@@ -315,8 +345,8 @@
                         </div>
                         <div class="p-4">
                             <div class="additional-services-section">
-                                <ul class="nav nav-tabs border-bottom-0" id="myTab" role="tablist">
-                                    <li class="nav-item d-flex align-items-end" role="presentation">
+                                <ul class="nav nav-tabs border-bottom-0" id="myTab">
+                                    <li class="nav-item d-flex align-items-end">
                                         <button
                                             class="nav-link d-flex align-items-center justify-content-center gap-2 active"
                                             id="car-rentals-tab" data-bs-toggle="tab"
@@ -334,7 +364,7 @@
                                             Comfort Package
                                         </button>
                                     </li>
-                                    <li class="nav-item d-flex align-items-end" role="presentation">
+                                    <li class="nav-item d-flex align-items-end">
                                         <button class="nav-link d-flex align-items-center justify-content-center gap-2"
                                             id="airport-transfers-tab" data-bs-toggle="tab"
                                             data-bs-target="#airport-transfers-tab-pane" type="button" role="tab"
@@ -507,11 +537,11 @@
                                 <h4 class="pb-4 mb-1">Driver Details <span>(Required)</span></h4>
                             </div>
 
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="custom-input mb-3 pb-4 pt-1">
-                                        <label for="title" class="form-label mb-2">Title</label>
-                                        <select class="form-select" id="title">
+                            <div class="row gx-20">
+                                <div class="col-md-2">
+                                    <div class="custom-input py-3">
+                                        <label for="titleSelect" class="form-label mb-2">Title</label>
+                                        <select class="form-select" id="titleSelect">
                                             <option selected hidden></option>
                                             <option value="Mr">Mr</option>
                                             <option value="Mrs">Mrs</option>
@@ -519,26 +549,23 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-md-9">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="custom-input mb-3 pb-4 pt-1">
-                                                <label for="firstName" class="form-label mb-2">First Name</label>
-                                                <input type="text" class="form-control" id="firstName">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="custom-input mb-3 pb-4 pt-1">
-                                                <label for="lastName" class="form-label mb-2">Last Name</label>
-                                                <input type="text" class="form-control" id="lastName">
-                                            </div>
-                                        </div>
+                                <div class="col-md-5">
+                                    <div class="custom-input py-3">
+                                        <label for="firstName" class="form-label mb-2">First Name</label>
+                                        <input type="text" class="form-control" id="firstName">
                                     </div>
                                 </div>
-                                <div class="col-md-3">
-                                    <div class="custom-input mb-3 pb-4 pt-1">
+                                <div class="col-md-5">
+                                    <div class="custom-input py-3">
+                                        <label for="lastName" class="form-label mb-2">Last Name</label>
+                                        <input type="text" class="form-control" id="lastName">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <div class="custom-input py-3">
                                         <label for="driversAge" class="form-label mb-2">Driver’s age</label>
-                                        <select class="form-select" id="title">
+                                        <select class="form-select" id="driversAge">
                                             <option selected hidden></option>
                                             <option value="18">18</option>
                                             <option value="19">19</option>
@@ -572,23 +599,61 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-md-9">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="custom-input mb-3 pb-4 pt-1">
-                                                <label for="emailAddress" class="form-label mb-2">Email</label>
-                                                <input type="email" class="form-control" id="emailAddress">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="custom-input mb-3 pb-4 pt-1">
-                                                <label for="phoneNumber" class="form-label mb-2">Phone
-                                                    Number</label>
-                                                <input type="text" class="form-control" id="phoneNumber">
-                                            </div>
-                                        </div>
+                                <div class="col-md-5">
+                                    <div class="custom-input py-3">
+                                        <label for="emailAddress" class="form-label mb-2">Email</label>
+                                        <input type="email" class="form-control" id="emailAddress">
                                     </div>
                                 </div>
+                                <div class="col-md-5">
+                                    <div class="custom-input py-3">
+                                        <label for="phoneNumber" class="form-label mb-2">Phone
+                                            Number</label>
+                                        <input type="text" class="form-control" id="phoneNumber">
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="custom-input py-3">
+                                        <label for="address" class="form-label mb-2">Address</label>
+                                        <input type="text" class="form-control" id="address">
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="custom-input py-3">
+                                        <label for="city" class="form-label mb-2">City</label>
+                                        <input type="text" class="form-control" id="city">
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="custom-input py-3">
+                                        <label for="postalCode" class="form-label mb-2">Postal code</label>
+                                        <input type="text" class="form-control" id="postalCode">
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="custom-input py-3">
+                                        <label for="countryName" class="form-label mb-2">Country</label>
+                                        <select class="form-select" id="countryName">
+                                            <option selected>Select country</option>
+                                            <option value="United Kingdom">United Kingdom</option>
+                                            <option value="USA">USA</option>
+                                            <option value="India">India</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="custom-input py-3">
+                                        <label for="typeOfCar" class="form-label mb-2">What type of car do you usually
+                                            drive?</label>
+                                        <select class="form-select" id="typeOfCar">
+                                            <option selected>Choose an option</option>
+                                            <option value="United Kingdom">United Kingdom</option>
+                                            <option value="USA">USA</option>
+                                            <option value="India">India</option>
+                                        </select>
+                                    </div>
+                                </div>
+
                                 <div class="col-12">
                                     <div>
                                         <a href="#!" class="d-inline-flex align-items-center gap-2 terms-btn">
@@ -991,6 +1056,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="node_modules/slick-slider/slick/slick.min.js"></script>
+    <script src="node_modules/select2/dist/js/select2.min.js"></script>
     <script>
         $(document).ready(function () {
             $('.car-slider').slick({
@@ -1023,6 +1089,31 @@
         function decrement() {
             document.getElementById('qty').stepDown();
         }
+
+        // SELECT2 DROPDOWN JS HERE
+
+        $(document).ready(function () {
+            $('#titleSelect').select2({
+                placeholder: "",
+                allowClear: false,
+                minimumResultsForSearch: Infinity
+            });
+            $('#driversAge').select2({
+                placeholder: "",
+                allowClear: false,
+                minimumResultsForSearch: Infinity
+            });
+            $('#countryName').select2({
+                placeholder: "Select country",
+                allowClear: false,
+                minimumResultsForSearch: Infinity
+            });
+            $('#typeOfCar').select2({
+                placeholder: "Choose an option",
+                allowClear: false,
+                minimumResultsForSearch: Infinity
+            });
+        });
 
     </script>
 </body>

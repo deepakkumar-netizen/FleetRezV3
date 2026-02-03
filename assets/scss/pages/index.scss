@@ -5,19 +5,38 @@
 @import "details.scss";
 
 .filter-card {
-    overflow: hidden;
+  overflow: hidden;
   &.card {
     border-radius: 16px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background: #fff;
   }
   .card-header {
-    background: #FFF;
+    background: #fff;
     h5 {
       color: #000;
       font-size: 14px;
       font-weight: 500;
       letter-spacing: -0.14px;
+    }
+  }
+}
+
+.filter-inner-card {
+  border-top: 1px solid #ededed;
+  .filter-btn {
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.14px;
+    line-height: 24px;
+    img {
+      margin-top: 2px;
+    }
+    &.collapsed {
+      img {
+        transform: rotate(-90deg);
+      }
     }
   }
 }
@@ -28,3 +47,239 @@
   font-weight: 600;
   letter-spacing: -0.12px;
 }
+
+.filter-check-price {
+  color: #6c6c6c;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.12px;
+}
+
+.price-slider-text {
+  color: #303030;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.14px;
+  span {
+    color: #303030;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.14px;
+  }
+}
+
+// FILTER CHECKBOX
+.filter-checkbox {
+  &.form-check {
+    .form-check-input {
+      width: 16px;
+      height: 16px;
+      border-color: #e8e8e8;
+      &:checked {
+        background: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='16' height='16' rx='3' fill='white'/%3E%3Crect width='16' height='16' rx='3' fill='url(%23paint0_linear_222_1843)'/%3E%3Cpath d='M12 5L6.5 10.5L4 8' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_222_1843' x1='8' y1='0' x2='8' y2='16' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23008857'/%3E%3Cstop offset='1' stop-color='%2300613E'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A")
+          no-repeat center center;
+        border: none;
+      }
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    .form-check-label {
+      color: #303030;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: -0.14px;
+    }
+    .form-check-input:checked + .form-check-label {
+      color: #121212;
+      font-weight: 500;
+    }
+  }
+  &.filter-all-checkbox {
+    &.form-check {
+      .form-check-label {
+        font-size: 12px;
+        letter-spacing: -0.12px;
+      }
+      .form-check-input:checked + .form-check-label {
+        color: #303030;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.selected-filter {
+  border-radius: 12px;
+  border: 1px solid rgba(0, 124, 80, 0.12);
+  background: rgba(0, 124, 80, 0.05);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: -0.12px;
+  color: #007c50;
+}
+
+.noUi-target {
+  background: rgba(0, 124, 81, 0.2);
+  border: none;
+  box-shadow: none;
+}
+.noUi-horizontal {
+  height: 3px;
+  .noUi-handle {
+    width: 12px;
+    height: 12px;
+    right: -6px;
+    top: -5px;
+    &::after {
+      display: none;
+    }
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.noUi-handle {
+  border-radius: 12px;
+  background: #007c50;
+  box-shadow: none;
+  border: none;
+}
+
+.noUi-connect {
+  background: #007c50;
+}
+
+// RATING
+.rating-card {
+  border-radius: 12px;
+  border: 1px solid #6a4200;
+  background: radial-gradient(
+    117.62% 205.65% at 46.58% 36.36%,
+    #ffeed3 0%,
+    #ffb63a 100%
+  );
+  width: 265px;
+  max-width: 100%;
+  &.rating-sm-card {
+    max-width: 161px;
+  }
+  .rating-reviews {
+    color: #5b3900;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.28px;
+  }
+  .rating-text {
+    h4 {
+      color: #5b3900;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: -0.28px;
+    }
+    p {
+      color: #5b3900;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: -0.2px;
+    }
+  }
+}
+
+.modify-modal {
+  &.modal {
+    .modal-dialog {
+      margin-top: 102px;
+    }
+    .modal-content {
+      background-color: transparent;
+      .modal-body {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.modify-search-card {
+  border-radius: 12px;
+  border: 1px solid rgba(0, 128, 82, 0.5);
+  background: #fff;
+  box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.15);
+  width: 268px;
+  max-width: 100%;
+  h5 {
+    color: #171717;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: -0.12px;
+  }
+  span {
+    color: #646464;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: -0.1px;
+  }
+}
+
+.modal-open {
+  &.modify-modal-open {
+    .header {
+      &.header-dark {
+        position: relative;
+        z-index: 10000;
+      }
+    }
+  }
+}
+
+.not-found-card {
+  h5 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+  }
+  p {
+    color: #5e5e5e;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.14px;
+  }
+}
+
+
+
+/// Select 2 SCSS
+.select2-container .select2-selection--single {
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  background-color: #fafafa;
+  color: #797979;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+  padding: 12px 44px 12px 16px;
+  display: flex;
+  align-items: center;
+  min-height: 48px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M12.3529 6.3551C12.4465 6.26135 12.4991 6.13427 12.4991 6.00177C12.4991 5.86927 12.4465 5.74219 12.3529 5.64844H3.64623C3.55259 5.74219 3.5 5.86927 3.5 6.00177C3.5 6.13427 3.55259 6.26135 3.64623 6.3551L7.64623 10.3551C7.73998 10.4487 7.86706 10.5013 7.99956 10.5013C8.13206 10.5013 8.25914 10.4487 8.35289 10.3551L12.3529 6.3551Z' fill='black'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+}
+
+.select2-container--default
+.select2-selection--single
+.select2-selection__rendered {
+  color: #797979;
+  padding-left: 0;
+  line-height: normal;
+}
+
+.select2-container--default
+.select2-selection--single
+.select2-selection__arrow {
+  display: none;
+}
+
