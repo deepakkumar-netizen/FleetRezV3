@@ -23,114 +23,248 @@
 
 <body>
     <div class="header header-dark">
-        <nav class="navbar navbar-expand-lg py-3">
+        <nav class="navbar navbar-expand-lg py-2">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand col-lg-3 me-6" href="#">
                     <img src="assets/icons/logo.svg" alt="">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <div class="d-flex gap-2 align-items-center d-lg-none">
+                    <div class="booking-dropdown dropdown">
+                        <a class="nav-link px-3 py-12" type="button" id="dropdownMenubookingMob"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Manage my booking
+                        </a>
+                        <div class="booking-dropdown-menu dropdown-menu dropdown-menu-end p-0"
+                            aria-labelledby="dropdownMenubookingMob">
+                            <div class="booking-dropdown-content">
+                                <div class="booking-dropdown-header p-4 pb-20">
+                                    <h5>Enter your booking details</h5>
+                                </div>
+                                <div class="p-4 pb-20">
+                                    <form>
+                                        <div class="mb-20">
+                                            <label for="bookingNumberMob" class="form-label d-block mb-12">Booking
+                                                number</label>
+                                            <input type="text" class="form-control p-3" id="bookingNumberMob"
+                                                placeholder="XXX-123456">
+                                        </div>
+                                        <div class="mb-20">
+                                            <label for="lastNameMob" class="form-label d-block mb-12">Last
+                                                Name</label>
+                                            <input type="text" class="form-control p-3" id="lastNameMob"
+                                                placeholder="Smith">
+                                        </div>
+                                        <button type="submit"
+                                            class="btn btn-primary view-booking-btn d-flex align-items-center justify-content-center w-100 p-3 border-0 gap-2">View
+                                            my booking <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M3.33301 7.99992H12.6663M12.6663 7.99992L7.99967 3.33325M12.6663 7.99992L7.99967 12.6666"
+                                                    stroke="white" stroke-width="1.33333" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse my-2" id="navbarText">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link px-lg-3 px-12 py-12 active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Support</a>
+                            <a class="nav-link px-lg-3 px-12 py-12" href="#">Support</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Manage my booking</a>
+                        <li class="nav-item d-none d-lg-block">
+                            <div class="booking-dropdown dropdown">
+                                <a class="nav-link px-3 py-12" type="button" id="dropdownMenubooking"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Manage my booking
+                                </a>
+                                <div class="booking-dropdown-menu dropdown-menu dropdown-menu-end p-0"
+                                    aria-labelledby="dropdownMenubooking">
+                                    <div class="booking-dropdown-content">
+                                        <div class="booking-dropdown-header p-4 pb-20">
+                                            <h5>Enter your booking details</h5>
+                                        </div>
+                                        <div class="p-4 pb-20">
+                                            <form>
+                                                <div class="mb-20">
+                                                    <label for="bookingNumber" class="form-label d-block mb-12">Booking
+                                                        number</label>
+                                                    <input type="text" class="form-control p-3" id="bookingNumber"
+                                                        placeholder="XXX-123456">
+                                                </div>
+                                                <div class="mb-20">
+                                                    <label for="lastName" class="form-label d-block mb-12">Last
+                                                        Name</label>
+                                                    <input type="text" class="form-control p-3" id="lastName"
+                                                        placeholder="Smith">
+                                                </div>
+                                                <button type="submit"
+                                                    class="btn btn-primary view-booking-btn d-flex align-items-center justify-content-center w-100 p-3 border-0 gap-2">View
+                                                    my booking <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                        height="16" viewBox="0 0 16 16" fill="none">
+                                                        <path
+                                                            d="M3.33301 7.99992H12.6663M12.6663 7.99992L7.99967 3.33325M12.6663 7.99992L7.99967 12.6666"
+                                                            stroke="white" stroke-width="1.33333" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                     </ul>
-                    <div class="d-flex d-lg-none align-items-center justify-content-start gap-3">
-                        <div class="language-dropdown dropdown py-1 px-0">
-                            <a class="nav-link dropdown-toggle d-flex align-items-center gap-2" href="#" role="button"
+                    <div class="d-block d-lg-none align-items-center justify-content-start gap-3">
+                        <div class="language-dropdown dropdown d-md-block">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center gap-2 p-12 w-100" href="#"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="assets/icons/currency-euro-icon.svg" alt="">
+                                EUR
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-end">
-                                <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"> <img
-                                            src="assets/icons/currency-euro-icon.svg" alt="">
-                                        English</a></li>
-                                <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><img
-                                            src="assets/icons/currency-euro-icon.svg" alt="">
-                                        Hebrew</a></li>
-                                <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><img
-                                            src="assets/icons/currency-euro-icon.svg" alt="">
-                                        Hindi</a></li>
+                            <ul class="dropdown-menu p-2">
+                                <h5 class="py-3 px-12">Popular Currencies</h5>
+                                <li>
+                                    <a class="dropdown-item active d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                        EUR <span>Euro</span> </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                        USD <span>US Dollar</span> </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                        GBP <span>GB Pound</span> </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                        RUB <span>Russian Ruble</span> </a>
+                                </li>
+                                <h5 class="pt-20 pb-3 px-12">All Currencies</h5>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                        AED <span>UAE Dirhams</span> </a>
+                                </li>
                             </ul>
                         </div>
-                        <div class="language-dropdown dropdown py-1 px-0">
-                            <a class="nav-link dropdown-toggle d-flex align-items-center gap-2" href="#" role="button"
+                        <div class="language-dropdown currency-dropdown dropdown d-md-block">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center gap-2 p-12 w-100" href="#"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="assets/icons/english.png" alt="">
                                 EN
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-end">
-                                <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"> <img
-                                            src="assets/icons/english.png" alt="">
-                                        English</a></li>
-                                <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><img
-                                            src="assets/icons/english.png" alt="">
-                                        Hebrew</a></li>
-                                <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><img
-                                            src="assets/icons/english.png" alt="">
-                                        Hindi</a></li>
+                            <ul class="dropdown-menu p-2">
+                                <h5 class="py-3 px-12">All languages</h5>
+                                <li>
+                                    <a class="dropdown-item active d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                        <img src="assets/icons/english.png" alt=""> English (US) </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                        <img src="assets/icons/english.png" alt=""> Español </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                        <img src="assets/icons/english.png" alt=""> Português </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center gap-12 px-4 py-3" href="#">
+                                        <img src="assets/icons/english.png" alt=""> Français </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center gap-12 px-4 py-3" href="#">
+                                        <img src="assets/icons/english.png" alt=""> Polski </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center gap-12 px-4 py-3" href="#">
+                                        <img src="assets/icons/english.png" alt=""> Deutsch </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-
-                <div class="d-none d-lg-flex align-items-center justify-content-end">
-                    <div class="language-dropdown dropdown d-md-block d-none py-1 px-3">
-                        <a class="nav-link dropdown-toggle d-flex align-items-center gap-2" href="#" role="button"
+                <div class="d-none d-lg-flex align-items-center justify-content-end gap-2">
+                    <div class="language-dropdown dropdown d-md-block d-none">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center gap-2 p-12" href="#"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="assets/icons/currency-euro-icon.svg" alt="">
+                            EUR
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"> <img
-                                        src="assets/icons/currency-euro-icon.svg" alt="">
-                                    English</a></li>
-                            <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><img
-                                        src="assets/icons/currency-euro-icon.svg" alt="">
-                                    Hebrew</a></li>
-                            <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><img
-                                        src="assets/icons/currency-euro-icon.svg" alt="">
-                                    Hindi</a></li>
+                        <ul class="dropdown-menu dropdown-menu-end p-2">
+                            <h5 class="py-3 px-12">Popular Currencies</h5>
+                            <li>
+                                <a class="dropdown-item active d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                    EUR <span>Euro</span> </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                    USD <span>US Dollar</span> </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                    GBP <span>GB Pound</span> </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                    RUB <span>Russian Ruble</span> </a>
+                            </li>
+                            <h5 class="pt-20 pb-3 px-12">All Currencies</h5>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                    AED <span>UAE Dirhams</span> </a>
+                            </li>
                         </ul>
                     </div>
-                    <div class="language-dropdown dropdown d-md-block d-none py-1 px-3">
-                        <a class="nav-link dropdown-toggle d-flex align-items-center gap-2" href="#" role="button"
+                    <div class="language-dropdown currency-dropdown dropdown d-md-block d-none">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center gap-2 p-12" href="#"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="assets/icons/english.png" alt="">
                             EN
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"> <img
-                                        src="assets/icons/english.png" alt="">
-                                    English</a></li>
-                            <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><img
-                                        src="assets/icons/english.png" alt="">
-                                    Hebrew</a></li>
-                            <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><img
-                                        src="assets/icons/english.png" alt="">
-                                    Hindi</a></li>
+                        <ul class="dropdown-menu dropdown-menu-end p-2">
+                            <h5 class="py-3 px-12">All languages</h5>
+                            <li>
+                                <a class="dropdown-item active d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                    <img src="assets/icons/english.png" alt=""> English (US) </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                    <img src="assets/icons/english.png" alt=""> Español </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                    <img src="assets/icons/english.png" alt=""> Português </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-12 px-4 py-3" href="#">
+                                    <img src="assets/icons/english.png" alt=""> Français </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-12 px-4 py-3" href="#">
+                                    <img src="assets/icons/english.png" alt=""> Polski </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-12 px-4 py-3" href="#">
+                                    <img src="assets/icons/english.png" alt=""> Deutsch </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
-
             </div>
         </nav>
     </div>
     <section class="pb-5 mb-5">
         <div class="container">
-            <div class="row gx-4">
-                <div class="col-md-8">
+            <div class="row gx-20">
+                <div class="col-xl-8">
                     <!-- Progress Bar -->
                     <div class="progress-bar-section my-4 pb-2">
-                        <ul class="list-unstyled d-flex align-items-center justify-content-between gap-3 mb-0">
+                        <ul class="list-unstyled d-flex justify-content-between gap-3 mb-0">
                             <li class="step completed d-flex flex-column align-items-center gap-3">
                                 <div class="step-icon d-flex align-items-center justify-content-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -180,55 +314,46 @@
                             </li>
                         </ul>
                     </div>
-
                     <!-- Car Details -->
                     <div class="result-card result-details-page mb-3">
                         <div class="d-md-flex">
-                            <div class="card result-left position-relative">
-
+                            <div class="card result-left car-detail-left position-relative">
                                 <div class="card-body d-flex align-items-center p-0">
-                                    <div class="result-car-image">
-                                        <div class="px-20 pt-3">
-                                            <div
-                                                class="rating-card rating-sm-card d-flex align-items-center gap-6 px-12 py-2">
-                                                <div class="d-flex align-items-center">
-                                                    <div class="rating-reviews">
-                                                        9.2
-                                                    </div>
-                                                    <div class="rating-star d-flex align-items-center">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                            viewBox="0 0 16 16" fill="none">
-                                                            <path
-                                                                d="M8.00022 11.5161L5.23355 13.1828C5.11133 13.2606 4.98355 13.2939 4.85022 13.2828C4.71689 13.2717 4.60022 13.2273 4.50022 13.1495C4.40022 13.0717 4.32244 12.9746 4.26689 12.8581C4.21133 12.7417 4.20022 12.611 4.23355 12.4661L4.96689 9.31615L2.51689 7.19948C2.40577 7.09948 2.33644 6.98548 2.30889 6.85748C2.28133 6.72948 2.28955 6.60459 2.33355 6.48281C2.37755 6.36103 2.44422 6.26103 2.53355 6.18281C2.62289 6.10459 2.74511 6.05459 2.90022 6.03281L6.13355 5.74948L7.38355 2.78281C7.43911 2.64948 7.52533 2.54948 7.64222 2.48281C7.75911 2.41615 7.87844 2.38281 8.00022 2.38281C8.122 2.38281 8.24133 2.41615 8.35822 2.48281C8.47511 2.54948 8.56133 2.64948 8.61689 2.78281L9.86689 5.74948L13.1002 6.03281C13.2558 6.05503 13.378 6.10503 13.4669 6.18281C13.5558 6.26059 13.6224 6.36059 13.6669 6.48281C13.7113 6.60503 13.7198 6.73015 13.6922 6.85815C13.6647 6.98615 13.5951 7.09992 13.4836 7.19948L11.0336 9.31615L11.7669 12.4661C11.8002 12.6106 11.7891 12.7413 11.7336 12.8581C11.678 12.975 11.6002 13.0721 11.5002 13.1495C11.4002 13.2268 11.2836 13.2713 11.1502 13.2828C11.0169 13.2944 10.8891 13.261 10.7669 13.1828L8.00022 11.5161Z"
-                                                                fill="#5B3900" />
-                                                        </svg>
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                            viewBox="0 0 16 16" fill="none">
-                                                            <path
-                                                                d="M8.00022 11.5161L5.23355 13.1828C5.11133 13.2606 4.98355 13.2939 4.85022 13.2828C4.71689 13.2717 4.60022 13.2273 4.50022 13.1495C4.40022 13.0717 4.32244 12.9746 4.26689 12.8581C4.21133 12.7417 4.20022 12.611 4.23355 12.4661L4.96689 9.31615L2.51689 7.19948C2.40577 7.09948 2.33644 6.98548 2.30889 6.85748C2.28133 6.72948 2.28955 6.60459 2.33355 6.48281C2.37755 6.36103 2.44422 6.26103 2.53355 6.18281C2.62289 6.10459 2.74511 6.05459 2.90022 6.03281L6.13355 5.74948L7.38355 2.78281C7.43911 2.64948 7.52533 2.54948 7.64222 2.48281C7.75911 2.41615 7.87844 2.38281 8.00022 2.38281C8.122 2.38281 8.24133 2.41615 8.35822 2.48281C8.47511 2.54948 8.56133 2.64948 8.61689 2.78281L9.86689 5.74948L13.1002 6.03281C13.2558 6.05503 13.378 6.10503 13.4669 6.18281C13.5558 6.26059 13.6224 6.36059 13.6669 6.48281C13.7113 6.60503 13.7198 6.73015 13.6922 6.85815C13.6647 6.98615 13.5951 7.09992 13.4836 7.19948L11.0336 9.31615L11.7669 12.4661C11.8002 12.6106 11.7891 12.7413 11.7336 12.8581C11.678 12.975 11.6002 13.0721 11.5002 13.1495C11.4002 13.2268 11.2836 13.2713 11.1502 13.2828C11.0169 13.2944 10.8891 13.261 10.7669 13.1828L8.00022 11.5161Z"
-                                                                fill="#5B3900" />
-                                                        </svg>
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                            viewBox="0 0 16 16" fill="none">
-                                                            <path
-                                                                d="M8.00022 11.5161L5.23355 13.1828C5.11133 13.2606 4.98355 13.2939 4.85022 13.2828C4.71689 13.2717 4.60022 13.2273 4.50022 13.1495C4.40022 13.0717 4.32244 12.9746 4.26689 12.8581C4.21133 12.7417 4.20022 12.611 4.23355 12.4661L4.96689 9.31615L2.51689 7.19948C2.40577 7.09948 2.33644 6.98548 2.30889 6.85748C2.28133 6.72948 2.28955 6.60459 2.33355 6.48281C2.37755 6.36103 2.44422 6.26103 2.53355 6.18281C2.62289 6.10459 2.74511 6.05459 2.90022 6.03281L6.13355 5.74948L7.38355 2.78281C7.43911 2.64948 7.52533 2.54948 7.64222 2.48281C7.75911 2.41615 7.87844 2.38281 8.00022 2.38281C8.122 2.38281 8.24133 2.41615 8.35822 2.48281C8.47511 2.54948 8.56133 2.64948 8.61689 2.78281L9.86689 5.74948L13.1002 6.03281C13.2558 6.05503 13.378 6.10503 13.4669 6.18281C13.5558 6.26059 13.6224 6.36059 13.6669 6.48281C13.7113 6.60503 13.7198 6.73015 13.6922 6.85815C13.6647 6.98615 13.5951 7.09992 13.4836 7.19948L11.0336 9.31615L11.7669 12.4661C11.8002 12.6106 11.7891 12.7413 11.7336 12.8581C11.678 12.975 11.6002 13.0721 11.5002 13.1495C11.4002 13.2268 11.2836 13.2713 11.1502 13.2828C11.0169 13.2944 10.8891 13.261 10.7669 13.1828L8.00022 11.5161Z"
-                                                                fill="#5B3900" />
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="rating-text d-flex align-items-center justify-content-between w-100">
-                                                    <h4>Excellent</h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex align-items-end justify-content-center w-100 h-100">
-
-                                            <img src="assets/images/car-items.png" class="img-fluid" alt="">
-                                        </div>
+                                    <div
+                                        class="result-car-image d-flex align-items-start justify-content-center w-100 h-100">
+                                        <img src="assets/images/car-items.png" class="img-fluid" alt="">
                                     </div>
                                 </div>
-
+                                <div class="rating-card rating-sm-card d-flex align-items-center gap-6 px-12 py-2">
+                                    <div class="d-flex align-items-center">
+                                        <div class="rating-reviews">
+                                            9.2
+                                        </div>
+                                        <div class="rating-star d-flex align-items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M8.00022 11.5161L5.23355 13.1828C5.11133 13.2606 4.98355 13.2939 4.85022 13.2828C4.71689 13.2717 4.60022 13.2273 4.50022 13.1495C4.40022 13.0717 4.32244 12.9746 4.26689 12.8581C4.21133 12.7417 4.20022 12.611 4.23355 12.4661L4.96689 9.31615L2.51689 7.19948C2.40577 7.09948 2.33644 6.98548 2.30889 6.85748C2.28133 6.72948 2.28955 6.60459 2.33355 6.48281C2.37755 6.36103 2.44422 6.26103 2.53355 6.18281C2.62289 6.10459 2.74511 6.05459 2.90022 6.03281L6.13355 5.74948L7.38355 2.78281C7.43911 2.64948 7.52533 2.54948 7.64222 2.48281C7.75911 2.41615 7.87844 2.38281 8.00022 2.38281C8.122 2.38281 8.24133 2.41615 8.35822 2.48281C8.47511 2.54948 8.56133 2.64948 8.61689 2.78281L9.86689 5.74948L13.1002 6.03281C13.2558 6.05503 13.378 6.10503 13.4669 6.18281C13.5558 6.26059 13.6224 6.36059 13.6669 6.48281C13.7113 6.60503 13.7198 6.73015 13.6922 6.85815C13.6647 6.98615 13.5951 7.09992 13.4836 7.19948L11.0336 9.31615L11.7669 12.4661C11.8002 12.6106 11.7891 12.7413 11.7336 12.8581C11.678 12.975 11.6002 13.0721 11.5002 13.1495C11.4002 13.2268 11.2836 13.2713 11.1502 13.2828C11.0169 13.2944 10.8891 13.261 10.7669 13.1828L8.00022 11.5161Z"
+                                                    fill="#5B3900" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M8.00022 11.5161L5.23355 13.1828C5.11133 13.2606 4.98355 13.2939 4.85022 13.2828C4.71689 13.2717 4.60022 13.2273 4.50022 13.1495C4.40022 13.0717 4.32244 12.9746 4.26689 12.8581C4.21133 12.7417 4.20022 12.611 4.23355 12.4661L4.96689 9.31615L2.51689 7.19948C2.40577 7.09948 2.33644 6.98548 2.30889 6.85748C2.28133 6.72948 2.28955 6.60459 2.33355 6.48281C2.37755 6.36103 2.44422 6.26103 2.53355 6.18281C2.62289 6.10459 2.74511 6.05459 2.90022 6.03281L6.13355 5.74948L7.38355 2.78281C7.43911 2.64948 7.52533 2.54948 7.64222 2.48281C7.75911 2.41615 7.87844 2.38281 8.00022 2.38281C8.122 2.38281 8.24133 2.41615 8.35822 2.48281C8.47511 2.54948 8.56133 2.64948 8.61689 2.78281L9.86689 5.74948L13.1002 6.03281C13.2558 6.05503 13.378 6.10503 13.4669 6.18281C13.5558 6.26059 13.6224 6.36059 13.6669 6.48281C13.7113 6.60503 13.7198 6.73015 13.6922 6.85815C13.6647 6.98615 13.5951 7.09992 13.4836 7.19948L11.0336 9.31615L11.7669 12.4661C11.8002 12.6106 11.7891 12.7413 11.7336 12.8581C11.678 12.975 11.6002 13.0721 11.5002 13.1495C11.4002 13.2268 11.2836 13.2713 11.1502 13.2828C11.0169 13.2944 10.8891 13.261 10.7669 13.1828L8.00022 11.5161Z"
+                                                    fill="#5B3900" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M8.00022 11.5161L5.23355 13.1828C5.11133 13.2606 4.98355 13.2939 4.85022 13.2828C4.71689 13.2717 4.60022 13.2273 4.50022 13.1495C4.40022 13.0717 4.32244 12.9746 4.26689 12.8581C4.21133 12.7417 4.20022 12.611 4.23355 12.4661L4.96689 9.31615L2.51689 7.19948C2.40577 7.09948 2.33644 6.98548 2.30889 6.85748C2.28133 6.72948 2.28955 6.60459 2.33355 6.48281C2.37755 6.36103 2.44422 6.26103 2.53355 6.18281C2.62289 6.10459 2.74511 6.05459 2.90022 6.03281L6.13355 5.74948L7.38355 2.78281C7.43911 2.64948 7.52533 2.54948 7.64222 2.48281C7.75911 2.41615 7.87844 2.38281 8.00022 2.38281C8.122 2.38281 8.24133 2.41615 8.35822 2.48281C8.47511 2.54948 8.56133 2.64948 8.61689 2.78281L9.86689 5.74948L13.1002 6.03281C13.2558 6.05503 13.378 6.10503 13.4669 6.18281C13.5558 6.26059 13.6224 6.36059 13.6669 6.48281C13.7113 6.60503 13.7198 6.73015 13.6922 6.85815C13.6647 6.98615 13.5951 7.09992 13.4836 7.19948L11.0336 9.31615L11.7669 12.4661C11.8002 12.6106 11.7891 12.7413 11.7336 12.8581C11.678 12.975 11.6002 13.0721 11.5002 13.1495C11.4002 13.2268 11.2836 13.2713 11.1502 13.2828C11.0169 13.2944 10.8891 13.261 10.7669 13.1828L8.00022 11.5161Z"
+                                                    fill="#5B3900" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="rating-text d-flex align-items-center justify-content-between w-100">
+                                        <h4>Excellent</h4>
+                                    </div>
+                                </div>
                             </div>
                             <div class="result-right">
                                 <div class="result-details">
@@ -322,7 +447,8 @@
                                         </div>
                                         <div class="result-price">
                                             <button type="button"
-                                                class="custom-success-outline btn btn-outline-success d-flex align-items-center justify-content-center gap-2 mb-2"><svg
+                                                class="custom-success-outline btn btn-outline-success d-flex align-items-center justify-content-center gap-2 mb-2"
+                                                data-bs-toggle="modal" data-bs-target="#rentalConditionsModal"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                     viewBox="0 0 16 16" fill="none">
                                                     <path
@@ -343,15 +469,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-4">
-                            <div class="additional-services-section">
-                                <ul class="nav nav-tabs border-bottom-0" id="myTab">
-                                    <li class="nav-item d-flex align-items-end">
-                                        <button
-                                            class="nav-link d-flex align-items-center justify-content-center gap-2 active"
-                                            id="car-rentals-tab" data-bs-toggle="tab"
-                                            data-bs-target="#car-rentals-tab-pane" type="button" role="tab"
-                                            aria-controls="car-rentals-tab-pane" aria-selected="true">
+                        <div  class="p-4">
+                            <div id="divOne" class="additional-services-section">
+                                <ul class="list-unstyled d-flex flex-wrap align-items-center gap-12 ">
+                                    <li>
+                                        <button id="btnOne"
+                                            class="comfort-package-btn d-flex align-items-center gap-3 py-3 ps-3 pe-36 border-0"
+                                            type="button" id="btnOne">
                                             <div class="icon d-flex align-items-center justify-content-center">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none">
@@ -361,14 +485,12 @@
                                                         stroke-linejoin="round" />
                                                 </svg>
                                             </div>
-                                            Comfort Package
+                                            Essential
                                         </button>
                                     </li>
-                                    <li class="nav-item d-flex align-items-end">
-                                        <button class="nav-link d-flex align-items-center justify-content-center gap-2"
-                                            id="airport-transfers-tab" data-bs-toggle="tab"
-                                            data-bs-target="#airport-transfers-tab-pane" type="button" role="tab"
-                                            aria-controls="airport-transfers-tab-pane" aria-selected="false">
+                                    <li>
+                                        <button id="btnTwo" class="change-package-btn d-flex align-items-center gap-2 py-3 px-20"
+                                            type="button">
                                             <div class="icon d-flex align-items-center justify-content-center">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                     viewBox="0 0 16 16" fill="none">
@@ -382,94 +504,152 @@
                                         </button>
                                     </li>
                                 </ul>
-                                <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane fade show active" id="car-rentals-tab-pane" role="tabpanel"
-                                        aria-labelledby="car-rentals-tab" tabindex="0">
-                                        <div class="p-4">
-                                            <div class="available-result-amenities">
-                                                <ul class="list-unstyled d-flex align-items-center gap-4">
-                                                    <li class="d-flex align-items-center gap-2 active">
+                                <div class="p-4">
+                                    <div class="available-result-amenities">
+                                        <ul class="list-unstyled d-flex flex-wrap align-items-center gap-4">
+                                            <li class="d-flex align-items-center gap-2 active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 16 16" fill="none">
+                                                    <g clip-path="url(#clip0_229_765)">
+                                                        <path
+                                                            d="M7.99967 5.33334V10.6667M7.99967 5.33334V1.33334M7.99967 5.33334L4.66634 2.00001M7.99967 5.33334L11.333 2.00001M7.99967 10.6667V14.6667M7.99967 10.6667L4.66634 14M7.99967 10.6667L11.333 14M10.6663 8.00001H5.33301M10.6663 8.00001H14.6663M10.6663 8.00001L13.9997 4.66668M10.6663 8.00001L13.9997 11.3333M5.33301 8.00001H1.33301M5.33301 8.00001L1.99967 4.66668M5.33301 8.00001L1.99967 11.3333"
+                                                            stroke="#219653" stroke-width="1.33333"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_229_765">
+                                                            <rect width="16" height="16" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                                <span class="available-result-text">Air
+                                                    Conditioning</span>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2 active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 16 16" fill="none">
+                                                    <g clip-path="url(#clip0_229_768)">
+                                                        <path
+                                                            d="M3.33301 9.52425C2.09877 10.0687 1.33301 10.8275 1.33301 11.6667C1.33301 13.3235 4.31778 14.6667 7.99967 14.6667C11.6816 14.6667 14.6663 13.3235 14.6663 11.6667C14.6663 10.8275 13.9006 10.0687 12.6663 9.52425M11.9997 5.33334C11.9997 8.04248 8.99967 9.33334 7.99967 11.3333C6.99967 9.33334 3.99967 8.04248 3.99967 5.33334C3.99967 3.1242 5.79054 1.33334 7.99967 1.33334C10.2088 1.33334 11.9997 3.1242 11.9997 5.33334ZM8.66634 5.33334C8.66634 5.70153 8.36786 6.00001 7.99967 6.00001C7.63148 6.00001 7.33301 5.70153 7.33301 5.33334C7.33301 4.96515 7.63148 4.66668 7.99967 4.66668C8.36786 4.66668 8.66634 4.96515 8.66634 5.33334Z"
+                                                            stroke="#219653" stroke-width="1.33333"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_229_768">
+                                                            <rect width="16" height="16" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                                <span class="available-result-text">GPS included</span>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2 active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 16 16" fill="none">
+                                                    <path d="M13.3337 4L6.00033 11.3333L2.66699 8" stroke="#219653"
+                                                        stroke-width="1.33333" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                <span class="available-result-text">Average
+                                                    Deposit</span>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2 active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 16 16" fill="none">
+                                                    <g clip-path="url(#clip0_229_774)">
+                                                        <path
+                                                            d="M3.33301 9.52425C2.09877 10.0687 1.33301 10.8275 1.33301 11.6667C1.33301 13.3235 4.31778 14.6667 7.99967 14.6667C11.6816 14.6667 14.6663 13.3235 14.6663 11.6667C14.6663 10.8275 13.9006 10.0687 12.6663 9.52425M11.9997 5.33334C11.9997 8.04248 8.99967 9.33334 7.99967 11.3333C6.99967 9.33334 3.99967 8.04248 3.99967 5.33334C3.99967 3.1242 5.79054 1.33334 7.99967 1.33334C10.2088 1.33334 11.9997 3.1242 11.9997 5.33334ZM8.66634 5.33334C8.66634 5.70153 8.36786 6.00001 7.99967 6.00001C7.63148 6.00001 7.33301 5.70153 7.33301 5.33334C7.33301 4.96515 7.63148 4.66668 7.99967 4.66668C8.36786 4.66668 8.66634 4.96515 8.66634 5.33334Z"
+                                                            stroke="#219653" stroke-width="1.33333"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_229_774">
+                                                            <rect width="16" height="16" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                                <span class="available-result-text">Additional Driver</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="divTwo" class="d-none">
+                                <div class="available-car-heading pb-3">
+                                    <h5>Your Selection: <strong id="btnThree">Essential Package</strong></h5>
+                                </div>
+                                <div class="available-car d-flex align-items-start gap-3">
+                                    <div class="available-car-items card h-100 p-2">
+                                        <div class="card-body p-3">
+                                            <div
+                                                class="available-car-type d-flex align-items-center justify-content-between pb-2">
+                                                <h5>Essential</h5>
+                                            </div>
+                                            <div class="available-car-price">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <span class="offer-price">$6,500</span>
+                                                </div>
+                                                <h6 class="pt-1">Lowest price guaranteed</h6>
+                                            </div>
+                                            <div class="available-result-amenities pt-4">
+                                                <ul class="list-unstyled d-flex flex-column gap-2">
+                                                    <li class="d-flex align-items-center gap-2">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                             viewBox="0 0 16 16" fill="none">
-                                                            <g clip-path="url(#clip0_229_765)">
-                                                                <path
-                                                                    d="M7.99967 5.33334V10.6667M7.99967 5.33334V1.33334M7.99967 5.33334L4.66634 2.00001M7.99967 5.33334L11.333 2.00001M7.99967 10.6667V14.6667M7.99967 10.6667L4.66634 14M7.99967 10.6667L11.333 14M10.6663 8.00001H5.33301M10.6663 8.00001H14.6663M10.6663 8.00001L13.9997 4.66668M10.6663 8.00001L13.9997 11.3333M5.33301 8.00001H1.33301M5.33301 8.00001L1.99967 4.66668M5.33301 8.00001L1.99967 11.3333"
-                                                                    stroke="#219653" stroke-width="1.33333"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                            </g>
-                                                            <defs>
-                                                                <clipPath id="clip0_229_765">
-                                                                    <rect width="16" height="16" fill="white" />
-                                                                </clipPath>
-                                                            </defs>
-                                                        </svg>
-                                                        <span class="available-result-text">Air
-                                                            Conditioning</span>
-                                                    </li>
-                                                    <li class="d-flex align-items-center gap-2 active">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                            viewBox="0 0 16 16" fill="none">
-                                                            <g clip-path="url(#clip0_229_768)">
-                                                                <path
-                                                                    d="M3.33301 9.52425C2.09877 10.0687 1.33301 10.8275 1.33301 11.6667C1.33301 13.3235 4.31778 14.6667 7.99967 14.6667C11.6816 14.6667 14.6663 13.3235 14.6663 11.6667C14.6663 10.8275 13.9006 10.0687 12.6663 9.52425M11.9997 5.33334C11.9997 8.04248 8.99967 9.33334 7.99967 11.3333C6.99967 9.33334 3.99967 8.04248 3.99967 5.33334C3.99967 3.1242 5.79054 1.33334 7.99967 1.33334C10.2088 1.33334 11.9997 3.1242 11.9997 5.33334ZM8.66634 5.33334C8.66634 5.70153 8.36786 6.00001 7.99967 6.00001C7.63148 6.00001 7.33301 5.70153 7.33301 5.33334C7.33301 4.96515 7.63148 4.66668 7.99967 4.66668C8.36786 4.66668 8.66634 4.96515 8.66634 5.33334Z"
-                                                                    stroke="#219653" stroke-width="1.33333"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                            </g>
-                                                            <defs>
-                                                                <clipPath id="clip0_229_768">
-                                                                    <rect width="16" height="16" fill="white" />
-                                                                </clipPath>
-                                                            </defs>
-                                                        </svg>
-                                                        <span class="available-result-text">GPS included</span>
-                                                    </li>
-                                                    <li class="d-flex align-items-center gap-2 active">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                            viewBox="0 0 16 16" fill="none">
-                                                            <path d="M13.3337 4L6.00033 11.3333L2.66699 8"
-                                                                stroke="#219653" stroke-width="1.33333"
+                                                            <path d="M12 4L4 12M4 4L12 12" stroke="#3A3A3A"
+                                                                stroke-opacity="0.7" stroke-width="1.33333"
                                                                 stroke-linecap="round" stroke-linejoin="round" />
                                                         </svg>
                                                         <span class="available-result-text">Average
                                                             Deposit</span>
                                                     </li>
-                                                    <li class="d-flex align-items-center gap-2 active">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    <li class="d-flex align-items-center gap-2"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                             viewBox="0 0 16 16" fill="none">
-                                                            <g clip-path="url(#clip0_229_774)">
-                                                                <path
-                                                                    d="M3.33301 9.52425C2.09877 10.0687 1.33301 10.8275 1.33301 11.6667C1.33301 13.3235 4.31778 14.6667 7.99967 14.6667C11.6816 14.6667 14.6663 13.3235 14.6663 11.6667C14.6663 10.8275 13.9006 10.0687 12.6663 9.52425M11.9997 5.33334C11.9997 8.04248 8.99967 9.33334 7.99967 11.3333C6.99967 9.33334 3.99967 8.04248 3.99967 5.33334C3.99967 3.1242 5.79054 1.33334 7.99967 1.33334C10.2088 1.33334 11.9997 3.1242 11.9997 5.33334ZM8.66634 5.33334C8.66634 5.70153 8.36786 6.00001 7.99967 6.00001C7.63148 6.00001 7.33301 5.70153 7.33301 5.33334C7.33301 4.96515 7.63148 4.66668 7.99967 4.66668C8.36786 4.66668 8.66634 4.96515 8.66634 5.33334Z"
-                                                                    stroke="#219653" stroke-width="1.33333"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                            </g>
-                                                            <defs>
-                                                                <clipPath id="clip0_229_774">
-                                                                    <rect width="16" height="16" fill="white" />
-                                                                </clipPath>
-                                                            </defs>
+                                                            <path d="M13.3333 4L5.99996 11.3333L2.66663 8"
+                                                                stroke="#3A3A3A" stroke-opacity="0.7"
+                                                                stroke-width="1.33333" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
                                                         </svg>
-                                                        <span class="available-result-text">Additional Driver</span>
+                                                        <span class="available-result-text">Limited
+                                                            Mileage</span>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </div>
+                                        <div class="d-flex h-100">
+                                            <button type="button"
+                                                class="select-btn border-0 w-100 text-center">Select</button>
+                                        </div>
                                     </div>
-                                    <div class="tab-pane fade" id="airport-transfers-tab-pane" role="tabpanel"
-                                        aria-labelledby="airport-transfers-tab" tabindex="0">
-                                        <div class="p-4">
-                                            <div class="available-result-amenities">
-                                                <ul class="list-unstyled d-flex align-items-center gap-4">
+                                    <div class="available-car-items card h-100 p-2 active">
+                                        <div class="card-body p-3">
+                                            <div
+                                                class="available-car-type d-flex align-items-center justify-content-between pb-2">
+                                                <h5>Comfort</h5>
+                                                <span
+                                                    class="badge rounded-pill text-bg-success py-1 px-2 custom-badge-success">Most
+                                                    Popular</span>
+                                            </div>
+                                            <div class="available-car-price">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <span class="offer-price">$7,220</span>
+                                                    <span class="current-price ps-1">$9,210</span>
+                                                </div>
+                                                <h6 class="pt-1">Lowest price guaranteed</h6>
+                                            </div>
+                                            <div class="available-result-amenities pt-4">
+                                                <ul class="list-unstyled d-flex flex-column gap-2">
                                                     <li class="d-flex align-items-center gap-2 active">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                             viewBox="0 0 16 16" fill="none">
-                                                            <g clip-path="url(#clip0_229_765)">
+                                                            <g clip-path="url(#clip0_1_2352)">
                                                                 <path
-                                                                    d="M7.99967 5.33334V10.6667M7.99967 5.33334V1.33334M7.99967 5.33334L4.66634 2.00001M7.99967 5.33334L11.333 2.00001M7.99967 10.6667V14.6667M7.99967 10.6667L4.66634 14M7.99967 10.6667L11.333 14M10.6663 8.00001H5.33301M10.6663 8.00001H14.6663M10.6663 8.00001L13.9997 4.66668M10.6663 8.00001L13.9997 11.3333M5.33301 8.00001H1.33301M5.33301 8.00001L1.99967 4.66668M5.33301 8.00001L1.99967 11.3333"
+                                                                    d="M8.00004 5.33331V10.6666M8.00004 5.33331V1.33331M8.00004 5.33331L4.66671 1.99998M8.00004 5.33331L11.3334 1.99998M8.00004 10.6666V14.6666M8.00004 10.6666L4.66671 14M8.00004 10.6666L11.3334 14M10.6667 7.99998H5.33337M10.6667 7.99998H14.6667M10.6667 7.99998L14 4.66665M10.6667 7.99998L14 11.3333M5.33337 7.99998H1.33337M5.33337 7.99998L2.00004 4.66665M5.33337 7.99998L2.00004 11.3333"
                                                                     stroke="#219653" stroke-width="1.33333"
                                                                     stroke-linecap="round" stroke-linejoin="round" />
                                                             </g>
                                                             <defs>
-                                                                <clipPath id="clip0_229_765">
+                                                                <clipPath id="clip0_1_2352">
                                                                     <rect width="16" height="16" fill="white" />
                                                                 </clipPath>
                                                             </defs>
@@ -477,59 +657,117 @@
                                                         <span class="available-result-text">Air
                                                             Conditioning</span>
                                                     </li>
-                                                    <li class="d-flex align-items-center gap-2 active">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    <li class="d-flex align-items-center gap-2 active"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                             viewBox="0 0 16 16" fill="none">
-                                                            <g clip-path="url(#clip0_229_768)">
+                                                            <g clip-path="url(#clip0_1_2355)">
                                                                 <path
-                                                                    d="M3.33301 9.52425C2.09877 10.0687 1.33301 10.8275 1.33301 11.6667C1.33301 13.3235 4.31778 14.6667 7.99967 14.6667C11.6816 14.6667 14.6663 13.3235 14.6663 11.6667C14.6663 10.8275 13.9006 10.0687 12.6663 9.52425M11.9997 5.33334C11.9997 8.04248 8.99967 9.33334 7.99967 11.3333C6.99967 9.33334 3.99967 8.04248 3.99967 5.33334C3.99967 3.1242 5.79054 1.33334 7.99967 1.33334C10.2088 1.33334 11.9997 3.1242 11.9997 5.33334ZM8.66634 5.33334C8.66634 5.70153 8.36786 6.00001 7.99967 6.00001C7.63148 6.00001 7.33301 5.70153 7.33301 5.33334C7.33301 4.96515 7.63148 4.66668 7.99967 4.66668C8.36786 4.66668 8.66634 4.96515 8.66634 5.33334Z"
+                                                                    d="M3.33337 9.52422C2.09913 10.0687 1.33337 10.8274 1.33337 11.6666C1.33337 13.3235 4.31814 14.6666 8.00004 14.6666C11.6819 14.6666 14.6667 13.3235 14.6667 11.6666C14.6667 10.8274 13.9009 10.0687 12.6667 9.52422M12 5.33331C12 8.04245 9.00004 9.33331 8.00004 11.3333C7.00004 9.33331 4.00004 8.04245 4.00004 5.33331C4.00004 3.12417 5.7909 1.33331 8.00004 1.33331C10.2092 1.33331 12 3.12417 12 5.33331ZM8.66671 5.33331C8.66671 5.7015 8.36823 5.99998 8.00004 5.99998C7.63185 5.99998 7.33337 5.7015 7.33337 5.33331C7.33337 4.96512 7.63185 4.66665 8.00004 4.66665C8.36823 4.66665 8.66671 4.96512 8.66671 5.33331Z"
                                                                     stroke="#219653" stroke-width="1.33333"
                                                                     stroke-linecap="round" stroke-linejoin="round" />
                                                             </g>
                                                             <defs>
-                                                                <clipPath id="clip0_229_768">
+                                                                <clipPath id="clip0_1_2355">
                                                                     <rect width="16" height="16" fill="white" />
                                                                 </clipPath>
                                                             </defs>
                                                         </svg>
-                                                        <span class="available-result-text">GPS included</span>
+                                                        <span class="available-result-text">GPS
+                                                            included</span>
                                                     </li>
-                                                    <li class="d-flex align-items-center gap-2 active">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    <li class="d-flex align-items-center gap-2 active"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                             viewBox="0 0 16 16" fill="none">
-                                                            <path d="M13.3337 4L6.00033 11.3333L2.66699 8"
+                                                            <path d="M13.3333 4L5.99996 11.3333L2.66663 8"
                                                                 stroke="#219653" stroke-width="1.33333"
                                                                 stroke-linecap="round" stroke-linejoin="round" />
                                                         </svg>
                                                         <span class="available-result-text">Average
                                                             Deposit</span>
                                                     </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex h-100">
+                                            <button type="button"
+                                                class="select-btn border-0 w-100 text-center">Select</button>
+                                        </div>
+                                    </div>
+                                    <div class="available-car-items card h-100 p-2">
+                                        <div class="card-body p-3">
+                                            <div
+                                                class="available-car-type d-flex align-items-center justify-content-between pb-2">
+                                                <h5>Luxury</h5>
+                                            </div>
+                                            <div class="available-car-price">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <span class="offer-price">$9,430</span>
+                                                    <span class="current-price ps-1">$12,454</span>
+                                                </div>
+                                                <h6 class="pt-1">Lowest price guaranteed</h6>
+                                            </div>
+                                            <div class="available-result-amenities pt-4">
+                                                <p class="pb-2 mb-1">Everything in Comfort, plus</p>
+                                                <ul class="list-unstyled d-flex flex-column gap-2">
                                                     <li class="d-flex align-items-center gap-2 active">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                             viewBox="0 0 16 16" fill="none">
-                                                            <g clip-path="url(#clip0_229_774)">
+                                                            <g clip-path="url(#clip0_1_2370)">
                                                                 <path
-                                                                    d="M3.33301 9.52425C2.09877 10.0687 1.33301 10.8275 1.33301 11.6667C1.33301 13.3235 4.31778 14.6667 7.99967 14.6667C11.6816 14.6667 14.6663 13.3235 14.6663 11.6667C14.6663 10.8275 13.9006 10.0687 12.6663 9.52425M11.9997 5.33334C11.9997 8.04248 8.99967 9.33334 7.99967 11.3333C6.99967 9.33334 3.99967 8.04248 3.99967 5.33334C3.99967 3.1242 5.79054 1.33334 7.99967 1.33334C10.2088 1.33334 11.9997 3.1242 11.9997 5.33334ZM8.66634 5.33334C8.66634 5.70153 8.36786 6.00001 7.99967 6.00001C7.63148 6.00001 7.33301 5.70153 7.33301 5.33334C7.33301 4.96515 7.63148 4.66668 7.99967 4.66668C8.36786 4.66668 8.66634 4.96515 8.66634 5.33334Z"
+                                                                    d="M3.33325 9.52422C2.09901 10.0687 1.33325 10.8274 1.33325 11.6666C1.33325 13.3235 4.31802 14.6666 7.99992 14.6666C11.6818 14.6666 14.6666 13.3235 14.6666 11.6666C14.6666 10.8274 13.9008 10.0687 12.6666 9.52422M11.9999 5.33331C11.9999 8.04245 8.99992 9.33331 7.99992 11.3333C6.99992 9.33331 3.99992 8.04245 3.99992 5.33331C3.99992 3.12417 5.79078 1.33331 7.99992 1.33331C10.2091 1.33331 11.9999 3.12417 11.9999 5.33331ZM8.66659 5.33331C8.66659 5.7015 8.36811 5.99998 7.99992 5.99998C7.63173 5.99998 7.33325 5.7015 7.33325 5.33331C7.33325 4.96512 7.63173 4.66665 7.99992 4.66665C8.36811 4.66665 8.66659 4.96512 8.66659 5.33331Z"
                                                                     stroke="#219653" stroke-width="1.33333"
                                                                     stroke-linecap="round" stroke-linejoin="round" />
                                                             </g>
                                                             <defs>
-                                                                <clipPath id="clip0_229_774">
+                                                                <clipPath id="clip0_1_2370">
                                                                     <rect width="16" height="16" fill="white" />
                                                                 </clipPath>
                                                             </defs>
                                                         </svg>
-                                                        <span class="available-result-text">Additional Driver</span>
+                                                        <span class="available-result-text">Additional
+                                                            Benefit</span>
+                                                    </li>
+                                                    <li class="d-flex align-items-center gap-2 active"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            viewBox="0 0 16 16" fill="none">
+                                                            <g clip-path="url(#clip0_1_2373)">
+                                                                <path
+                                                                    d="M7.99992 5.33331V10.6666M7.99992 5.33331V1.33331M7.99992 5.33331L4.66659 1.99998M7.99992 5.33331L11.3333 1.99998M7.99992 10.6666V14.6666M7.99992 10.6666L4.66659 14M7.99992 10.6666L11.3333 14M10.6666 7.99998H5.33325M10.6666 7.99998H14.6666M10.6666 7.99998L13.9999 4.66665M10.6666 7.99998L13.9999 11.3333M5.33325 7.99998H1.33325M5.33325 7.99998L1.99992 4.66665M5.33325 7.99998L1.99992 11.3333"
+                                                                    stroke="#219653" stroke-width="1.33333"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_1_2373">
+                                                                    <rect width="16" height="16" fill="white" />
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                        <span class="available-result-text">Another
+                                                            Additional
+                                                            Benefit</span>
+                                                    </li>
+                                                    <li class="d-flex align-items-center gap-2 active">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            viewBox="0 0 16 16" fill="none">
+                                                            <path d="M13.3334 4L6.00008 11.3333L2.66675 8"
+                                                                stroke="#219653" stroke-width="1.33333"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span class="available-result-text">Lower
+                                                            Deposit</span>
                                                     </li>
                                                 </ul>
                                             </div>
+                                        </div>
+                                        <div class="d-flex h-100">
+                                            <button type="button"
+                                                class="select-btn border-0 w-100 text-center">Select</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                     <!-- Driver Details -->
                     <div class="driver-details-card card p-3 mt-2">
                         <div class="p-3">
@@ -557,11 +795,10 @@
                                 </div>
                                 <div class="col-md-5">
                                     <div class="custom-input py-3">
-                                        <label for="lastName" class="form-label mb-2">Last Name</label>
-                                        <input type="text" class="form-control" id="lastName">
+                                        <label for="lastNameCustomer" class="form-label mb-2">Last Name</label>
+                                        <input type="text" class="form-control" id="lastNameCustomer">
                                     </div>
                                 </div>
-
                                 <div class="col-md-2">
                                     <div class="custom-input py-3">
                                         <label for="driversAge" class="form-label mb-2">Driver’s age</label>
@@ -653,10 +890,33 @@
                                         </select>
                                     </div>
                                 </div>
+                            </div>
 
+                            <div id="flightDetails" class="row gx-20 d-none">
+                                <div class="col-md-5">
+                                    <div class="custom-input py-3">
+                                        <label for="selectAirline" class="form-label mb-2">Select airline</label>
+                                        <select class="form-select w-100" id="selectAirline">
+                                            <option selected>Select airline</option>
+                                            <option value="United Kingdom">United Kingdom</option>
+                                            <option value="USA">USA</option>
+                                            <option value="Etihad">Etihad</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="custom-input py-3">
+                                        <label for="flightNumber" class="form-label mb-2">Flight number</label>
+                                        <input type="text" class="form-control" id="flightNumber">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
                                 <div class="col-12">
-                                    <div>
-                                        <a href="#!" class="d-inline-flex align-items-center gap-2 terms-btn">
+                                    <div class="d-flex justify-content-end">
+                                        <button type="button"
+                                            class="add-flight-btn d-inline-flex align-items-center gap-2 mt-3 py-12 px-32">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 viewBox="0 0 16 16" fill="none">
                                                 <g clip-path="url(#clip0_229_669)">
@@ -670,7 +930,7 @@
                                                         <rect width="16" height="16" fill="white" />
                                                     </clipPath>
                                                 </defs>
-                                            </svg>Add flight details <span> (optional)</span></a>
+                                            </svg>Add flight details <span> (optional)</span></button>
                                     </div>
                                 </div>
                             </div>
@@ -890,9 +1150,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <!-- <div class="bg-danger text-white">dgsdgdg</div> -->
-
+                <div class="col-xl-4">
                     <div class="price-card card mt-4">
                         <div class="card-header d-flex align-items-center gap-3">
                             <div class="icon d-flex align-items-center justify-content-center">
@@ -938,7 +1196,6 @@
                         </div>
 
                     </div>
-
                     <div class="price-card card mt-3">
                         <div class="card-header d-flex align-items-center gap-3">
                             <div class="icon d-flex align-items-center justify-content-center">
@@ -1053,6 +1310,413 @@
         </div>
     </section>
 
+    <!-- Button trigger modal -->
+    <!-- Modal -->
+    <div class="rental-details-modal modal fade" id="rentalConditionsModal" tabindex="-1"
+        aria-labelledby="rentalConditionsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header px-36 pt-32 pb-25">
+                    <div class="d-flex align-items-center gap-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M14 2.26953V6.40007C14 6.96012 14 7.24015 14.109 7.45406C14.2049 7.64222 14.3578 7.7952 14.546 7.89108C14.7599 8.00007 15.0399 8.00007 15.6 8.00007H19.7305M14 17H8M16 13H8M20 9.98822V17.2C20 18.8802 20 19.7202 19.673 20.362C19.3854 20.9265 18.9265 21.3854 18.362 21.673C17.7202 22 16.8802 22 15.2 22H8.8C7.11984 22 6.27976 22 5.63803 21.673C5.07354 21.3854 4.6146 20.9265 4.32698 20.362C4 19.7202 4 18.8802 4 17.2V6.8C4 5.11984 4 4.27976 4.32698 3.63803C4.6146 3.07354 5.07354 2.6146 5.63803 2.32698C6.27976 2 7.11984 2 8.8 2H12.0118C12.7455 2 13.1124 2 13.4577 2.08289C13.7638 2.15638 14.0564 2.27759 14.3249 2.44208C14.6276 2.6276 14.887 2.88703 15.4059 3.40589L18.5941 6.59411C19.113 7.11297 19.3724 7.3724 19.5579 7.67515C19.7224 7.94356 19.8436 8.2362 19.9171 8.5423C20 8.88757 20 9.25445 20 9.98822Z"
+                                stroke="#037F4E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <h5 class="rental-details-tittle">Rental Conditions</h5>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-4 pt-3 pb-5">
+                    <div class="rental-accordion accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item mb-2">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button p-20" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="true"
+                                    aria-controls="flush-collapseOne">
+                                    Important info
+                                </button>
+                            </h2>
+
+                            <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body px-4">
+                                    <div class="px-10">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="row gx-4">
+                                                    <div class="col-md-3">
+                                                        <div class="rental-details-text">
+                                                            <h5>Driver</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <div class="rental-details-text">
+                                                            <p>When picking up your rental car, you will need the
+                                                                following documents for the driver:</p>
+                                                            <ul class="list-unstyled d-flex flex-column gap-2 mt-12">
+                                                                <li>
+                                                                    <div class="d-flex align-items-center gap-2">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            width="16" height="16" viewBox="0 0 16 16"
+                                                                            fill="none">
+                                                                            <path
+                                                                                d="M13.3327 4L5.99935 11.3333L2.66602 8"
+                                                                                stroke="#008857" stroke-width="2"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                        </svg>
+                                                                        <span>Passport</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="d-flex align-items-center gap-2">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            width="16" height="16" viewBox="0 0 16 16"
+                                                                            fill="none">
+                                                                            <path
+                                                                                d="M13.3327 4L5.99935 11.3333L2.66602 8"
+                                                                                stroke="#008857" stroke-width="2"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                        </svg>
+                                                                        <span>Driving license</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="d-flex align-items-center gap-2">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            width="16" height="16" viewBox="0 0 16 16"
+                                                                            fill="none">
+                                                                            <path
+                                                                                d="M13.3327 4L5.99935 11.3333L2.66602 8"
+                                                                                stroke="#008857" stroke-width="2"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                        </svg>
+                                                                        <span>Credit card</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="d-flex align-items-center gap-2">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            width="16" height="16" viewBox="0 0 16 16"
+                                                                            fill="none">
+                                                                            <path
+                                                                                d="M13.3327 4L5.99935 11.3333L2.66602 8"
+                                                                                stroke="#008857" stroke-width="2"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                        </svg>
+                                                                        <span>Voucher (if applicable)</span>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row gx-4">
+                                                    <div class="col-md-3">
+                                                        <div class="rental-details-text">
+                                                            <h5>Security Deposit</h5>
+                                                            <h6 class="mt-2">$1,000.00</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <div class="rental-details-text">
+                                                            <p>A security deposit will be blocked on the main driver’s
+                                                                credit card at pick-up. It will be fully released at the
+                                                                end of the rental, if there is no theft or damage to the
+                                                                rental car.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row gx-4">
+                                                    <div class="col-md-3">
+                                                        <div class="rental-details-text">
+                                                            <h5>Damage excess</h5>
+                                                            <h6 class="mt-2">$1,250.00</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <div class="rental-details-text">
+                                                            <p>The Damage Excess is the amount of money you are liable
+                                                                for if the rental car is damaged. Your liability for the
+                                                                car is reduced to this amount by Collision Damage Waiver
+                                                                (if applicable). Please note that CDW only covers damage
+                                                                to the body of the car. Windscreen, locks, tires,
+                                                                undercarriage and keys are not covered by the CDW.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mb-2">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Driver & required documents
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body px-4">
+                                    <div class="px-10">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="row gx-4">
+                                                    <div class="col-md-3">
+                                                        <div class="rental-details-text">
+                                                            <h5>Driver</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <div class="rental-details-text">
+                                                            <p>When picking up your rental car, you will need the
+                                                                following documents for the driver:</p>
+                                                            <ul class="list-unstyled d-flex flex-column gap-2 mt-12">
+                                                                <li>
+                                                                    <div class="d-flex align-items-center gap-2">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            width="16" height="16" viewBox="0 0 16 16"
+                                                                            fill="none">
+                                                                            <path
+                                                                                d="M13.3327 4L5.99935 11.3333L2.66602 8"
+                                                                                stroke="#008857" stroke-width="2"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                        </svg>
+                                                                        <span>Passport</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="d-flex align-items-center gap-2">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            width="16" height="16" viewBox="0 0 16 16"
+                                                                            fill="none">
+                                                                            <path
+                                                                                d="M13.3327 4L5.99935 11.3333L2.66602 8"
+                                                                                stroke="#008857" stroke-width="2"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                        </svg>
+                                                                        <span>Driving license</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="d-flex align-items-center gap-2">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            width="16" height="16" viewBox="0 0 16 16"
+                                                                            fill="none">
+                                                                            <path
+                                                                                d="M13.3327 4L5.99935 11.3333L2.66602 8"
+                                                                                stroke="#008857" stroke-width="2"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                        </svg>
+                                                                        <span>Credit card</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="d-flex align-items-center gap-2">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            width="16" height="16" viewBox="0 0 16 16"
+                                                                            fill="none">
+                                                                            <path
+                                                                                d="M13.3327 4L5.99935 11.3333L2.66602 8"
+                                                                                stroke="#008857" stroke-width="2"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                        </svg>
+                                                                        <span>Voucher (if applicable)</span>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row gx-4">
+                                                    <div class="col-md-3">
+                                                        <div class="rental-details-text">
+                                                            <h5>Security Deposit</h5>
+                                                            <h6 class="mt-2">$1,000.00</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <div class="rental-details-text">
+                                                            <p>A security deposit will be blocked on the main driver’s
+                                                                credit card at pick-up. It will be fully released at the
+                                                                end of the rental, if there is no theft or damage to the
+                                                                rental car.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row gx-4">
+                                                    <div class="col-md-3">
+                                                        <div class="rental-details-text">
+                                                            <h5>Damage excess</h5>
+                                                            <h6 class="mt-2">$1,250.00</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <div class="rental-details-text">
+                                                            <p>The Damage Excess is the amount of money you are liable
+                                                                for if the rental car is damaged. Your liability for the
+                                                                car is reduced to this amount by Collision Damage Waiver
+                                                                (if applicable). Please note that CDW only covers damage
+                                                                to the body of the car. Windscreen, locks, tires,
+                                                                undercarriage and keys are not covered by the CDW.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mb-2">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    Payments & security deposit
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body px-4">
+                                    <div class="px-10">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="row gx-4">
+                                                    <div class="col-md-3">
+                                                        <div class="rental-details-text">
+                                                            <h5>Driver</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <div class="rental-details-text">
+                                                            <p>When picking up your rental car, you will need the
+                                                                following documents for the driver:</p>
+                                                            <ul class="list-unstyled d-flex flex-column gap-2 mt-12">
+                                                                <li>
+                                                                    <div class="d-flex align-items-center gap-2">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            width="16" height="16" viewBox="0 0 16 16"
+                                                                            fill="none">
+                                                                            <path
+                                                                                d="M13.3327 4L5.99935 11.3333L2.66602 8"
+                                                                                stroke="#008857" stroke-width="2"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                        </svg>
+                                                                        <span>Passport</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="d-flex align-items-center gap-2">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            width="16" height="16" viewBox="0 0 16 16"
+                                                                            fill="none">
+                                                                            <path
+                                                                                d="M13.3327 4L5.99935 11.3333L2.66602 8"
+                                                                                stroke="#008857" stroke-width="2"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                        </svg>
+                                                                        <span>Driving license</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="d-flex align-items-center gap-2">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            width="16" height="16" viewBox="0 0 16 16"
+                                                                            fill="none">
+                                                                            <path
+                                                                                d="M13.3327 4L5.99935 11.3333L2.66602 8"
+                                                                                stroke="#008857" stroke-width="2"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                        </svg>
+                                                                        <span>Credit card</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="d-flex align-items-center gap-2">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            width="16" height="16" viewBox="0 0 16 16"
+                                                                            fill="none">
+                                                                            <path
+                                                                                d="M13.3327 4L5.99935 11.3333L2.66602 8"
+                                                                                stroke="#008857" stroke-width="2"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                        </svg>
+                                                                        <span>Voucher (if applicable)</span>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row gx-4">
+                                                    <div class="col-md-3">
+                                                        <div class="rental-details-text">
+                                                            <h5>Security Deposit</h5>
+                                                            <h6 class="mt-2">$1,000.00</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <div class="rental-details-text">
+                                                            <p>A security deposit will be blocked on the main driver’s
+                                                                credit card at pick-up. It will be fully released at the
+                                                                end of the rental, if there is no theft or damage to the
+                                                                rental car.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row gx-4">
+                                                    <div class="col-md-3">
+                                                        <div class="rental-details-text">
+                                                            <h5>Damage excess</h5>
+                                                            <h6 class="mt-2">$1,250.00</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <div class="rental-details-text">
+                                                            <p>The Damage Excess is the amount of money you are liable
+                                                                for if the rental car is damaged. Your liability for the
+                                                                car is reduced to this amount by Collision Damage Waiver
+                                                                (if applicable). Please note that CDW only covers damage
+                                                                to the body of the car. Windscreen, locks, tires,
+                                                                undercarriage and keys are not covered by the CDW.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="node_modules/slick-slider/slick/slick.min.js"></script>
@@ -1113,9 +1777,58 @@
                 allowClear: false,
                 minimumResultsForSearch: Infinity
             });
+            $('#selectAirline').select2({
+                placeholder: "",
+                allowClear: false,
+                minimumResultsForSearch: Infinity
+            });
+        });
+
+        // AIRLINE DETAIL TOGGLE HERE JS
+        const btn = document.querySelector('.add-flight-btn');
+        const details = document.getElementById('flightDetails');
+
+        btn.addEventListener('click', function () {
+            details.classList.toggle('d-none');
+
+            if (details.classList.contains('d-none')) {
+                btn.innerHTML = btn.innerHTML.replace('Hide flight details', 'Add flight details <span>(optional)</span>');
+            } else {
+                btn.innerHTML = btn.innerHTML.replace('Add flight details <span>(optional)</span>', 'Hide flight details');
+            }
         });
 
     </script>
+
+    <script>
+  const btnOne = document.getElementById('btnOne');
+  const btnTwo = document.getElementById('btnTwo');
+  const btnThree = document.getElementById('btnThree');
+
+  const divOne = document.getElementById('divOne');
+  const divTwo = document.getElementById('divTwo');
+
+  // Button 2 click → show second box
+  btnTwo.addEventListener('click', () => {
+    divOne.classList.add('d-none');
+    divTwo.classList.remove('d-none');
+
+    btnOne.classList.add('d-none');
+    btnTwo.classList.add('d-none');
+    btnThree.classList.remove('d-none');
+  });
+
+  // Button 3 click → back to first box
+  btnThree.addEventListener('click', () => {
+    divTwo.classList.add('d-none');
+    divOne.classList.remove('d-none');
+
+    btnThree.classList.add('d-none');
+    btnOne.classList.remove('d-none');
+    btnTwo.classList.remove('d-none');
+  });
+</script>
+
 </body>
 
 </html>

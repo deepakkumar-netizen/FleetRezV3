@@ -348,13 +348,9 @@
   width: 234px;
   max-width: 100%;
   &:hover {
-    border-color: #008857;
-    background: #008857;
-    svg {
-      path {
-        stroke: #fff;
-      }
-    }
+    border-color: rgba(3, 127, 78, 0.15);
+    background: rgba(4, 132, 81, 0.05);
+    color: #037f4e;
   }
 }
 
@@ -456,53 +452,196 @@
   border: 1px solid rgba(4, 129, 79, 0.3);
   background: #fff;
   box-shadow: 0 4px 12.7px -5px rgba(0, 0, 0, 0.07);
-  overflow: hidden;
-  .nav-tabs {
-    .nav-link {
-      color: #037f4e;
+}
+
+.comfort-package-btn {
+  border-radius: 0 0 28px 0;
+  background: linear-gradient(180deg, #048451 0%, #00683f 100%);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.28px;
+  .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background:
+      linear-gradient(
+        0deg,
+        rgba(242, 248, 246, 0.1) 0%,
+        rgba(242, 248, 246, 0.1) 100%
+      ),
+      linear-gradient(
+        180deg,
+        rgba(4, 132, 81, 0.05) 0%,
+        rgba(0, 104, 63, 0.05) 100%
+      );
+    svg {
+      path {
+        stroke: #ffffff;
+      }
+    }
+  }
+}
+
+.change-package-btn {
+  border-radius: 16px;
+  border: 1px solid rgba(3, 127, 78, 0.04);
+  background: rgba(3, 127, 78, 0.05);
+  color: #037f4e;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.28px;
+}
+
+.add-flight-btn {
+  border-radius: 14px;
+  border: 1px solid rgba(3, 127, 78, 0.11);
+  background: rgba(4, 132, 81, 0.05);
+  color: #037f4e;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.28px;
+}
+
+/// RENTAL MODAL
+.rental-details-modal {
+  &.modal {
+    .modal-dialog {
+      max-width: 686px;
+      .modal-content {
+        border-radius: 24px;
+      }
+      .modal-header {
+        background: #fff;
+        box-shadow: 0 4px 15.3px -6px rgba(0, 0, 0, 0.25);
+      }
+      .modal-body {
+        background: #f6f6f6;
+      }
+    }
+  }
+}
+
+.rental-accordion {
+  .accordion-item {
+    border-radius: 16px;
+    border: 1px solid rgba(2, 100, 65, 0.1);
+    background: #fff;
+    overflow: hidden;
+    &:first-child {
+      border-top: 1px solid rgba(2, 100, 65, 0.1);
+    }
+    &:last-child {
+      border-bottom: 1px solid rgba(2, 100, 65, 0.1);
+    }
+  }
+  .accordion-button {
+    color: #026441;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.18px;
+    background: #ecfff8;
+    box-shadow: none;
+    &::after {
+      width: 16px;
+      height: 16px;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M6.3551 3.64711C6.26135 3.55347 6.13427 3.50088 6.00177 3.50088C5.86927 3.50088 5.74219 3.55347 5.64844 3.64711L5.64844 12.3538C5.74219 12.4474 5.86927 12.5 6.00177 12.5C6.13427 12.5 6.26135 12.4474 6.3551 12.3538L10.3551 8.35377C10.4487 8.26002 10.5013 8.13294 10.5013 8.00044C10.5013 7.86794 10.4487 7.74086 10.3551 7.64711L6.3551 3.64711Z' fill='%23026441'/%3E%3C/svg%3E")
+        no-repeat center center;
+      transform: rotate(90deg);
+    }
+    &.collapsed {
+      background: #ffffff;
+      &::after {
+        transform: rotate(0deg);
+      }
+    }
+  }
+}
+
+.rental-details-text {
+  h5 {
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.14px;
+  }
+  h6 {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.14px;
+  }
+  p {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%; /* 20.8px */
+    letter-spacing: -0.16px;
+  }
+  span {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+    letter-spacing: -0.16px;
+  }
+}
+
+.rental-details-tittle {
+  color: #037f4e;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.22px;
+}
+
+.card {
+  &.result-left {
+    &.car-details-left {
+      border: 1px solid #efefef;
+      background: rgba(249, 249, 249, 0.3);
+    }
+    .result-car-image {
+      padding-top: 83px;
+    }
+    .rating-sm-card {
+      position: absolute;
+      left: 20px;
+      top: 17px;
+    }
+  }
+}
+
+.available-car-heading {
+  h5 {
+    color: #666;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.28px;
+    strong {
+      color: #008857;
       font-size: 14px;
       font-weight: 600;
       letter-spacing: -0.28px;
-      padding: 16px;
-      border-radius: 0 0 28px 0;
-      border: none;
-      background: #ffffff;
-      color: #037f4e;
-      .icon {
-        width: 40px;
-        height: 40px;
-        border-radius: 8px;
-        border: 1px solid #ffffff;
-        background: #ffffff;
-        svg {
-            path {
-              stroke: #037f4e;
-            }
-          }
-      }
-      &.active {
-        background: linear-gradient(180deg, #048451 0%, #00683f 100%);
-        color: #ffffff;
-        .icon {
-          border: 1px solid rgba(255, 255, 255, 0.1);
-          background:
-            linear-gradient(
-              0deg,
-              rgba(242, 248, 246, 0.1) 0%,
-              rgba(242, 248, 246, 0.1) 100%
-            ),
-            linear-gradient(
-              180deg,
-              rgba(4, 132, 81, 0.05) 0%,
-              rgba(0, 104, 63, 0.05) 100%
-            );
-          svg {
-            path {
-              stroke: #ffffff;
-            }
-          }
-        }
-      }
     }
+  }
+}
+
+@media screen and (max-width: 991.99px) {
+  .progress-bar-section {
+    margin: 0 -50px;
+  }
+}
+
+@media screen and (max-width: 767.99px) {
+  .progress-bar-section {
+    margin: 0 -20px;
+  }
+}
+
+@media screen and (max-width: 575.99px) {
+  .progress-bar-section {
+    margin: 0 0px;
   }
 }

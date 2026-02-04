@@ -444,13 +444,14 @@
   border-radius: 12px;
   background: #e9fff7;
   padding: 12px 22px;
+  overflow-x: auto;
 }
 
 .available-car-items {
   border-radius: 16px;
   border: 1px solid rgba(0, 136, 87, 0.2);
   background: #fff;
-  width: 245px;
+  min-width: 245px;
   min-height: 289px;
   max-width: 100%;
   margin: 8px 0;
@@ -458,7 +459,6 @@
   &.active {
     margin: 0;
     min-height: calc(289px + 16px);
-    // transform: scale(1, 1.1);
   }
 }
 

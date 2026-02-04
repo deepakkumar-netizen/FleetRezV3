@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/slick-slider/slick/slick.css">
+    <link rel="stylesheet" href="node_modules/slick-slider/slick/slick-theme.css">
+    <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="assets/scss/pages/index.css">
+    <title>FleetRez | Result Page</title>
+</head>
+
+<body>
+    <div class="header header-dark">
+        <nav class="navbar navbar-expand-lg py-2">
+            <div class="container">
+                <a class="navbar-brand col-lg-3 me-6" href="#">
+                    <img src="assets/icons/logo.svg" alt="">
+                </a>
+                <div class="d-flex gap-2 align-items-center d-lg-none">
+                    <div class="booking-dropdown dropdown">
+                        <a class="nav-link px-3 py-12" type="button" id="dropdownMenubookingMob"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Manage my booking
+                        </a>
+                        <div class="booking-dropdown-menu dropdown-menu dropdown-menu-end p-0"
+                            aria-labelledby="dropdownMenubookingMob">
+                            <div class="booking-dropdown-content">
+                                <div class="booking-dropdown-header p-4 pb-20">
+                                    <h5>Enter your booking details</h5>
+                                </div>
+                                <div class="p-4 pb-20">
+                                    <form>
+                                        <div class="mb-20">
+                                            <label for="bookingNumberMob" class="form-label d-block mb-12">Booking
+                                                number</label>
+                                            <input type="text" class="form-control p-3" id="bookingNumberMob"
+                                                placeholder="XXX-123456">
+                                        </div>
+                                        <div class="mb-20">
+                                            <label for="lastNameMob" class="form-label d-block mb-12">Last
+                                                Name</label>
+                                            <input type="text" class="form-control p-3" id="lastNameMob"
+                                                placeholder="Smith">
+                                        </div>
+                                        <button type="submit"
+                                            class="btn btn-primary view-booking-btn d-flex align-items-center justify-content-center w-100 p-3 border-0 gap-2">View
+                                            my booking <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M3.33301 7.99992H12.6663M12.6663 7.99992L7.99967 3.33325M12.6663 7.99992L7.99967 12.6666"
+                                                    stroke="white" stroke-width="1.33333" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse my-2" id="navbarText">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
+                        <li class="nav-item">
+                            <a class="nav-link px-lg-3 px-12 py-12 active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-lg-3 px-12 py-12" href="#">Support</a>
+                        </li>
+                        <li class="nav-item d-none d-lg-block">
+                            <div class="booking-dropdown dropdown">
+                                <a class="nav-link px-3 py-12" type="button" id="dropdownMenubooking"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Manage my booking
+                                </a>
+                                <div class="booking-dropdown-menu dropdown-menu dropdown-menu-end p-0"
+                                    aria-labelledby="dropdownMenubooking">
+                                    <div class="booking-dropdown-content">
+                                        <div class="booking-dropdown-header p-4 pb-20">
+                                            <h5>Enter your booking details</h5>
+                                        </div>
+                                        <div class="p-4 pb-20">
+                                            <form>
+                                                <div class="mb-20">
+                                                    <label for="bookingNumber" class="form-label d-block mb-12">Booking
+                                                        number</label>
+                                                    <input type="text" class="form-control p-3" id="bookingNumber"
+                                                        placeholder="XXX-123456">
+                                                </div>
+                                                <div class="mb-20">
+                                                    <label for="lastName" class="form-label d-block mb-12">Last
+                                                        Name</label>
+                                                    <input type="text" class="form-control p-3" id="lastName"
+                                                        placeholder="Smith">
+                                                </div>
+                                                <button type="submit"
+                                                    class="btn btn-primary view-booking-btn d-flex align-items-center justify-content-center w-100 p-3 border-0 gap-2">View
+                                                    my booking <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                        height="16" viewBox="0 0 16 16" fill="none">
+                                                        <path
+                                                            d="M3.33301 7.99992H12.6663M12.6663 7.99992L7.99967 3.33325M12.6663 7.99992L7.99967 12.6666"
+                                                            stroke="white" stroke-width="1.33333" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="d-block d-lg-none align-items-center justify-content-start gap-3">
+                        <div class="language-dropdown dropdown d-md-block">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center gap-2 p-12 w-100" href="#"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                EUR
+                            </a>
+                            <ul class="dropdown-menu p-2">
+                                <h5 class="py-3 px-12">Popular Currencies</h5>
+                                <li>
+                                    <a class="dropdown-item active d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                        EUR <span>Euro</span> </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                        USD <span>US Dollar</span> </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                        GBP <span>GB Pound</span> </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                        RUB <span>Russian Ruble</span> </a>
+                                </li>
+                                <h5 class="pt-20 pb-3 px-12">All Currencies</h5>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                        AED <span>UAE Dirhams</span> </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="language-dropdown currency-dropdown dropdown d-md-block">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center gap-2 p-12 w-100" href="#"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                EN
+                            </a>
+                            <ul class="dropdown-menu p-2">
+                                <h5 class="py-3 px-12">All languages</h5>
+                                <li>
+                                    <a class="dropdown-item active d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                        <img src="assets/icons/english.png" alt=""> English (US) </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                        <img src="assets/icons/english.png" alt=""> Español </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                        <img src="assets/icons/english.png" alt=""> Português </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center gap-12 px-4 py-3" href="#">
+                                        <img src="assets/icons/english.png" alt=""> Français </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center gap-12 px-4 py-3" href="#">
+                                        <img src="assets/icons/english.png" alt=""> Polski </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center gap-12 px-4 py-3" href="#">
+                                        <img src="assets/icons/english.png" alt=""> Deutsch </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-lg-flex align-items-center justify-content-end gap-2">
+                    <div class="language-dropdown dropdown d-md-block d-none">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center gap-2 p-12" href="#"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            EUR
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end p-2">
+                            <h5 class="py-3 px-12">Popular Currencies</h5>
+                            <li>
+                                <a class="dropdown-item active d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                    EUR <span>Euro</span> </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                    USD <span>US Dollar</span> </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                    GBP <span>GB Pound</span> </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                    RUB <span>Russian Ruble</span> </a>
+                            </li>
+                            <h5 class="pt-20 pb-3 px-12">All Currencies</h5>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                    AED <span>UAE Dirhams</span> </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="language-dropdown currency-dropdown dropdown d-md-block d-none">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center gap-2 p-12" href="#"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            EN
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end p-2">
+                            <h5 class="py-3 px-12">All languages</h5>
+                            <li>
+                                <a class="dropdown-item active d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                    <img src="assets/icons/english.png" alt=""> English (US) </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                    <img src="assets/icons/english.png" alt=""> Español </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2 px-4 py-3" href="#">
+                                    <img src="assets/icons/english.png" alt=""> Português </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-12 px-4 py-3" href="#">
+                                    <img src="assets/icons/english.png" alt=""> Français </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-12 px-4 py-3" href="#">
+                                    <img src="assets/icons/english.png" alt=""> Polski </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-12 px-4 py-3" href="#">
+                                    <img src="assets/icons/english.png" alt=""> Deutsch </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <section class="pb-5 mb-5">
+        <div class="container">
+            <div class="row gx-20">
+                <div class="col-xl-8">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="confirmation-detail-card p-36 mt-4">
+                                <div class="d-flex flex-md-row flex-column  align-items-center gap-36">
+                                    <div>
+                                        <img src="assets/images/confirmation-img.png" class="img-fluid" alt="">
+                                    </div>
+                                    <div>
+                                        <div class="confirmation-detail-text text-md-start text-center">
+                                            <h3 class="pb-3">Your booking is confirmed!</h3>
+                                            <p class="pb-2 d-flex align-items-center justify-content-md-start justify-content-center gap-2">Your booking ID is <span
+                                                    class="py-1 px-2">TST-72396</span></p>
+                                            <p>We’ve sent you an email with all the details.</p>
+                                        </div>
+                                        <div class="confirmation-pay-card d-flex align-items-center gap-3 mt-4">
+                                            <div
+                                                class="icon d-flex align-items-center justify-content-center px-3 py-4 h-100">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path
+                                                        d="M6 16C6 18.2091 7.79086 20 10 20H14C16.2091 20 18 18.2091 18 16C18 13.7909 16.2091 12 14 12H10C7.79086 12 6 10.2091 6 8C6 5.79086 7.79086 4 10 4H14C16.2091 4 18 5.79086 18 8M12 2V22"
+                                                        stroke="#018857" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="confirmation-pay-text py-10">
+                                                <p>
+                                                    Your payment of <strong>$1,293.28</strong> will occur at the pickup
+                                                    location (card or cash)
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="confirm-term py-36 mt-36">
+                                <div class="confirm-term-heading pb-4">
+                                    <h4>Rental Terms and Conditions</h4>
+                                </div>
+                                <div class="confirm-term-text pb-3">
+                                    <h5>Ferry</h5>
+                                    <p class="mt-2">On request (Not allowed without the written consent of the company).
+                                        Damages caused while
+                                        ferrying are not covered by any insurance and the customer is responsible for
+                                        the full
+                                        cost
+                                        of repairs and for retrieving the vehicle at the rental station.</p>
+
+                                </div>
+                                <div class="confirm-term-text pb-3">
+                                    <h5>Fuel Policy</h5>
+                                    <p class="mt-2">Same to Same. There are no refueling charges, only the gas
+                                        difference will be charged.
+                                        Vehicles are rented with a minimum of ¼ tank. The client has to return the car
+                                        with the
+                                        same
+                                        quantity of fuel it had when picked up.</p>
+                                </div>
+                                <div class="confirm-term-text pb-3">
+
+                                    <h5>Ferry</h5>
+                                    <p class="mt-2">On request (Not allowed without the written consent of the company).
+                                        Damages caused while
+                                        ferrying are not covered by any insurance and the customer is responsible for
+                                        the full
+                                        cost
+                                        of repairs and for retrieving the vehicle at the rental station.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="price-card card mt-4">
+                        <div class="card-header d-flex align-items-center gap-3">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M5 14.2864C3.14864 15.1031 2 16.2412 2 17.5C2 19.9853 6.47715 22 12 22C17.5228 22 22 19.9853 22 17.5C22 16.2412 20.8514 15.1031 19 14.2864M18 8C18 12.0637 13.5 14 12 17C10.5 14 6 12.0637 6 8C6 4.68629 8.68629 2 12 2C15.3137 2 18 4.68629 18 8ZM13 8C13 8.55228 12.5523 9 12 9C11.4477 9 11 8.55228 11 8C11 7.44772 11.4477 7 12 7C12.5523 7 13 7.44772 13 8Z"
+                                        stroke="#037F4E" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h5>Pick-up and Drop-off</h5>
+                        </div>
+                        <div class="card-body px-4 py-0">
+                            <div class="location-card py-2 px-2">
+                                <ul class="list-unstyled d-flex flex-column py-1">
+                                    <li class="">
+                                        <div class="d-flex align-items-center gap-2 flex-wrap">
+                                            <span class="d-date">Jan 18, 2026</span>
+                                            <span class="d-time">10:00</span>
+                                        </div>
+                                        <h5 class="d-location-name">
+                                            Indira Gandhi International Airport
+                                        </h5>
+                                    </li>
+                                    <li class="explanatory">
+                                        <div class="d-flex align-items-center gap-2 flex-wrap">
+                                            <span class="d-date">Jan 21, 2026</span>
+                                            <span class="d-time">17:00</span>
+                                        </div>
+                                        <h5 class="d-location-name">
+                                            Indira Gandhi International Airport
+                                        </h5>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="pb-4">
+                                <button class="change-details-btn px-3 w-100" type="button">Change
+                                    Details</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="price-card card mt-3">
+                        <div class="card-header d-flex align-items-center gap-3">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M5 13H8M2 9L4 10L5.27064 6.18807C5.53292 5.40125 5.66405 5.00784 5.90729 4.71698C6.12208 4.46013 6.39792 4.26132 6.70951 4.13878C7.06236 4 7.47705 4 8.30643 4H15.6936C16.523 4 16.9376 4 17.2905 4.13878C17.6021 4.26132 17.8779 4.46013 18.0927 4.71698C18.3359 5.00784 18.4671 5.40125 18.7294 6.18807L20 10L22 9M16 13H19M6.8 10H17.2C18.8802 10 19.7202 10 20.362 10.327C20.9265 10.6146 21.3854 11.0735 21.673 11.638C22 12.2798 22 13.1198 22 14.8V17.5C22 17.9647 22 18.197 21.9616 18.3902C21.8038 19.1836 21.1836 19.8038 20.3902 19.9616C20.197 20 19.9647 20 19.5 20H19C17.8954 20 17 19.1046 17 18C17 17.7239 16.7761 17.5 16.5 17.5H7.5C7.22386 17.5 7 17.7239 7 18C7 19.1046 6.10457 20 5 20H4.5C4.03534 20 3.80302 20 3.60982 19.9616C2.81644 19.8038 2.19624 19.1836 2.03843 18.3902C2 18.197 2 17.9647 2 17.5V14.8C2 13.1198 2 12.2798 2.32698 11.638C2.6146 11.0735 3.07354 10.6146 3.63803 10.327C4.27976 10 5.11984 10 6.8 10Z"
+                                        stroke="#037F4E" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h5>Car and Driver</h5>
+                        </div>
+                        <div class="card-body py-4 px-3">
+                            <div class="conf-car-card d-flex align-items-center gap-3 mb-1">
+                                <div class="conf-car-img p-12 d-flex align-items-center justify-content-center">
+                                    <img src="assets/images/car-items.png" alt="">
+                                </div>
+                                <div class="conf-car-text">
+                                    <h6 class="d-flex align-items-center gap-6">Kia Ceed <span>or similar</span></h6>
+                                    <p class="pt-2">Compact hatchback</p>
+                                    <div class="result-amenities pt-2">
+                                        <ul class="list-unstyled d-flex flex-wrap align-items-center gap-12">
+                                            <li class="d-flex align-items-center gap-1">
+                                                <img src="assets/icons/seat-icon.svg" alt="">
+                                                <span class="result-amenities-text">4</span>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-1">
+                                                <img src="assets/icons/luggage-icon.svg" alt="">
+                                                <span class="result-amenities-text">2</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="conf-driver-card d-flex align-items-center gap-18 p-3 mb-4">
+                                <div class="conf-driver-img">
+                                    <img src="assets/icons/driver-icon.svg" alt="">
+                                </div>
+                                <div class="conf-driver-text">
+                                    <h6>Driver</h6>
+                                    <h5 class="mt-1">Laieh Jwella</h5>
+                                    <div class="d-flex align-items-center gap-2 pt-2">
+                                        <span>Age <strong>32</strong></span>
+                                        <div class="conf-driver-info d-flex align-items-center gap-1">
+                                            <div class="icon d-flex align-items-center justify-content-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 16 16" fill="none">
+                                                    <g clip-path="url(#clip0_279_3853)">
+                                                        <path
+                                                            d="M8.00065 14.6667C11.6826 14.6667 14.6673 11.6819 14.6673 8.00004C14.6673 4.31814 11.6826 1.33337 8.00065 1.33337C4.31875 1.33337 1.33398 4.31814 1.33398 8.00004C1.33398 11.6819 4.31875 14.6667 8.00065 14.6667Z"
+                                                            fill="#D1492C" />
+                                                        <path
+                                                            d="M8.00065 5.33337V8.00004M8.00065 10.6667H8.00732M14.6673 8.00004C14.6673 11.6819 11.6826 14.6667 8.00065 14.6667C4.31875 14.6667 1.33398 11.6819 1.33398 8.00004C1.33398 4.31814 4.31875 1.33337 8.00065 1.33337C11.6826 1.33337 14.6673 4.31814 14.6673 8.00004Z"
+                                                            stroke="white" stroke-width="1.6" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_279_3853">
+                                                            <rect width="16" height="16" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                            <div class="conf-driver-info-text">
+                                                ID required at pick-up
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-3">
+                                <button class="change-details-btn px-3 w-100" type="button">Manage my booking</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/slick-slider/slick/slick.min.js"></script>
+    <script src="node_modules/select2/dist/js/select2.min.js"></script>
+</body>
+
+</html>

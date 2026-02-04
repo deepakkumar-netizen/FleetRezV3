@@ -1,0 +1,159 @@
+.confirm-term {
+  border-top: 1px solid #d9d9d9;
+  .confirm-term-heading {
+    h3 {
+      color: #000;
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: -0.48px;
+    }
+  }
+  .confirm-term-text {
+    h5 {
+      color: #000;
+      font-size: 17px;
+      font-weight: 600;
+      letter-spacing: -0.34px;
+    }
+    p {
+      color: #4c4c4c;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: -0.26px;
+    }
+  }
+}
+
+.confirmation-detail-card {
+  border-radius: 8px;
+  border: 1px solid #eaeaea;
+  background: #fff;
+  box-shadow: 0 4px 12.7px -5px rgba(0, 0, 0, 0.07);
+}
+
+.confirmation-detail-text {
+  h3 {
+    color: #000;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: -0.64px;
+  }
+  p {
+    color: #686868;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: -0.34px;
+  }
+  span {
+    border-radius: 6px;
+    border: 2px solid #dbdbdb;
+    background: #fff;
+    color: #000;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: -0.34px;
+  }
+}
+
+.confirmation-pay-card {
+  border-radius: 8px;
+  border: 2px solid #018857;
+  background: #fff;
+  overflow: hidden;
+  .icon {
+    background: #ebfcf6;
+  }
+}
+.confirmation-pay-text {
+  p {
+    color: rgba(1, 136, 87, 0.8);
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: -0.34px;
+    strong {
+      color: #018857;
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: -0.34px;
+    }
+  }
+}
+
+// CAR DETAIL CONFIRMATION
+.conf-car-card {
+  border-radius: 16px;
+  border: 1px solid #f0f0f0;
+  background: #fff;
+  overflow: hidden;
+  min-height: 92px;
+}
+.conf-car-img {
+  background: #f6f6f6;
+  min-height: 98px;
+  img {
+    height: 48px;
+  }
+}
+.conf-car-text {
+  h6 {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.32px;
+    span {
+      color: #6d6d6d;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: -0.24px;
+    }
+  }
+  p {
+    color: #6d6d6d;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: -0.24px;
+  }
+}
+
+// DRIVER DETAILS CONFIRMATION
+.conf-driver-card {
+  border-radius: 16px;
+  border: 1px solid #f0f0f0;
+  background: #fff;
+}
+
+.conf-driver-text {
+  h6 {
+    color: #6d6d6d;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.24px;
+  }
+  h5 {
+    color: #232323;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.32px;
+  }
+  span {
+    color: #6d6d6d;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.24px;
+    strong {
+      color: #000;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: -0.24px;
+    }
+  }
+}
+
+.conf-driver-info {
+  .conf-driver-info-text {
+    color: #d1492c;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: -0.24px;
+  }
+}

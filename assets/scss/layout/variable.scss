@@ -48,6 +48,21 @@ $navbar-toggler-transition: none;
 // FLOATING LABELS
 $form-floating-label-opacity: 1;
 
+/// CLOSE BUTTON BOOTSTRAP
+$btn-close-width: 1.5rem;
+$btn-close-height: $btn-close-width;
+$btn-close-padding-x: 0rem;
+$btn-close-padding-y: $btn-close-padding-x;
+$btn-close-color: #000000;
+$btn-close-bg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cg opacity='0.4'%3E%3Cpath d='M18 6L6 18M6 6L18 18' stroke='%23#{str-slice(#{$btn-close-color}, 2)}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E");
+
+$btn-close-focus-shadow: none;
+$btn-close-opacity: 0.4;
+$btn-close-hover-opacity: 0.75;
+$btn-close-focus-opacity: 1;
+$btn-close-disabled-opacity: 0.25;
+// $btn-close-white-filter: invert(1) grayscale(100%) brightness(200%);
+
 @mixin hide-number-arrows {
   -moz-appearance: textfield;
 

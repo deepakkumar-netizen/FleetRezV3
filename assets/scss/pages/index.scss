@@ -3,6 +3,7 @@
 @import "results.scss";
 @import "home.scss";
 @import "details.scss";
+@import "confirmation.scss";
 
 .filter-card {
   overflow: hidden;
@@ -251,7 +252,9 @@
 
 
 /// Select 2 SCSS
-.select2-container .select2-selection--single {
+.select2-container {
+  width: 100% !important;
+  .select2-selection--single {
   height: auto;
   border-radius: 8px;
   border: 1px solid rgba(0, 0, 0, 0.14);
@@ -267,6 +270,7 @@
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M12.3529 6.3551C12.4465 6.26135 12.4991 6.13427 12.4991 6.00177C12.4991 5.86927 12.4465 5.74219 12.3529 5.64844H3.64623C3.55259 5.74219 3.5 5.86927 3.5 6.00177C3.5 6.13427 3.55259 6.26135 3.64623 6.3551L7.64623 10.3551C7.73998 10.4487 7.86706 10.5013 7.99956 10.5013C8.13206 10.5013 8.25914 10.4487 8.35289 10.3551L12.3529 6.3551Z' fill='black'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 16px center;
+}
 }
 
 .select2-container--default
