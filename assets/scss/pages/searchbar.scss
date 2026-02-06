@@ -127,31 +127,20 @@
       letter-spacing: -0.16px;
     }
   }
-  // .form-control {
-  //   border: none;
-  //   box-shadow: none;
-  //   color: #000;
-  //   font-size: 16px;
-  //   font-weight: 600;
-  //   line-height: 100%; /* 16px */
-  //   letter-spacing: -0.16px;
-  //   &:focus {
-  //     border: none;
-  //     box-shadow: none;
-  //   }
-  //   &::placeholder {
-  //     color: #6e6e6e;
-  //     opacity: 1; /* important for Firefox */
-  //   }
-  // }
-  // .form-label {
-  //   color: #6d6d6d;
-  //   font-size: 12px;
-  //   font-weight: 500;
-  //   line-height: 100%; /* 12px */
-  //   letter-spacing: -0.12px;
-  //   display: block;
-  // }
+  &.was-validated {
+    .form-control {
+      &:valid,
+      &.is-valid {
+        padding-right: 0.75rem;
+        background-image: none;
+      }
+      &:invalid,
+      &.is-invalid {
+        padding-right: 0.75rem;
+        background-image: none;
+      }
+    }
+  }
 }
 
 .location-input {
@@ -319,8 +308,6 @@
     height: 64px;
     border-radius: 24px;
   }
-
-  
 
   .search-input-wrapper {
     .form-control {

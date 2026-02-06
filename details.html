@@ -14,11 +14,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="node_modules/slick-slider/slick/slick.css">
-    <link rel="stylesheet" href="node_modules/slick-slider/slick/slick-theme.css">
     <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
     <link rel="stylesheet" href="assets/scss/pages/index.css">
-    <title>FleetRez | Result Page</title>
+    <title>FleetRez | Details Page</title>
 </head>
 
 <body>
@@ -504,6 +502,11 @@
                                             </div>
                                             Change Package
                                         </button>
+                                    </li>
+                                    <li>
+                                        <div class="upgrade-alert py-2 ps-12 pe-20 position-relative">Upgrade to Comfort
+                                            for only $110
+                                            more!</div>
                                     </li>
                                 </ul>
                                 <div class="p-4">
@@ -1731,136 +1734,8 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="node_modules/slick-slider/slick/slick.min.js"></script>
     <script src="node_modules/select2/dist/js/select2.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.car-slider').slick({
-                infinite: false,
-                speed: 300,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                variableWidth: true,
-                dots: false,
-            });
-        });
-    </script>
-
-    <script>
-        document.querySelectorAll('.result-card-main .collapse').forEach(collapse => {
-            collapse.addEventListener('show.bs.collapse', function () {
-                this.closest('.result-card-main').classList.add('is-open');
-            });
-
-            collapse.addEventListener('hide.bs.collapse', function () {
-                this.closest('.result-card-main').classList.remove('is-open');
-            });
-        });
-
-        /// NUMBER INPUT INCREMENT AND DECREMENT FUNCTIONS
-        function increment() {
-            document.getElementById('qty').stepUp();
-        }
-
-        function decrement() {
-            document.getElementById('qty').stepDown();
-        }
-
-        // SELECT2 DROPDOWN JS HERE
-
-        $(document).ready(function () {
-            $('#titleSelect').select2({
-                placeholder: "",
-                allowClear: false,
-                minimumResultsForSearch: Infinity
-            });
-            $('#driversAge').select2({
-                placeholder: "",
-                allowClear: false,
-                minimumResultsForSearch: Infinity
-            });
-            $('#countryName').select2({
-                placeholder: "Select country",
-                allowClear: false,
-                minimumResultsForSearch: Infinity
-            });
-            $('#typeOfCar').select2({
-                placeholder: "Choose an option",
-                allowClear: false,
-                minimumResultsForSearch: Infinity
-            });
-            $('#selectAirline').select2({
-                placeholder: "",
-                allowClear: false,
-                minimumResultsForSearch: Infinity
-            });
-        });
-
-        // AIRLINE DETAIL TOGGLE HERE JS
-        const btn = document.querySelector('.add-flight-btn');
-        const details = document.getElementById('flightDetails');
-
-        btn.addEventListener('click', function () {
-            details.classList.toggle('d-none');
-
-            if (details.classList.contains('d-none')) {
-                btn.innerHTML = btn.innerHTML.replace('Hide flight details', 'Add flight details <span>(optional)</span>');
-            } else {
-                btn.innerHTML = btn.innerHTML.replace('Add flight details <span>(optional)</span>', 'Hide flight details');
-            }
-        });
-
-    </script>
-
-    <script>
-        const btnOne = document.getElementById('btnOne');
-        const btnTwo = document.getElementById('btnTwo');
-        const btnThree = document.getElementById('btnThree');
-
-        const divOne = document.getElementById('divOne');
-        const divTwo = document.getElementById('divTwo');
-
-        // Button 2 click → show second box
-        btnTwo.addEventListener('click', () => {
-            divOne.classList.add('d-none');
-            divTwo.classList.remove('d-none');
-
-            btnOne.classList.add('d-none');
-            btnTwo.classList.add('d-none');
-            btnThree.classList.remove('d-none');
-        });
-
-        // Button 3 click → back to first box
-        btnThree.addEventListener('click', () => {
-            divTwo.classList.add('d-none');
-            divOne.classList.remove('d-none');
-
-            btnThree.classList.add('d-none');
-            btnOne.classList.remove('d-none');
-            btnTwo.classList.remove('d-none');
-        });
-
-        // BOOTSTRAP TOOLTIPS
-        // const tooltipTriggerList = document.querySelectorAll(
-        //     '[data-bs-toggle="tooltip"]',
-        // );
-        // [...tooltipTriggerList].forEach((el) => {
-        //     new bootstrap.Tooltip(el);
-        // });
-
-        const tooltipTriggerList = document.querySelectorAll(
-            '[data-bs-toggle="tooltip"]'
-        );
-
-        [...tooltipTriggerList].forEach((el) => {
-            const tooltip = new bootstrap.Tooltip(el, {
-                customClass: 'custom-tooltip'
-            });
-
-            // tooltip.show();
-        });
-    </script>
-
+    <script src="assets/js/details.js"></script>
 </body>
 
 </html>
