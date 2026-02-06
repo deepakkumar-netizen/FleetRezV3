@@ -1,7 +1,7 @@
 // ===============================
 // Variables
 // ===============================
-$primary: #008857;
+$primary: #026441;
 $border: #ddd;
 $text: #333;
 $bg-hover: #e6f4ef;
@@ -68,6 +68,22 @@ $font-family: 'Inter', sans-serif;
       border-radius: 8px;
     }
   }
+}
+
+.daterangepicker .ranges li.active {
+  background-color: $primary;
+  color: #fff;
+}
+
+.daterangepicker td.in-range {
+  background: #ECFFF8;
+}
+
+.daterangepicker td.start-date {
+  background: $primary;
+}
+.daterangepicker td.end-date {
+  background: $primary;
 }
 
 // ===============================

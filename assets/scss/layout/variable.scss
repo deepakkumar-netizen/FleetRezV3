@@ -63,6 +63,23 @@ $btn-close-focus-opacity: 1;
 $btn-close-disabled-opacity: 0.25;
 // $btn-close-white-filter: invert(1) grayscale(100%) brightness(200%);
 
+// TOOLTIPS
+$tooltip-font-size:                 12px;
+$tooltip-max-width:                 274px;
+$tooltip-color:                     #ffffff;
+$tooltip-bg:                        #111;
+$tooltip-border-radius:             12px;
+$tooltip-opacity:                   1;
+$tooltip-padding-y:                 10px;
+$tooltip-padding-x:                 12px;
+$tooltip-margin:                    null; // TODO: remove this in v6
+
+$tooltip-arrow-width:               8px;
+$tooltip-arrow-height:              7px;
+// fusv-disable
+$tooltip-arrow-color:               null; // Deprecated in Bootstrap 5.2.0 for CSS variables
+// fusv-enable
+
 @mixin hide-number-arrows {
   -moz-appearance: textfield;
 

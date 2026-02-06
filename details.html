@@ -469,7 +469,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div  class="p-4">
+                        <div class="p-4">
                             <div id="divOne" class="additional-services-section">
                                 <ul class="list-unstyled d-flex flex-wrap align-items-center gap-12 ">
                                     <li>
@@ -489,8 +489,10 @@
                                         </button>
                                     </li>
                                     <li>
-                                        <button id="btnTwo" class="change-package-btn d-flex align-items-center gap-2 py-3 px-20"
-                                            type="button">
+                                        <button id="btnTwo"
+                                            class="change-package-btn d-flex align-items-center gap-2 py-3 px-20"
+                                            type="button" data-bs-toggle="tooltip" data-bs-placement="right"
+                                            data-bs-html="true" data-bs-title="Upgrade to Comfort for only $110 more!">
                                             <div class="icon d-flex align-items-center justify-content-center">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                     viewBox="0 0 16 16" fill="none">
@@ -771,8 +773,18 @@
                     <!-- Driver Details -->
                     <div class="driver-details-card card p-3 mt-2">
                         <div class="p-3">
-                            <div class="add-heading">
-                                <h4 class="pb-4 mb-1">Driver Details <span>(Required)</span></h4>
+                            <div class="add-heading d-flex flex-wrap align-items-center gap-3 pb-4 mb-1">
+                                <h4>Driver Details <span>(Required)</span></h4>
+                                <div
+                                    class="custom-pending-alert py-1 px-12 d-inline-flex align-items-center justify-content-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                        fill="none">
+                                        <path
+                                            d="M7.99967 5.33331V7.99998M7.99967 10.6666H8.00634M14.6663 7.99998C14.6663 11.6819 11.6816 14.6666 7.99967 14.6666C4.31778 14.6666 1.33301 11.6819 1.33301 7.99998C1.33301 4.31808 4.31778 1.33331 7.99967 1.33331C11.6816 1.33331 14.6663 4.31808 14.6663 7.99998Z"
+                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg> Pending
+                                </div>
                             </div>
 
                             <div class="row gx-20">
@@ -1801,33 +1813,53 @@
     </script>
 
     <script>
-  const btnOne = document.getElementById('btnOne');
-  const btnTwo = document.getElementById('btnTwo');
-  const btnThree = document.getElementById('btnThree');
+        const btnOne = document.getElementById('btnOne');
+        const btnTwo = document.getElementById('btnTwo');
+        const btnThree = document.getElementById('btnThree');
 
-  const divOne = document.getElementById('divOne');
-  const divTwo = document.getElementById('divTwo');
+        const divOne = document.getElementById('divOne');
+        const divTwo = document.getElementById('divTwo');
 
-  // Button 2 click → show second box
-  btnTwo.addEventListener('click', () => {
-    divOne.classList.add('d-none');
-    divTwo.classList.remove('d-none');
+        // Button 2 click → show second box
+        btnTwo.addEventListener('click', () => {
+            divOne.classList.add('d-none');
+            divTwo.classList.remove('d-none');
 
-    btnOne.classList.add('d-none');
-    btnTwo.classList.add('d-none');
-    btnThree.classList.remove('d-none');
-  });
+            btnOne.classList.add('d-none');
+            btnTwo.classList.add('d-none');
+            btnThree.classList.remove('d-none');
+        });
 
-  // Button 3 click → back to first box
-  btnThree.addEventListener('click', () => {
-    divTwo.classList.add('d-none');
-    divOne.classList.remove('d-none');
+        // Button 3 click → back to first box
+        btnThree.addEventListener('click', () => {
+            divTwo.classList.add('d-none');
+            divOne.classList.remove('d-none');
 
-    btnThree.classList.add('d-none');
-    btnOne.classList.remove('d-none');
-    btnTwo.classList.remove('d-none');
-  });
-</script>
+            btnThree.classList.add('d-none');
+            btnOne.classList.remove('d-none');
+            btnTwo.classList.remove('d-none');
+        });
+
+        // BOOTSTRAP TOOLTIPS
+        // const tooltipTriggerList = document.querySelectorAll(
+        //     '[data-bs-toggle="tooltip"]',
+        // );
+        // [...tooltipTriggerList].forEach((el) => {
+        //     new bootstrap.Tooltip(el);
+        // });
+
+        const tooltipTriggerList = document.querySelectorAll(
+            '[data-bs-toggle="tooltip"]'
+        );
+
+        [...tooltipTriggerList].forEach((el) => {
+            const tooltip = new bootstrap.Tooltip(el, {
+                customClass: 'custom-tooltip'
+            });
+
+            // tooltip.show();
+        });
+    </script>
 
 </body>
 

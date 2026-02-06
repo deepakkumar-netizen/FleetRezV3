@@ -123,6 +123,119 @@
   }
 }
 
+
+/// Select 2 SCSS
+.select2-container {
+  width: 100% !important;
+  .select2-selection--single {
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    background-color: #fafafa;
+    color: #797979;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: -0.3px;
+    padding: 12px 44px 12px 16px;
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M12.3529 6.3551C12.4465 6.26135 12.4991 6.13427 12.4991 6.00177C12.4991 5.86927 12.4465 5.74219 12.3529 5.64844H3.64623C3.55259 5.74219 3.5 5.86927 3.5 6.00177C3.5 6.13427 3.55259 6.26135 3.64623 6.3551L7.64623 10.3551C7.73998 10.4487 7.86706 10.5013 7.99956 10.5013C8.13206 10.5013 8.25914 10.4487 8.35289 10.3551L12.3529 6.3551Z' fill='black'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+  }
+}
+
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__rendered {
+  color: #797979;
+  padding-left: 0;
+  line-height: normal;
+}
+
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow {
+  display: none;
+}
+
+.select2-dropdown {
+  border-radius: 12px;
+  border: 1px solid rgba(0, 136, 87, 0.1);
+  background: #fff;
+  box-shadow:
+    0 4px 6.3px -4px rgba(0, 0, 0, 0.05),
+    0 4px 6.3px -4px rgba(0, 0, 0, 0.05);
+  padding: 8px;
+
+  .select2-results__option {
+    color: #202020;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.28px;
+    padding: 8px;
+    background: #fff;
+    border-radius: 8px;
+    &.select2-results__option--selected {
+      color: #007c50;
+      background:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M13.3337 4L6.00033 11.3333L2.66699 8' stroke='%23007C50' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+          no-repeat right 8px center,
+        #ecfff8;
+      &.select2-results__option--highlighted {
+        color: #007c50;
+        background:
+          url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M13.3337 4L6.00033 11.3333L2.66699 8' stroke='%23007C50' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+            no-repeat right 8px center,
+          #ecfff8;
+      }
+    }
+    &.select2-results__option--highlighted {
+      background: #f4f4f4;
+      color: #202020;
+    }
+  }
+}
+
+.custom-sorting-input {
+  .select2-container {
+    width: 100% !important;
+    .select2-selection--single {
+      height: auto;
+      border-radius: 12px;
+      border: 1px solid rgba(0, 136, 87, 0.1);
+      background-color: #fff;
+      box-shadow: 0 4px 6.3px -4px rgba(0, 0, 0, 0.05);
+      color: #007c50;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: -0.3px;
+      padding: 16px 44px 16px 16px;
+      display: flex;
+      align-items: center;
+      min-height: 48px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M12.3529 6.3551C12.4465 6.26135 12.4991 6.13427 12.4991 6.00177C12.4991 5.86927 12.4465 5.74219 12.3529 5.64844H3.64623C3.55259 5.74219 3.5 5.86927 3.5 6.00177C3.5 6.13427 3.55259 6.26135 3.64623 6.3551L7.64623 10.3551C7.73998 10.4487 7.86706 10.5013 7.99956 10.5013C8.13206 10.5013 8.25914 10.4487 8.35289 10.3551L12.3529 6.3551Z' fill='%23007C50'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 16px center;
+    }
+  }
+
+  .select2-container--default
+    .select2-selection--single
+    .select2-selection__rendered {
+    color: #007c50;
+    padding-left: 0;
+    line-height: normal;
+  }
+
+  .select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1199.99px) {
   .location-picker {
     .location-dropdown {
