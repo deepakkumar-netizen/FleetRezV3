@@ -316,9 +316,12 @@ $(document).ready(function () {
 });
 
 // BOOTSTRAP TOOLTIPS
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-[...tooltipTriggerList].forEach(el => {
-  new bootstrap.Tooltip(el);
+const tooltipTriggerList = document.querySelectorAll(
+  '[data-bs-toggle="tooltip"]',
+);
+[...tooltipTriggerList].forEach((el) => {
+  const tooltip = new bootstrap.Tooltip(el);
+  console.log(tooltip);
 });
 
 // BOOTSTRAP VALIDATION
@@ -337,8 +340,7 @@ const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]
         }
         form.classList.add("was-validated");
       },
-      false
+      false,
     );
   });
 })();
-

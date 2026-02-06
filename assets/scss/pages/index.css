@@ -13462,12 +13462,32 @@ button:focus {
   border: 1px solid rgba(0, 136, 87, 0.2);
   background: #fff;
   min-width: 245px;
-  min-height: 289px;
+  min-height: 294px;
   max-width: 100%;
   margin: 8px 0; }
+  .available-car-items.selected .select-btn {
+    background: #fff;
+    border: 1px solid rgba(0, 136, 87, 0.21); }
+    .available-car-items.selected .select-btn .btn-text {
+      color: #008857; }
   .available-car-items.active {
     margin: 0;
     min-height: calc(289px + 16px); }
+
+.select-btn {
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #008857 0%, #00613e 100%);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.14px;
+  border: 1px solid #fff; }
+  .select-btn .btn-text {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.14px; }
 
 .custom-badge-success {
   background: #008857;
@@ -13518,15 +13538,6 @@ button:focus {
   font-size: 12px;
   font-weight: 500;
   letter-spacing: -0.12px; }
-
-.select-btn {
-  padding: 10px 16px;
-  border-radius: 8px;
-  background: linear-gradient(180deg, #008857 0%, #00613e 100%);
-  color: #fff;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: -0.14px; }
 
 @media screen and (max-width: 767.99px) {
   .result-left {

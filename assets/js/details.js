@@ -73,12 +73,37 @@ btnThree.addEventListener("click", () => {
 });
 
 // BOOTSTRAP TOOLTIPS
-const tooltipTriggerList = document.querySelectorAll(
-  '[data-bs-toggle="tooltip"]',
-);
+// const tooltipTriggerList = document.querySelectorAll(
+//   '[data-bs-toggle="tooltip"]',
+// );
 
-[...tooltipTriggerList].forEach((el) => {
-  const tooltip = new bootstrap.Tooltip(el, {
-    customClass: "custom-tooltip",
+// [...tooltipTriggerList].forEach((el) => {
+//   const tooltip = new bootstrap.Tooltip(el, {
+//     customClass: "custom-tooltip",
+//   });
+//   console.log(tooltip);
+// });
+
+// CAR OFFER TYPE SELECT
+const buttons = document.querySelectorAll(".select-btn");
+
+buttons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const card = btn.closest(".card");
+    const isSelected = card.classList.contains("selected");
+
+    // reset all cards
+    buttons.forEach((b) => {
+      b.closest(".card").classList.remove("selected");
+      b.querySelector(".btn-text").textContent = "Select";
+      b.querySelector(".icon").classList.add("d-none");
+    });
+
+    // toggle current card
+    if (!isSelected) {
+      card.classList.add("selected");
+      btn.querySelector(".btn-text").textContent = "Selected";
+      btn.querySelector(".icon").classList.remove("d-none");
+    }
   });
 });
