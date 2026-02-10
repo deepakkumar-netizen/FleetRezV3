@@ -427,6 +427,25 @@ document.querySelectorAll(".carSpecifications-item").forEach((item) => {
   });
 });
 
+/// CAR TYPES
+document
+  .getElementById("carTypeSelectAll")
+  .addEventListener("change", function () {
+    const items = document.querySelectorAll(".cartype-item");
+    items.forEach((item) => {
+      item.checked = this.checked;
+    });
+  });
+
+// Optional: update "Select all" when individual checkboxes change
+document.querySelectorAll(".cartype-item").forEach((item) => {
+  item.addEventListener("change", function () {
+    const items = document.querySelectorAll(".cartype-item");
+    const allChecked = [...items].every((i) => i.checked);
+    document.getElementById("carTypeSelectAll").checked = allChecked;
+  });
+});
+
 // SELECT2 DROPDOWN
 
 $("#sorting").select2({
