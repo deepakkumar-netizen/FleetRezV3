@@ -297,7 +297,7 @@
                 </div>
             </div>
             <div class="row gx-20">
-                <div class="col-xl-3">
+                <div class="col-xl-3 d-none d-xl-block">
                     <div class="filter-card card mt-20">
                         <div
                             class="card-header d-flex align-items-center gap-3 justify-content-between p-3 pb-12 border-0">
@@ -348,7 +348,7 @@
                                     <a class="filter-btn d-flex align-items-center justify-content-between gap-1"
                                         data-bs-toggle="collapse" data-bs-target=".multi-collapse-00"
                                         aria-expanded="false" aria-controls="filterPrice">
-                                        Payment type <img src="assets/icons/chevron-down-solid-icon.svg" alt="">
+                                        Total Price <img src="assets/icons/chevron-down-solid-icon.svg" alt="">
                                     </a>
                                 </div>
                                 <div class="collapse multi-collapse-00 pb-3 show" id="filterPrice">
@@ -938,39 +938,57 @@
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <div class="selected-filter-card d-flex flex-wrap align-items-center gap-6 mt-20 mb-18">
-                                <div
-                                    class="selected-filter d-inline-flex align-items-center justify-content-center gap-1 px-2 py-6">
-                                    &lt; €24,040
-                                    <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            viewBox="0 0 16 16" fill="none">
-                                            <path d="M12 4L4 12M4 4L12 12" stroke="#007C50" stroke-width="1.33333"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </span>
+                            <div class="d-flex align-items-center justify-content-between gap-3">
+                                <div class="selected-filter-card d-flex flex-wrap align-items-center gap-6 mt-20 mb-18">
+                                    <div
+                                        class="selected-filter d-inline-flex align-items-center justify-content-center gap-1 px-2 py-6">
+                                        &lt; €24,040
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path d="M12 4L4 12M4 4L12 12" stroke="#007C50" stroke-width="1.33333"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div
+                                        class="selected-filter d-inline-flex align-items-center justify-content-center gap-1 px-2 py-6">
+                                        &lt; Pay partially
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path d="M12 4L4 12M4 4L12 12" stroke="#007C50" stroke-width="1.33333"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div
+                                        class="selected-filter d-inline-flex align-items-center justify-content-center gap-1 px-2 py-6">
+                                        &lt; Air conditioning
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path d="M12 4L4 12M4 4L12 12" stroke="#007C50" stroke-width="1.33333"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </div>
                                 </div>
-                                <div
-                                    class="selected-filter d-inline-flex align-items-center justify-content-center gap-1 px-2 py-6">
-                                    &lt; Pay partially
-                                    <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            viewBox="0 0 16 16" fill="none">
-                                            <path d="M12 4L4 12M4 4L12 12" stroke="#007C50" stroke-width="1.33333"
-                                                stroke-linecap="round" stroke-linejoin="round" />
+                                <div class="d-xl-none d-block">
+                                    <button
+                                        class="filter-open-btn d-flex align-items-center justify-content-center border-0 position-relative"
+                                        type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive"
+                                        aria-controls="offcanvasResponsive">
+                                        <span
+                                            class="selected-filter-number position-absolute d-flex align-items-center justify-content-center rounded-circle">3</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="10"
+                                            viewBox="0 0 14 10" fill="none">
+                                            <path
+                                                d="M2.66699 4.66675H10.667M0.666992 0.666748H12.667M4.66699 8.66675H8.66699"
+                                                stroke="black" stroke-width="1.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
                                         </svg>
-                                    </span>
-                                </div>
-                                <div
-                                    class="selected-filter d-inline-flex align-items-center justify-content-center gap-1 px-2 py-6">
-                                    &lt; Air conditioning
-                                    <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            viewBox="0 0 16 16" fill="none">
-                                            <path d="M12 4L4 12M4 4L12 12" stroke="#007C50" stroke-width="1.33333"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </span>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -1823,6 +1841,364 @@
         </div>
     </section>
 
+    <!-- FILTER CANVAS -->
+
+    <div class="offcanvas-xl offcanvas-end" tabindex="-1" id="offcanvasResponsive"
+        aria-labelledby="offcanvasResponsiveLabel">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">Filter</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="filter-card card">
+                <div class="card-header d-flex align-items-center gap-3 justify-content-between p-3 pb-12 border-0">
+                    <h5 class="d-flex align-items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M11.3333 2.66675V13.3334M11.3333 13.3334L8.66667 10.6667M11.3333 13.3334L14 10.6667M4.66667 13.3334V2.66675M4.66667 2.66675L2 5.33341M4.66667 2.66675L7.33333 5.33341"
+                                stroke="black" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Sort by
+                    </h5>
+                </div>
+                <div class="card-body p-0">
+                    <div class="filter-inner-card overflow-hidden bg-white px-3 border-top-0 pb-12">
+                        <div class="custom-sorting-input">
+                            <select class="form-select" id="sortingMob">
+                                <option selected value="Popular deals">Popular deals</option>
+                                <option value="Price (high to low)">Price (high to low)</option>
+                                <option value="Price (low to high)">Price (low to high)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-card card mt-2">
+                <div class="card-header d-flex align-items-center gap-3 justify-content-between p-3 pb-12 border-0">
+                    <h5 class="d-flex align-items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M4 8H12M2 4H14M6 12H10" stroke="black" stroke-width="1.33333"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>Filter by</h5>
+                    <a href="#!" class="reset-filter-btn d-flex align-items-center gap-1"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                            <path
+                                d="M1 5C1 5 2.00249 3.63411 2.81692 2.81912C3.63134 2.00413 4.7568 1.5 6 1.5C8.48528 1.5 10.5 3.51472 10.5 6C10.5 8.48528 8.48528 10.5 6 10.5C3.94845 10.5 2.21756 9.12714 1.67588 7.25M1 5V2M1 5H4"
+                                stroke="#007C50" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg> Reset</a>
+                </div>
+                <div class="card-body p-0">
+                    <div class="filter-inner-card overflow-hidden bg-white px-3">
+                        <div class="d-flex align-items-center justify-content-between py-3">
+                            <a class="filter-btn d-flex align-items-center justify-content-between gap-1"
+                                data-bs-toggle="collapse" data-bs-target=".multi-collapse-Mob-00" aria-expanded="false"
+                                aria-controls="filterPriceMob">
+                                Total Price <img src="assets/icons/chevron-down-solid-icon.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="collapse multi-collapse-Mob-00 pb-3 show" id="filterPriceMob">
+                            <div class="d-flex flex-column gap-2">
+                                <div class="price-slider-text pb-12"><span id="minMob"></span> - <span
+                                        id="maxMob"></span>
+                                </div>
+                                <div id="priceSliderMob" class="mb-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-inner-card overflow-hidden bg-white px-3">
+                        <div class="d-flex align-items-center justify-content-between py-3">
+                            <a class="filter-btn d-flex align-items-center justify-content-between gap-1"
+                                data-bs-toggle="collapse" data-bs-target=".multi-collapse-Mob-01" aria-expanded="false"
+                                aria-controls="filterPaymentMob filterPaymentSelectAllMob">
+                                Payment type <img src="assets/icons/chevron-down-solid-icon.svg" alt="">
+                            </a>
+                            <div class="collapse multi-collapse-Mob-01 show" id="filterPaymentSelectAllMob">
+                                <div
+                                    class="filter-checkbox filter-all-checkbox form-check d-flex align-items-center gap-2">
+                                    <input class="form-check-input" type="checkbox" id="payNowSelectAllMob">
+                                    <label class="form-check-label" for="payNowSelectAllMob">Select all</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse multi-collapse-Mob-01 pb-3 show" id="filterPaymentMob">
+                            <div class="d-flex flex-column gap-6">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="filter-checkbox form-check d-flex align-items-center gap-12">
+                                        <input class="form-check-input payNow-item-mob" type="checkbox"
+                                            id="payNowMob-01">
+                                        <label class="form-check-label" for="payNowMob-01">Pay in full</label>
+                                    </div>
+                                    <div class="filter-check-price">
+                                        €240
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="filter-checkbox form-check d-flex align-items-center gap-12">
+                                        <input class="form-check-input payNow-item-mob" type="checkbox"
+                                            id="payNowMob-02">
+                                        <label class="form-check-label" for="payNowMob-02">Pay partially</label>
+                                    </div>
+                                    <div class="filter-check-price">
+                                        €151
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-inner-card overflow-hidden bg-white px-3">
+                        <div class="d-flex align-items-center justify-content-between py-3">
+                            <a class="filter-btn d-flex align-items-center justify-content-between gap-1"
+                                data-bs-toggle="collapse" data-bs-target=".multi-collapse-mob-02" aria-expanded="false"
+                                aria-controls="filtercarSpecificationsMob filtercarSpecificationsSelectAllMob">
+                                Car specifications <img src="assets/icons/chevron-down-solid-icon.svg" alt="">
+                            </a>
+                            <div class="collapse multi-collapse-mob-02 show" id="filtercarSpecificationsSelectAllMob">
+                                <div
+                                    class="filter-checkbox filter-all-checkbox form-check d-flex align-items-center gap-2">
+                                    <input class="form-check-input" type="checkbox" id="carSpecificationsSelectAllMob">
+                                    <label class="form-check-label" for="carSpecificationsSelectAllMob">Select
+                                        all</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse multi-collapse-mob-02 pb-3 show" id="filtercarSpecificationsMob">
+                            <div class="d-flex flex-column gap-6 pb-3">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="filter-checkbox form-check d-flex align-items-center gap-12">
+                                        <input class="form-check-input carSpecifications-mob-item" type="checkbox"
+                                            id="carSpecificationsMob-01">
+                                        <label class="form-check-label" for="carSpecificationsMob-01">2
+                                            doors</label>
+                                    </div>
+                                    <div class="filter-check-price">
+                                        €240
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="filter-checkbox form-check d-flex align-items-center gap-12">
+                                        <input class="form-check-input carSpecifications-mob-item" type="checkbox"
+                                            id="carSpecificationsMob-02">
+                                        <label class="form-check-label" for="carSpecificationsMob-02">4+
+                                            doors</label>
+                                    </div>
+                                    <div class="filter-check-price">
+                                        €151
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="filter-checkbox form-check d-flex align-items-center gap-12">
+                                        <input class="form-check-input carSpecifications-mob-item" type="checkbox"
+                                            id="carSpecificationsMob-03">
+                                        <label class="form-check-label" for="carSpecificationsMob-03">Air
+                                            conditioning</label>
+                                    </div>
+                                    <div class="filter-check-price">
+                                        €151
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="filter-checkbox form-check d-flex align-items-center gap-12">
+                                        <input class="form-check-input carSpecifications-mob-item" type="checkbox"
+                                            id="carSpecificationsMob-04">
+                                        <label class="form-check-label" for="carSpecificationsMob-04">Manual
+                                            transmission</label>
+                                    </div>
+                                    <div class="filter-check-price">
+                                        €151
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="filter-checkbox form-check d-flex align-items-center gap-12">
+                                        <input class="form-check-input carSpecifications-mob-item" type="checkbox"
+                                            id="carSpecificationsMob-05">
+                                        <label class="form-check-label" for="carSpecificationsMob-05">Automatic
+                                            transmission</label>
+                                    </div>
+                                    <div class="filter-check-price">
+                                        €151
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="filter-checkbox form-check d-flex align-items-center gap-12">
+                                        <input class="form-check-input carSpecifications-mob-item" type="checkbox"
+                                            id="carSpecificationsMob-06">
+                                        <label class="form-check-label" for="carSpecificationsMob-06">Unlimited
+                                            mileage</label>
+                                    </div>
+                                    <div class="filter-check-price">
+                                        €151
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-inner-card overflow-hidden bg-white px-3">
+                        <div class="d-flex align-items-center justify-content-between py-3">
+                            <a class="filter-btn d-flex align-items-center justify-content-between gap-1"
+                                data-bs-toggle="collapse" data-bs-target=".multi-collapse-mob-03" aria-expanded="false"
+                                aria-controls="filtercarTypeMob filtercarTypeSelectAllMob">
+                                Car types <img src="assets/icons/chevron-down-solid-icon.svg" alt="">
+                            </a>
+                            <div class="collapse multi-collapse-mob-03 show" id="filtercarTypeSelectAllMob">
+                                <div
+                                    class="filter-checkbox filter-all-checkbox form-check d-flex align-items-center gap-2">
+                                    <input class="form-check-input" type="checkbox" id="carTypeSelectAllMob">
+                                    <label class="form-check-label" for="carTypeSelectAllMob">Select
+                                        all</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse multi-collapse-mob-03 pb-3 show" id="filtercarTypeMob">
+                            <div class="d-flex flex-column gap-6 pb-3">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="filter-checkbox form-check d-flex align-items-center gap-12">
+                                        <input class="form-check-input car-type-mob-item" type="checkbox"
+                                            id="cartypeMob-01">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <label class="form-check-label" for="cartypeMob-01">Small</label>
+                                            <div class="car-type-amenities d-flex align-items-center gap-6">
+                                                <span class="d-flex align-items-center gap-1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                        viewBox="0 0 10 10" fill="none">
+                                                        <path
+                                                            d="M5.00065 4.16659C5.92113 4.16659 6.66732 3.42039 6.66732 2.49992C6.66732 1.57944 5.92113 0.833252 5.00065 0.833252C4.08018 0.833252 3.33398 1.57944 3.33398 2.49992C3.33398 3.42039 4.08018 4.16659 5.00065 4.16659Z"
+                                                            fill="#4A4A4A" fill-opacity="0.8" />
+                                                        <path
+                                                            d="M8.33268 7.29175C8.33268 8.32716 8.33268 9.16675 4.99935 9.16675C1.66602 9.16675 1.66602 8.32716 1.66602 7.29175C1.66602 6.25633 3.15852 5.41675 4.99935 5.41675C6.84018 5.41675 8.33268 6.25633 8.33268 7.29175Z"
+                                                            fill="#4A4A4A" fill-opacity="0.8" />
+                                                    </svg>
+                                                    4
+                                                </span>
+                                                <span class="d-flex align-items-center gap-1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                        viewBox="0 0 10 10" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M5.02232 0.520752H4.97898C4.6044 0.520752 4.29232 0.520752 4.04482 0.554085C3.78315 0.589085 3.5469 0.666585 3.35732 0.856169C3.16732 1.04617 3.08982 1.28242 3.05482 1.54367C3.02148 1.79159 3.02148 2.10409 3.02148 2.47825V2.51075C2.1794 2.53825 1.67357 2.63659 1.32232 2.98825C0.833984 3.47617 0.833984 4.262 0.833984 5.83325C0.833984 7.4045 0.833984 8.19033 1.32232 8.67825C1.81065 9.16617 2.59607 9.16658 4.16732 9.16658H5.83398C7.40523 9.16658 8.19107 9.16658 8.67898 8.67825C9.1669 8.18992 9.16732 7.4045 9.16732 5.83325C9.16732 4.262 9.16732 3.47617 8.67898 2.98825C8.32773 2.63659 7.8219 2.53825 6.97982 2.51075V2.47825C6.97982 2.10409 6.97982 1.79159 6.94648 1.54409C6.91148 1.28242 6.83398 1.04617 6.64398 0.856585C6.4544 0.666585 6.21815 0.589085 5.95648 0.554085C5.70898 0.520752 5.39648 0.520752 5.02232 0.520752ZM6.35482 2.50075V2.49992C6.35482 2.09825 6.35398 1.82825 6.32732 1.627C6.30107 1.43492 6.25648 1.35242 6.20232 1.29825C6.14815 1.24409 6.06565 1.1995 5.87315 1.17325C5.67232 1.14659 5.40232 1.14575 5.00065 1.14575C4.59898 1.14575 4.32898 1.14659 4.12773 1.17367C3.93565 1.1995 3.85315 1.24409 3.79898 1.29867C3.74482 1.35325 3.70023 1.43492 3.67398 1.627C3.64773 1.82825 3.64648 2.09825 3.64648 2.49992V2.50075C3.80954 2.5002 3.98315 2.49992 4.16732 2.49992H5.83398C6.01787 2.49992 6.19148 2.5002 6.35482 2.50075ZM7.08398 3.74992C7.08398 3.86043 7.04009 3.96641 6.96195 4.04455C6.88381 4.12269 6.77782 4.16659 6.66732 4.16659C6.55681 4.16659 6.45083 4.12269 6.37269 4.04455C6.29455 3.96641 6.25065 3.86043 6.25065 3.74992C6.25065 3.63941 6.29455 3.53343 6.37269 3.45529C6.45083 3.37715 6.55681 3.33325 6.66732 3.33325C6.77782 3.33325 6.88381 3.37715 6.96195 3.45529C7.04009 3.53343 7.08398 3.63941 7.08398 3.74992ZM3.33398 4.16659C3.44449 4.16659 3.55047 4.12269 3.62861 4.04455C3.70675 3.96641 3.75065 3.86043 3.75065 3.74992C3.75065 3.63941 3.70675 3.53343 3.62861 3.45529C3.55047 3.37715 3.44449 3.33325 3.33398 3.33325C3.22348 3.33325 3.1175 3.37715 3.03936 3.45529C2.96122 3.53343 2.91732 3.63941 2.91732 3.74992C2.91732 3.86043 2.96122 3.96641 3.03936 4.04455C3.1175 4.12269 3.22348 4.16659 3.33398 4.16659Z"
+                                                            fill="#4A4A4A" fill-opacity="0.8" />
+                                                    </svg>
+                                                    2
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter-check-price">
+                                        €240
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="filter-checkbox form-check d-flex align-items-center gap-12">
+                                        <input class="form-check-input car-type-mob-item" type="checkbox"
+                                            id="cartypeMob-02">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <label class="form-check-label" for="cartypeMob-02">Large</label>
+                                            <div class="car-type-amenities d-flex align-items-center gap-6">
+                                                <span class="d-flex align-items-center gap-1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                        viewBox="0 0 10 10" fill="none">
+                                                        <path
+                                                            d="M5.00065 4.16659C5.92113 4.16659 6.66732 3.42039 6.66732 2.49992C6.66732 1.57944 5.92113 0.833252 5.00065 0.833252C4.08018 0.833252 3.33398 1.57944 3.33398 2.49992C3.33398 3.42039 4.08018 4.16659 5.00065 4.16659Z"
+                                                            fill="#4A4A4A" fill-opacity="0.8" />
+                                                        <path
+                                                            d="M8.33268 7.29175C8.33268 8.32716 8.33268 9.16675 4.99935 9.16675C1.66602 9.16675 1.66602 8.32716 1.66602 7.29175C1.66602 6.25633 3.15852 5.41675 4.99935 5.41675C6.84018 5.41675 8.33268 6.25633 8.33268 7.29175Z"
+                                                            fill="#4A4A4A" fill-opacity="0.8" />
+                                                    </svg>
+                                                    6
+                                                </span>
+                                                <span class="d-flex align-items-center gap-1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                        viewBox="0 0 10 10" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M5.02232 0.520752H4.97898C4.6044 0.520752 4.29232 0.520752 4.04482 0.554085C3.78315 0.589085 3.5469 0.666585 3.35732 0.856169C3.16732 1.04617 3.08982 1.28242 3.05482 1.54367C3.02148 1.79159 3.02148 2.10409 3.02148 2.47825V2.51075C2.1794 2.53825 1.67357 2.63659 1.32232 2.98825C0.833984 3.47617 0.833984 4.262 0.833984 5.83325C0.833984 7.4045 0.833984 8.19033 1.32232 8.67825C1.81065 9.16617 2.59607 9.16658 4.16732 9.16658H5.83398C7.40523 9.16658 8.19107 9.16658 8.67898 8.67825C9.1669 8.18992 9.16732 7.4045 9.16732 5.83325C9.16732 4.262 9.16732 3.47617 8.67898 2.98825C8.32773 2.63659 7.8219 2.53825 6.97982 2.51075V2.47825C6.97982 2.10409 6.97982 1.79159 6.94648 1.54409C6.91148 1.28242 6.83398 1.04617 6.64398 0.856585C6.4544 0.666585 6.21815 0.589085 5.95648 0.554085C5.70898 0.520752 5.39648 0.520752 5.02232 0.520752ZM6.35482 2.50075V2.49992C6.35482 2.09825 6.35398 1.82825 6.32732 1.627C6.30107 1.43492 6.25648 1.35242 6.20232 1.29825C6.14815 1.24409 6.06565 1.1995 5.87315 1.17325C5.67232 1.14659 5.40232 1.14575 5.00065 1.14575C4.59898 1.14575 4.32898 1.14659 4.12773 1.17367C3.93565 1.1995 3.85315 1.24409 3.79898 1.29867C3.74482 1.35325 3.70023 1.43492 3.67398 1.627C3.64773 1.82825 3.64648 2.09825 3.64648 2.49992V2.50075C3.80954 2.5002 3.98315 2.49992 4.16732 2.49992H5.83398C6.01787 2.49992 6.19148 2.5002 6.35482 2.50075ZM7.08398 3.74992C7.08398 3.86043 7.04009 3.96641 6.96195 4.04455C6.88381 4.12269 6.77782 4.16659 6.66732 4.16659C6.55681 4.16659 6.45083 4.12269 6.37269 4.04455C6.29455 3.96641 6.25065 3.86043 6.25065 3.74992C6.25065 3.63941 6.29455 3.53343 6.37269 3.45529C6.45083 3.37715 6.55681 3.33325 6.66732 3.33325C6.77782 3.33325 6.88381 3.37715 6.96195 3.45529C7.04009 3.53343 7.08398 3.63941 7.08398 3.74992ZM3.33398 4.16659C3.44449 4.16659 3.55047 4.12269 3.62861 4.04455C3.70675 3.96641 3.75065 3.86043 3.75065 3.74992C3.75065 3.63941 3.70675 3.53343 3.62861 3.45529C3.55047 3.37715 3.44449 3.33325 3.33398 3.33325C3.22348 3.33325 3.1175 3.37715 3.03936 3.45529C2.96122 3.53343 2.91732 3.63941 2.91732 3.74992C2.91732 3.86043 2.96122 3.96641 3.03936 4.04455C3.1175 4.12269 3.22348 4.16659 3.33398 4.16659Z"
+                                                            fill="#4A4A4A" fill-opacity="0.8" />
+                                                    </svg>
+                                                    4
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="filter-check-price">
+                                        €364
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="filter-checkbox form-check d-flex align-items-center gap-12">
+                                        <input class="form-check-input car-type-mob-item" type="checkbox"
+                                            id="cartypeMob-03">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <label class="form-check-label" for="cartypeMob-03">SUVs</label>
+                                            <div class="car-type-amenities d-flex align-items-center gap-6">
+                                                <span class="d-flex align-items-center gap-1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                        viewBox="0 0 10 10" fill="none">
+                                                        <path
+                                                            d="M5.00065 4.16659C5.92113 4.16659 6.66732 3.42039 6.66732 2.49992C6.66732 1.57944 5.92113 0.833252 5.00065 0.833252C4.08018 0.833252 3.33398 1.57944 3.33398 2.49992C3.33398 3.42039 4.08018 4.16659 5.00065 4.16659Z"
+                                                            fill="#4A4A4A" fill-opacity="0.8" />
+                                                        <path
+                                                            d="M8.33268 7.29175C8.33268 8.32716 8.33268 9.16675 4.99935 9.16675C1.66602 9.16675 1.66602 8.32716 1.66602 7.29175C1.66602 6.25633 3.15852 5.41675 4.99935 5.41675C6.84018 5.41675 8.33268 6.25633 8.33268 7.29175Z"
+                                                            fill="#4A4A4A" fill-opacity="0.8" />
+                                                    </svg>
+                                                    7
+                                                </span>
+                                                <span class="d-flex align-items-center gap-1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                        viewBox="0 0 10 10" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M5.02232 0.520752H4.97898C4.6044 0.520752 4.29232 0.520752 4.04482 0.554085C3.78315 0.589085 3.5469 0.666585 3.35732 0.856169C3.16732 1.04617 3.08982 1.28242 3.05482 1.54367C3.02148 1.79159 3.02148 2.10409 3.02148 2.47825V2.51075C2.1794 2.53825 1.67357 2.63659 1.32232 2.98825C0.833984 3.47617 0.833984 4.262 0.833984 5.83325C0.833984 7.4045 0.833984 8.19033 1.32232 8.67825C1.81065 9.16617 2.59607 9.16658 4.16732 9.16658H5.83398C7.40523 9.16658 8.19107 9.16658 8.67898 8.67825C9.1669 8.18992 9.16732 7.4045 9.16732 5.83325C9.16732 4.262 9.16732 3.47617 8.67898 2.98825C8.32773 2.63659 7.8219 2.53825 6.97982 2.51075V2.47825C6.97982 2.10409 6.97982 1.79159 6.94648 1.54409C6.91148 1.28242 6.83398 1.04617 6.64398 0.856585C6.4544 0.666585 6.21815 0.589085 5.95648 0.554085C5.70898 0.520752 5.39648 0.520752 5.02232 0.520752ZM6.35482 2.50075V2.49992C6.35482 2.09825 6.35398 1.82825 6.32732 1.627C6.30107 1.43492 6.25648 1.35242 6.20232 1.29825C6.14815 1.24409 6.06565 1.1995 5.87315 1.17325C5.67232 1.14659 5.40232 1.14575 5.00065 1.14575C4.59898 1.14575 4.32898 1.14659 4.12773 1.17367C3.93565 1.1995 3.85315 1.24409 3.79898 1.29867C3.74482 1.35325 3.70023 1.43492 3.67398 1.627C3.64773 1.82825 3.64648 2.09825 3.64648 2.49992V2.50075C3.80954 2.5002 3.98315 2.49992 4.16732 2.49992H5.83398C6.01787 2.49992 6.19148 2.5002 6.35482 2.50075ZM7.08398 3.74992C7.08398 3.86043 7.04009 3.96641 6.96195 4.04455C6.88381 4.12269 6.77782 4.16659 6.66732 4.16659C6.55681 4.16659 6.45083 4.12269 6.37269 4.04455C6.29455 3.96641 6.25065 3.86043 6.25065 3.74992C6.25065 3.63941 6.29455 3.53343 6.37269 3.45529C6.45083 3.37715 6.55681 3.33325 6.66732 3.33325C6.77782 3.33325 6.88381 3.37715 6.96195 3.45529C7.04009 3.53343 7.08398 3.63941 7.08398 3.74992ZM3.33398 4.16659C3.44449 4.16659 3.55047 4.12269 3.62861 4.04455C3.70675 3.96641 3.75065 3.86043 3.75065 3.74992C3.75065 3.63941 3.70675 3.53343 3.62861 3.45529C3.55047 3.37715 3.44449 3.33325 3.33398 3.33325C3.22348 3.33325 3.1175 3.37715 3.03936 3.45529C2.96122 3.53343 2.91732 3.63941 2.91732 3.74992C2.91732 3.86043 2.96122 3.96641 3.03936 4.04455C3.1175 4.12269 3.22348 4.16659 3.33398 4.16659Z"
+                                                            fill="#4A4A4A" fill-opacity="0.8" />
+                                                    </svg>
+                                                    5
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter-check-price">
+                                        €510
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="filter-checkbox form-check d-flex align-items-center gap-12">
+                                        <input class="form-check-input car-type-mob-item" type="checkbox"
+                                            id="cartypeMob-04">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <label class="form-check-label" for="cartypeMob-04">Vans</label>
+                                            <div class="car-type-amenities d-flex align-items-center gap-6">
+                                                <span class="d-flex align-items-center gap-1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                        viewBox="0 0 10 10" fill="none">
+                                                        <path
+                                                            d="M5.00065 4.16659C5.92113 4.16659 6.66732 3.42039 6.66732 2.49992C6.66732 1.57944 5.92113 0.833252 5.00065 0.833252C4.08018 0.833252 3.33398 1.57944 3.33398 2.49992C3.33398 3.42039 4.08018 4.16659 5.00065 4.16659Z"
+                                                            fill="#4A4A4A" fill-opacity="0.8" />
+                                                        <path
+                                                            d="M8.33268 7.29175C8.33268 8.32716 8.33268 9.16675 4.99935 9.16675C1.66602 9.16675 1.66602 8.32716 1.66602 7.29175C1.66602 6.25633 3.15852 5.41675 4.99935 5.41675C6.84018 5.41675 8.33268 6.25633 8.33268 7.29175Z"
+                                                            fill="#4A4A4A" fill-opacity="0.8" />
+                                                    </svg>
+                                                    8
+                                                </span>
+                                                <span class="d-flex align-items-center gap-1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                        viewBox="0 0 10 10" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M5.02232 0.520752H4.97898C4.6044 0.520752 4.29232 0.520752 4.04482 0.554085C3.78315 0.589085 3.5469 0.666585 3.35732 0.856169C3.16732 1.04617 3.08982 1.28242 3.05482 1.54367C3.02148 1.79159 3.02148 2.10409 3.02148 2.47825V2.51075C2.1794 2.53825 1.67357 2.63659 1.32232 2.98825C0.833984 3.47617 0.833984 4.262 0.833984 5.83325C0.833984 7.4045 0.833984 8.19033 1.32232 8.67825C1.81065 9.16617 2.59607 9.16658 4.16732 9.16658H5.83398C7.40523 9.16658 8.19107 9.16658 8.67898 8.67825C9.1669 8.18992 9.16732 7.4045 9.16732 5.83325C9.16732 4.262 9.16732 3.47617 8.67898 2.98825C8.32773 2.63659 7.8219 2.53825 6.97982 2.51075V2.47825C6.97982 2.10409 6.97982 1.79159 6.94648 1.54409C6.91148 1.28242 6.83398 1.04617 6.64398 0.856585C6.4544 0.666585 6.21815 0.589085 5.95648 0.554085C5.70898 0.520752 5.39648 0.520752 5.02232 0.520752ZM6.35482 2.50075V2.49992C6.35482 2.09825 6.35398 1.82825 6.32732 1.627C6.30107 1.43492 6.25648 1.35242 6.20232 1.29825C6.14815 1.24409 6.06565 1.1995 5.87315 1.17325C5.67232 1.14659 5.40232 1.14575 5.00065 1.14575C4.59898 1.14575 4.32898 1.14659 4.12773 1.17367C3.93565 1.1995 3.85315 1.24409 3.79898 1.29867C3.74482 1.35325 3.70023 1.43492 3.67398 1.627C3.64773 1.82825 3.64648 2.09825 3.64648 2.49992V2.50075C3.80954 2.5002 3.98315 2.49992 4.16732 2.49992H5.83398C6.01787 2.49992 6.19148 2.5002 6.35482 2.50075ZM7.08398 3.74992C7.08398 3.86043 7.04009 3.96641 6.96195 4.04455C6.88381 4.12269 6.77782 4.16659 6.66732 4.16659C6.55681 4.16659 6.45083 4.12269 6.37269 4.04455C6.29455 3.96641 6.25065 3.86043 6.25065 3.74992C6.25065 3.63941 6.29455 3.53343 6.37269 3.45529C6.45083 3.37715 6.55681 3.33325 6.66732 3.33325C6.77782 3.33325 6.88381 3.37715 6.96195 3.45529C7.04009 3.53343 7.08398 3.63941 7.08398 3.74992ZM3.33398 4.16659C3.44449 4.16659 3.55047 4.12269 3.62861 4.04455C3.70675 3.96641 3.75065 3.86043 3.75065 3.74992C3.75065 3.63941 3.70675 3.53343 3.62861 3.45529C3.55047 3.37715 3.44449 3.33325 3.33398 3.33325C3.22348 3.33325 3.1175 3.37715 3.03936 3.45529C2.96122 3.53343 2.91732 3.63941 2.91732 3.74992C2.91732 3.86043 2.96122 3.96641 3.03936 4.04455C3.1175 4.12269 3.22348 4.16659 3.33398 4.16659Z"
+                                                            fill="#4A4A4A" fill-opacity="0.8" />
+                                                    </svg>
+                                                    6
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter-check-price">
+                                        €600
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- MODIFY Modal -->
     <div class="modify-modal modal fade" id="ModifySearchModal" tabindex="-1" aria-labelledby="ModifySearchModalLabel"
@@ -2074,6 +2450,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js"></script>
     <script src="node_modules/select2/dist/js/select2.min.js"></script>
     <script src="assets/js/result.js"></script>
+    <script src="assets/js/result-filter-mob.js"></script>
 </body>
 
 </html>
