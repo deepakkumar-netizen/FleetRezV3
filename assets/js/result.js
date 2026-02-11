@@ -452,6 +452,7 @@ $("#sorting").select2({
   placeholder: "",
   allowClear: false,
   minimumResultsForSearch: Infinity,
+  dropdownParent: $("#offcanvasResponsive"), // 👈 IMPORTANT
 });
 
 // CAR OFFER TYPE SELECT
