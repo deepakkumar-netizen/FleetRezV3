@@ -13577,6 +13577,12 @@ button:focus {
   font-size: 40px;
   font-weight: 700;
   letter-spacing: 0.4px; }
+.heading h4, .heading .h4 {
+  color: #000;
+  font-family: "Rethink Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: -0.4px; }
 
 .blog-img {
   overflow: hidden;
@@ -13743,7 +13749,21 @@ button:focus {
   background: linear-gradient(180deg, #008857 27.38%, #007148 100%);
   padding: 40px 60px;
   width: 698px;
-  max-width: 100%; }
+  max-width: 100%;
+  position: relative; }
+  .customer-card::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 44px;
+    background: rgba(1, 122, 78, 0.14);
+    position: absolute;
+    right: 8px;
+    top: 8px; }
+  .customer-card .customer-quotes {
+    position: absolute;
+    top: -18px;
+    left: -5px; }
 
 .customer-body p {
   color: #fff;
@@ -13754,16 +13774,16 @@ button:focus {
   /* 40px */
   letter-spacing: -0.32px; }
 
-.customer-avtar {
+.customer-avatar {
   gap: 12px; }
-  .customer-avtar p {
+  .customer-avatar p {
     color: rgba(255, 255, 255, 0.6);
     font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 120%;
     letter-spacing: -0.16px; }
-    .customer-avtar p span {
+    .customer-avatar p span {
       color: #fff;
       font-family: "Inter", sans-serif;
       font-size: 16px;
@@ -13778,7 +13798,7 @@ button:focus {
   .customer-slider .slide {
     width: 698px; }
     .customer-slider .slide .slide-inner {
-      transform: scale(0.92);
+      transform: scale(0.9);
       opacity: 0.5;
       transition: transform 0.45s ease, opacity 0.45s ease; }
   .customer-slider .slick-center .slide .slide-inner {
@@ -13847,6 +13867,8 @@ button:focus {
   .customer-card {
     width: 320px;
     padding: 24px; }
+    .customer-card .customer-quotes svg {
+      width: 29px; }
 
   .customer-body p {
     font-size: 18px; }
